@@ -1,0 +1,75 @@
+@use '../abstracts';
+
+.section {
+	margin-top: abstracts.$navHeight;
+	padding: 2rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+	gap: 1rem 2rem;
+	justify-content: center;
+	max-height: calc(100vh - abstracts.$navHeight);
+	background-color: abstracts.$mainBg;
+	// CUSTOM SCROLLBAR FOR MOZILLA
+	scrollbar-width: thin;
+	scrollbar-color: abstracts.$scrollThumb abstracts.$scrollTrack;
+	// CUSTOM SCROLLBAR FOR CHROMIUM BROWSERS
+	overflow-y: scroll;
+	&::-webkit-scrollbar {
+		width: 5px;
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: abstracts.$scrollThumb;
+	}
+	&::-webkit-scrollbar-track {
+		background-color: abstracts.$scrollTrack;
+	}
+	a {
+		text-decoration: none;
+	}
+	&__title {
+		align-self: flex-start;
+		grid-column: 1/-1;
+		color: abstracts.$green;
+		font-family: 'Inter', sans-serif;
+		font-weight: 600;
+		font-size: 2.4rem;
+	}
+	.video-card {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		font-family: 'Inter', sans-serif;
+		&__thumbnail {
+			width: 100%;
+			aspect-ratio: 16/9;
+			background-color: abstracts.$hoverBg;
+		}
+		&__title {
+			margin-block: 1rem;
+			width: 100%;
+			max-height: 4rem;
+			color: abstracts.$mainFont;
+			font-weight: 500;
+			overflow: hidden;
+		}
+		&__user,
+		&__views {
+			color: abstracts.$off;
+			font-weight: 500;
+			font-size: 1.4rem;
+		}
+		&__user {
+		}
+		&__views {
+		}
+	}
+}
+.section--frozen {
+	overflow-y: hidden;
+}
+
+@media (min-width: 576px) {
+	.section {
+		grid-template-columns: repeat(auto-fill, minmax(265px, 2fr));
+	}
+}

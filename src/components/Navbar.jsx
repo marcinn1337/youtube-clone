@@ -1,11 +1,19 @@
+import { useTheme } from '../context/ThemeContext'
+
 export default function Navbar() {
+	const theme = useTheme().darkTheme ? 'dark' : 'light'
+
 	const toggleSearchbar = () => {
-		document.querySelector('.nav__searchbar').classList.toggle('visible')
+		document.querySelector('.nav__searchbar').classList.toggle('nav__searchbar--visible')
+	}
+	const toggleSidebar = () => {
+		document.querySelector('.sidebar').classList.toggle('sidebar--visible')
+		document.querySelector('.section').classList.toggle('section--frozen')
 	}
 	return (
-		<nav className='nav'>
+		<nav className={`nav nav--${theme}`}>
 			<div className='wrapper'>
-				<button className='nav__icon-btn'>
+				<button className='nav__icon-btn' onClick={toggleSidebar}>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
 						viewBox='0 0 24 24'

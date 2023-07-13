@@ -1,0 +1,268 @@
+@use '../abstracts';
+.nav {
+	padding: 1rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+	z-index: 50;
+	.wrapper {
+		display: flex;
+		align-items: center;
+	}
+	&__title {
+		margin-inline-start: 1rem;
+		font-size: 2rem;
+		font-family: 'Inter', sans-serif;
+		font-weight: 800;
+		span {
+			color: abstracts.$green;
+			font-weight: 500;
+		}
+	}
+	&__icon-btn {
+		padding: 1.8rem;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: none;
+		border-radius: abstracts.$borderRadius;
+		text-decoration: none;
+		z-index: 0;
+		svg {
+			width: 2.5rem;
+			height: 2.5rem;
+			pointer-events: none;
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: abstracts.$borderRadius;
+			transition: opacity 0.15s;
+			opacity: 0;
+			z-index: -1;
+		}
+		&:hover::before {
+			opacity: 1;
+		}
+	}
+	.show-searchbar {
+		margin-left: auto;
+	}
+	&__searchbar {
+		padding: 1rem;
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: flex;
+		width: 100%;
+		height: 100%;
+		transform: translateY(-100%);
+		transition: transform 0.2s;
+		&-input {
+			padding-inline: 1rem;
+			margin-left: auto;
+			width: 60%;
+			max-width: 350px;
+			border-radius: abstracts.$borderRadius;
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+			background-color: transparent;
+			font-family: 'Inter', sans-serif;
+			font-size: 1.6rem;
+			&:focus,
+			&:focus ~ .nav__searchbar-btn {
+				outline: none;
+			}
+		}
+		&-btn {
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+			border-left: none;
+			svg {
+				width: 2.5rem;
+				height: 2.5rem;
+				pointer-events: none;
+			}
+		}
+	}
+	&__searchbar--visible {
+		transform: translateY(0);
+	}
+}
+.nav--dark {
+	background-color: abstracts.$mainBgDark;
+	.nav__icon-btn {
+		background-color: abstracts.$mainBgDark;
+		svg {
+			color: abstracts.$mainFontDark;
+			fill: abstracts.$mainFontDark;
+		}
+		&::before {
+			background-color: abstracts.$mainBgDark;
+		}
+	}
+	.nav__searchbar {
+		background-color: abstracts.$mainBgDark;
+		&-input {
+			color: abstracts.$offDark;
+			&::placeholder {
+				color: abstracts.$offDark;
+			}
+			&:focus,
+			&:focus ~ .nav__searchbar-btn {
+				outline: none;
+				border: 1px solid abstracts.$mainFontDark;
+				color: abstracts.$mainFontDark;
+				svg {
+					fill: abstracts.$mainFontDark;
+				}
+			}
+		}
+		&-btn {
+			border: 1px solid abstracts.$offDark;
+			svg {
+				fill: abstracts.$offDark;
+			}
+		}
+	}
+}
+.nav--light {
+	background-color: abstracts.$mainBgLight;
+	.nav__icon-btn {
+		background-color: abstracts.$mainBgLight;
+		svg {
+			color: abstracts.$mainFontLight;
+			fill: abstracts.$mainFontLight;
+		}
+		&::before {
+			background-color: abstracts.$mainBgLight;
+		}
+	}
+	.nav__searchbar {
+		background-color: abstracts.$mainBgLight;
+		&-input {
+			color: abstracts.$offLight;
+			&::placeholder {
+				color: abstracts.$offLight;
+			}
+			&:focus,
+			&:focus ~ .nav__searchbar-btn {
+				outline: none;
+				border: 1px solid abstracts.$mainFontLight;
+				color: abstracts.$mainFontLight;
+				svg {
+					fill: abstracts.$mainFontLight;
+				}
+			}
+		}
+		&-btn {
+			border: 1px solid abstracts.$offLight;
+			svg {
+				fill: abstracts.$offLight;
+			}
+		}
+	}
+}
+// MEDIUM RES
+@media (min-width: 768px) {
+	.nav {
+		.show-searchbar {
+			display: none;
+		}
+		&__searchbar {
+			margin-right: 2rem;
+			padding: unset;
+			position: unset;
+			order: 3;
+			background-color: transparent;
+			transform: translateY(0);
+			transition: transform 0.2s;
+			.close-searchbar {
+				display: none;
+			}
+			&-input {
+				padding-inline: 1em;
+				margin-left: auto;
+				width: 60%;
+				max-height: 4rem;
+				border-radius: abstracts.$borderRadius;
+				border-top-right-radius: 0;
+				border-bottom-right-radius: 0;
+				background-color: transparent;
+				font-family: 'Inter', sans-serif;
+				font-size: 1.6rem;
+			}
+			&-btn {
+				max-height: 4rem;
+				border-top-left-radius: 0;
+				border-bottom-left-radius: 0;
+				border-left: none;
+				svg {
+					width: 2.5rem;
+					height: 2.5rem;
+					pointer-events: none;
+				}
+			}
+		}
+		.show-profile {
+			order: 4;
+		}
+	}
+	.nav--dark {
+		.nav__searchbar {
+			&-input {
+				border: 1px solid abstracts.$offDark;
+				color: abstracts.$offDark;
+				&::placeholder {
+					color: abstracts.$offDark;
+				}
+				&:focus,
+				&:focus ~ .nav__searchbar-btn {
+					border: 1px solid abstracts.$mainFontDark;
+					color: abstracts.$mainFontDark;
+					svg {
+						fill: abstracts.$mainFontDark;
+					}
+				}
+			}
+			&-btn {
+				border: 1px solid abstracts.$offDark;
+				svg {
+					fill: abstracts.$offDark;
+				}
+			}
+		}
+	}
+	.nav--light {
+		.nav__searchbar {
+			&-input {
+				border: 1px solid abstracts.$offLight;
+				color: abstracts.$offLight;
+				&::placeholder {
+					color: abstracts.$offLight;
+				}
+				&:focus,
+				&:focus ~ .nav__searchbar-btn {
+					border: 1px solid abstracts.$mainFontLight;
+					color: abstracts.$mainFontLight;
+					svg {
+						fill: abstracts.$mainFontLight;
+					}
+				}
+			}
+			&-btn {
+				border: 1px solid abstracts.$offLight;
+				svg {
+					fill: abstracts.$offLight;
+				}
+			}
+		}
+	}
+}

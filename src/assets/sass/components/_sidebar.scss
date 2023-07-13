@@ -1,0 +1,136 @@
+@use '../abstracts';
+.sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin-top: abstracts.$navHeight;
+	height: calc(100vh - abstracts.$navHeight);
+	max-height: calc(100vh - abstracts.$navHeight);
+	min-width: 220px;
+	transform: translateX(-100%);
+	transition: transform 0.15s;
+	overflow-y: scroll;
+	// CUSTOM SCROLLBAR FOR MOZILLA
+	scrollbar-width: thin;
+	// CUSTOM SCROLLBAR FOR CHROMIUM BROWSERS
+	&:hover::-webkit-scrollbar {
+		display: block;
+	}
+	&::-webkit-scrollbar {
+		display: none;
+		width: 5px;
+	}
+	&__section {
+		margin-top: 2rem;
+		padding-bottom: 1rem;
+		position: relative;
+		&-title {
+			margin-left: 1rem;
+			font-size: 1.8rem;
+			font-weight: 600;
+			font-family: 'Inter', sans-serif;
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 75%;
+			height: 1px;
+		}
+	}
+	&__item {
+		margin-top: 1rem;
+		padding-inline: 1rem;
+		padding-block: 1rem;
+		position: relative;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		border: none;
+		font-size: 1.6rem;
+		z-index: 0;
+		svg {
+			width: 3rem;
+			height: 3rem;
+		}
+		span {
+			margin-left: 2rem;
+			font-family: 'Inter', sans-serif;
+		}
+		// HOVER EFFECT
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			z-index: -1;
+		}
+		&:hover::before {
+			opacity: 1;
+		}
+	}
+}
+.sidebar--dark {
+	background-color: abstracts.$subBgDark;
+	// CUSTOM SCROLLBAR FOR MOZILLA
+	scrollbar-color: abstracts.$scrollThumbDark abstracts.$scrollTrackDark;
+	// CUSTOM SCROLLBAR FOR CHROMIUM BROWSERS
+	&::-webkit-scrollbar-thumb {
+		background-color: abstracts.$scrollThumbDark;
+	}
+	&::-webkit-scrollbar-track {
+		background-color: abstracts.$scrollTrackDark;
+	}
+	.sidebar__section {
+		&-title {
+			color: abstracts.$offDark;
+		}
+		&::before {
+			background-color: abstracts.$lineColorDark;
+		}
+	}
+	.sidebar__item {
+		color: abstracts.$mainFontDark;
+		fill: abstracts.$mainFontDark;
+		// HOVER EFFECT
+		&::before {
+			background-color: abstracts.$hoverBgDark;
+		}
+	}
+}
+.sidebar--light {
+	background-color: abstracts.$subBgLight;
+	// CUSTOM SCROLLBAR FOR MOZILLA
+	scrollbar-color: abstracts.$scrollThumbLight abstracts.$scrollTrackLight;
+	// CUSTOM SCROLLBAR FOR CHROMIUM BROWSERS
+	&::-webkit-scrollbar-thumb {
+		background-color: abstracts.$scrollThumbLight;
+	}
+	&::-webkit-scrollbar-track {
+		background-color: abstracts.$scrollTrackLight;
+	}
+	.sidebar__section {
+		&-title {
+			color: abstracts.$offLight;
+		}
+		&::before {
+			background-color: abstracts.$lineColorLight;
+		}
+	}
+	.sidebar__item {
+		color: abstracts.$mainFontLight;
+		fill: abstracts.$mainFontLight;
+		// HOVER EFFECT
+		&::before {
+			background-color: abstracts.$hoverBgLight;
+		}
+	}
+}
+.sidebar--visible {
+	transform: translateX(0);
+}
