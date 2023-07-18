@@ -1,0 +1,69 @@
+@use '../abstracts';
+
+.category-section,
+.search-results {
+	.video__card {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		font-family: 'Inter', sans-serif;
+		&-thumbnail {
+			width: 100%;
+			aspect-ratio: 16/9;
+			background-size: cover;
+			background-position: center;
+		}
+		&-title {
+			margin-block: 1rem 0.7rem;
+			width: 100%;
+			max-height: 4rem;
+			font-weight: 500;
+			overflow: hidden;
+		}
+		&-user {
+			margin-right: 5px;
+			max-width: 60%;
+			overflow: hidden;
+		}
+		&-user,
+		&-views {
+			font-weight: 500;
+			font-size: 1.4rem;
+		}
+	}
+}
+
+.category-section--dark {
+	.video__card {
+		&-thumbnail {
+			background-color: abstracts.$hoverBgDark;
+		}
+		&-title {
+			color: abstracts.$mainFontDark;
+		}
+		&-user,
+		&-views {
+			color: abstracts.$offDark;
+		}
+	}
+}
+
+.category-section--light {
+	.video__card {
+		&-thumbnail {
+			background-color: abstracts.$hoverBgLight;
+		}
+		&-title {
+			color: abstracts.$mainFontLight;
+		}
+		&-user,
+		&-views {
+			color: abstracts.$offLight;
+		}
+	}
+}
+
+.search-results {
+	.video-card {
+	}
+}

@@ -4,7 +4,7 @@ import { useTheme } from '../context/ThemeContext'
 import { useCategory } from '../context/CategoryContext'
 import { fetchFromAPI } from '../utils/fetchFromAPI'
 import { fetchHomePageFromAPI } from '../utils/fetchHomePageFromAPI'
-export default function HomePage() {
+export default function CategorySection() {
 	const testData = {
 		kind: 'youtube#searchListResponse',
 		nextPageToken: 'CDIQAA',
@@ -2781,10 +2781,10 @@ export default function HomePage() {
 	}
 
 	return (
-		<section className={`home section section--${theme}`}>
-			<div className='section__wrapper'>
-				<h2 className='section__title'>{selectedCategory}</h2>
-				<div className='section__cards'>{videoCards}</div>
+		<section className={`category-section category-section--${theme}`}>
+			<div className='center-wrapper'>
+				<h2 className='category-section__title'>{selectedCategory}</h2>
+				<div className='category-section__cards'>{videoCards}</div>
 			</div>
 		</section>
 	)

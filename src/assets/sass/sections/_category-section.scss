@@ -1,6 +1,7 @@
 @use '../abstracts';
 
-.section {
+
+.category-section {
 	margin-top: abstracts.$navHeight;
 	padding: 2rem;
 	max-height: calc(100vh - abstracts.$navHeight);
@@ -16,48 +17,14 @@
 		color: abstracts.$green;
 		font-family: 'Inter', sans-serif;
 	}
-	&__wrapper {
-		margin: 0 auto;
-		width: 100%;
-		max-width: 1400px;
-	}
 	&__cards {
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
 		gap: 2rem;
 	}
 
-	&__card {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		font-family: 'Inter', sans-serif;
-		&-thumbnail {
-			width: 100%;
-			aspect-ratio: 16/9;
-			background-size: cover;
-			background-position: center;
-		}
-		&-title {
-			margin-block: 1rem 0.7rem;
-			width: 100%;
-			max-height: 4rem;
-			font-weight: 500;
-			overflow: hidden;
-		}
-		&-user {
-			margin-right: 5px;
-			max-width: 60%;
-			overflow: hidden;
-		}
-		&-user,
-		&-views {
-			font-weight: 500;
-			font-size: 1.4rem;
-		}
-	}
 }
-.section--dark {
+.category-section--dark {
 	background-color: abstracts.$mainBgDark;
 	// CUSTOM SCROLLBAR FOR MOZILLA
 	scrollbar-color: abstracts.$scrollThumbDark abstracts.$scrollTrackDark;
@@ -68,20 +35,8 @@
 	&::-webkit-scrollbar-track {
 		background-color: abstracts.$scrollTrackDark;
 	}
-	.section__card {
-		&-thumbnail {
-			background-color: abstracts.$hoverBgDark;
-		}
-		&-title {
-			color: abstracts.$mainFontDark;
-		}
-		&-user,
-		&-views {
-			color: abstracts.$offDark;
-		}
-	}
 }
-.section--light {
+.category-section--light {
 	background-color: abstracts.$mainBgLight;
 	// CUSTOM SCROLLBAR FOR MOZILLA
 	scrollbar-color: abstracts.$scrollThumbLight abstracts.$scrollTrackLight;
@@ -92,37 +47,25 @@
 	&::-webkit-scrollbar-track {
 		background-color: abstracts.$scrollTrackLight;
 	}
-	.section__card {
-		&-thumbnail {
-			background-color: abstracts.$hoverBgLight;
-		}
-		&-title {
-			color: abstracts.$mainFontLight;
-		}
-		&-user,
-		&-views {
-			color: abstracts.$offLight;
-		}
-	}
 }
-.section--frozen {
+.category-section--frozen {
 	overflow-y: hidden;
 }
 
 @media (min-width: 576px) {
-	.section__cards {
+	.category-section__cards {
 		grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
 	}
 }
 
 @media (min-width: 768px) {
-	.section__cards {
+	.category-section__cards {
 		grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
 	}
 }
 
 @media (min-width: 1400px) {
-	.section__cards {
+	.category-section__cards {
 		grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 	}
 }

@@ -1,4 +1,5 @@
 import SidebarItem from './SidebarItem'
+import SidebarLink from './SidebarLink'
 import ThemeButton from './ThemeButton'
 import { useTheme } from '../context/ThemeContext'
 
@@ -8,8 +9,8 @@ export default function Sidebar() {
 		<aside className={`sidebar sidebar--${theme}`}>
 			<section className='sidebar__section section-main'>
 				<SidebarItem itemName='Home Page' />
-				<SidebarItem itemName='History' />
-				<SidebarItem itemName='Playlists' />
+				<SidebarLink itemName='History' />
+				<SidebarLink itemName='Playlists' />
 			</section>
 			<section className='sidebar__section section-explore'>
 				<h4 className='sidebar__section-title'>Explore</h4>

@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
-import HomePage from './components/HomePage'
+import CategorySection from './components/CategorySection'
+import SearchResultsPage from './pages/SearchResultsPage'
 import { ThemeProvider } from './context/ThemeContext'
 import { CategoryProvider } from './context/CategoryContext'
 
@@ -10,7 +11,8 @@ export default function App() {
 			<Navbar />
 			<CategoryProvider>
 				<Sidebar />
-				<HomePage />
+				{/* <CategorySection /> */}
+				<SearchResultsPage />
 			</CategoryProvider>
 		</ThemeProvider>
 	)
