@@ -1,16 +1,19 @@
-export default function VideoCard() {
+export default function VideoCard({ videoTitle, channelName, thumbnail, publishDate }) {
+	const styles = {
+		backgroundImage: `url(${thumbnail})`
+	}
 	return (
-		<div className='video-card'>
-			<a href='#' className='video-card__thumbnail'></a>
-			<a href='#' className='video-card__title'>
-				Video Title lorem ipsum dolor sit amet, consectetur adipihh dolor sit
+		<div className='section__card'>
+			<a href='#' className='section__card-thumbnail' style={styles}></a>
+			<a href='#' className='section__card-title'>
+				{videoTitle}
 			</a>
-			<a href='#' className='video-card__user'>
-				User Name
+			<a href='#' className='section__card-user'>
+			{channelName}
 			</a>
-			<a href='#' className='video-card__views'>
-				1 200 000 views
-			</a>
+			<p href='#' className='section__card-views'>
+				{publishDate}
+			</p>
 		</div>
 	)
 }

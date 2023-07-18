@@ -55,6 +55,11 @@
 	.show-searchbar {
 		margin-left: auto;
 	}
+	.show-profile {
+		button:nth-of-type(2) {
+			display: none;
+		}
+	}
 	&__searchbar {
 		padding: 1rem;
 		position: absolute;
@@ -66,6 +71,7 @@
 		transform: translateY(-100%);
 		transition: transform 0.2s;
 		&-input {
+			margin-block: 0.8rem;
 			padding-inline: 1rem;
 			margin-left: auto;
 			width: 60%;
@@ -82,6 +88,7 @@
 			}
 		}
 		&-btn {
+			margin-block: 0.8rem;
 			border-top-left-radius: 0;
 			border-bottom-left-radius: 0;
 			border-left: none;
@@ -89,6 +96,10 @@
 				width: 2.5rem;
 				height: 2.5rem;
 				pointer-events: none;
+			}
+			&::before {
+				border-top-left-radius: 0;
+				border-bottom-left-radius: 0;
 			}
 		}
 	}
@@ -99,18 +110,21 @@
 .nav--dark {
 	background-color: abstracts.$mainBgDark;
 	.nav__icon-btn {
-		background-color: abstracts.$mainBgDark;
 		svg {
 			color: abstracts.$mainFontDark;
 			fill: abstracts.$mainFontDark;
 		}
 		&::before {
-			background-color: abstracts.$mainBgDark;
+			background-color: abstracts.$hoverBgDark;
 		}
+	}
+	.nav__title {
+		color: abstracts.$mainFontDark;
 	}
 	.nav__searchbar {
 		background-color: abstracts.$mainBgDark;
 		&-input {
+			border: 1px solid abstracts.$offDark;
 			color: abstracts.$offDark;
 			&::placeholder {
 				color: abstracts.$offDark;
@@ -136,18 +150,21 @@
 .nav--light {
 	background-color: abstracts.$mainBgLight;
 	.nav__icon-btn {
-		background-color: abstracts.$mainBgLight;
 		svg {
 			color: abstracts.$mainFontLight;
 			fill: abstracts.$mainFontLight;
 		}
 		&::before {
-			background-color: abstracts.$mainBgLight;
+			background-color: abstracts.$hoverBgLight;
 		}
+	}
+	.nav__title {
+		color: abstracts.$mainFontLight;
 	}
 	.nav__searchbar {
 		background-color: abstracts.$mainBgLight;
 		&-input {
+			border: 1px solid abstracts.$offLight;
 			color: abstracts.$offLight;
 			&::placeholder {
 				color: abstracts.$offLight;
@@ -155,10 +172,10 @@
 			&:focus,
 			&:focus ~ .nav__searchbar-btn {
 				outline: none;
-				border: 1px solid abstracts.$mainFontLight;
-				color: abstracts.$mainFontLight;
+				border: 1px solid abstracts.$onFocusFontLight;
+				color: abstracts.$onFocusFontLight;
 				svg {
-					fill: abstracts.$mainFontLight;
+					fill: abstracts.$onFocusFontLight;
 				}
 			}
 		}
@@ -170,7 +187,7 @@
 		}
 	}
 }
-// MEDIUM RES
+// MEDIUM BREAKPOINT
 @media (min-width: 768px) {
 	.nav {
 		.show-searchbar {
@@ -248,19 +265,66 @@
 				&::placeholder {
 					color: abstracts.$offLight;
 				}
-				&:focus,
-				&:focus ~ .nav__searchbar-btn {
-					border: 1px solid abstracts.$mainFontLight;
-					color: abstracts.$mainFontLight;
-					svg {
-						fill: abstracts.$mainFontLight;
-					}
-				}
 			}
 			&-btn {
 				border: 1px solid abstracts.$offLight;
 				svg {
 					fill: abstracts.$offLight;
+				}
+			}
+		}
+	}
+}
+
+// LARGE BREAKPOINT
+@media (min-width: 992px) {
+	.nav {
+		.show-profile {
+			border-radius: abstracts.$borderRadius;
+			background-color: abstracts.$green;
+			text-decoration: none;
+			button:first-of-type {
+				display: none;
+			}
+			button:nth-of-type(2) {
+				padding-inline: 4rem;
+				position: relative;
+				display: block;
+				height: 4rem;
+				max-height: 4rem;
+				font-family: 'Inter', sans-serif;
+				font-size: 1.6rem;
+				font-weight: 500;
+				color: abstracts.$mainFontDark;
+				transition: color 0.15s;
+				z-index: 0;
+				&::before {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					border-radius: abstracts.$borderRadius;
+					transition: opacity 0.15s;
+					z-index: -1;
+					opacity: 0;
+				}
+				&:hover::before {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	.nav--dark,
+	.nav--light {
+		.show-profile {
+			button:nth-of-type(2) {
+				&::before {
+					background-color: abstracts.$mainFontDark;
+				}
+				&:hover {
+					color: abstracts.$green;
 				}
 			}
 		}

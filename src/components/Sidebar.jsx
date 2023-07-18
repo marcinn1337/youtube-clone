@@ -1,4 +1,5 @@
 import SidebarItem from './SidebarItem'
+import ThemeButton from './ThemeButton'
 import { useTheme } from '../context/ThemeContext'
 
 export default function Sidebar() {
@@ -20,7 +21,7 @@ export default function Sidebar() {
 			</section>
 			<section className='sidebar__section section-settings'>
 				<h4 className='sidebar__section-title'>Settings</h4>
-				<SidebarItem itemName='Dark Theme' />
+				<ThemeButton />
 			</section>
 		</aside>
 	)
