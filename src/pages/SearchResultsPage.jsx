@@ -1060,6 +1060,7 @@ export default function SearchResultsPage() {
 			publishDate={video.publishedTimeText}
 			views={video.stats.views}
 			avatarUrl={video.author.avatar[0].url}
+			channelBadge={video.author.badges[0]}
 		/>
 	))
 	return (
