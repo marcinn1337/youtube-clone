@@ -3,15 +3,15 @@ export default function VideoCard({ videoTitle, channelName, thumbnail, publishD
 		backgroundImage: `url(${thumbnail})`
 	}
 	return (
-		<div className='section__card'>
-			<a href='#' className='section__card-thumbnail' style={styles}></a>
-			<a href='#' className='section__card-title'>
+		<div className='video__card'>
+			<a href='#' className='video__card-thumbnail' style={styles}></a>
+			<a href='#' className='video__card-title'>
 				{videoTitle}
 			</a>
-			<a href='#' className='section__card-user'>
-			{channelName}
+			<a href='#' className='video__card-user'>
+				{channelName}
 			</a>
-			<p href='#' className='section__card-views'>
+			<p href='#' className='video__card-views'>
 				{publishDate}
 			</p>
 		</div>
