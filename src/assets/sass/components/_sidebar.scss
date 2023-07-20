@@ -9,6 +9,7 @@
 	min-width: 220px;
 	transform: translateX(-100%);
 	transition: transform 0.15s;
+	z-index: 20;
 	overflow-y: scroll;
 	// CUSTOM SCROLLBAR FOR MOZILLA
 	scrollbar-width: thin;

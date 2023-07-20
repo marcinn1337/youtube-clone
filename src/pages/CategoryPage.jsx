@@ -1,8 +1,11 @@
 import VideoCard from '../components/VideoCard'
+import { useState, useEffect } from 'react'
 import { useTheme } from '../context/ThemeContext'
-
-export default function SearchResultsPage() {
-	const testData = {
+import { useCategory } from '../context/CategoryContext'
+import { fetchFromAPI } from '../utils/fetchFromAPI'
+import { fetchHomePageFromAPI } from '../utils/fetchHomePageFromAPI'
+export default function CategoryPage() {
+	const testData2 = {
 		contents: [
 			{
 				type: 'video',
@@ -1045,11 +1048,14 @@ export default function SearchResultsPage() {
 			}
 		]
 	}
-	const theme = useTheme().darkTheme ? 'dark' : 'light'
 	let videos,
 		videoCards = []
+	const selectedCategory = useCategory().selectedCategory
+	const theme = useTheme().darkTheme ? 'dark' : 'light'
 
-	videos = testData.contents
+	// Fetch videos and create video cards
+	// fetchHomePageFromAPI().then(data => console.log(data))
+	videos = testData2.contents
 	// Map video cards
 	videoCards = videos.map(({ video }, i) => (
 		<VideoCard
@@ -1063,10 +1069,12 @@ export default function SearchResultsPage() {
 			channelBadge={video.author.badges[0]}
 		/>
 	))
+
 	return (
 		<main className={`main-content main-content--${theme}`}>
 			<div className='center-wrapper'>
-				<div className='search-results'>{videoCards}</div>
+				<h2 className='category-page__title'>{selectedCategory}</h2>
+				<div className='category-page__cards'>{videoCards}</div>
 			</div>
 		</main>
 	)

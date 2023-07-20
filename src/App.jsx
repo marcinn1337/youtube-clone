@@ -1,6 +1,7 @@
+import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
-import CategorySection from './components/CategorySection'
+import CategoryPage from './pages/CategoryPage'
 import SearchResultsPage from './pages/SearchResultsPage'
 import { ThemeProvider } from './context/ThemeContext'
 import { CategoryProvider } from './context/CategoryContext'
@@ -11,8 +12,10 @@ export default function App() {
 			<Navbar />
 			<CategoryProvider>
 				<Sidebar />
-				{/* <CategorySection /> */}
-				<SearchResultsPage />
+				<Routes>
+					<Route path='/' element={<CategoryPage />} />
+					<Route path='/search' element={<SearchResultsPage />} />
+				</Routes>
 			</CategoryProvider>
 		</ThemeProvider>
 	)
