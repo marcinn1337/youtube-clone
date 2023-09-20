@@ -1,10 +1,15 @@
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
-import CategoryPage from './pages/CategoryPage'
+import HomePage from './pages/HomePage'
+import ChannelPage from './pages/ChannelPage'
 import SearchResultsPage from './pages/SearchResultsPage'
+import AlertBox from './components/AlertBox'
+import ReportModal from './sections/ReportModal'
 import { ThemeProvider } from './context/ThemeContext'
 import { CategoryProvider } from './context/CategoryContext'
+import { AlertProvider } from './context/AlertContext'
+import { ReportProvider } from './context/ReportContext'
 
 export default function App() {
 	return (
@@ -12,10 +17,18 @@ export default function App() {
 			<Navbar />
 			<CategoryProvider>
 				<Sidebar />
-				<Routes>
-					<Route path='/' element={<CategoryPage />} />
-					<Route path='/search' element={<SearchResultsPage />} />
-				</Routes>
+				<AlertProvider>
+					<ReportProvider>
+						<Routes>
+							<Route path='/' element={<HomePage />} />
+							<Route path='/search' element={<SearchResultsPage />} />
+							<Route path='/channel' element={<ChannelPage />} />
+						</Routes>
+						<ReportModal />
+						<AlertBox />
+						<div className="shadow"></div>
+					</ReportProvider>
+				</AlertProvider>
 			</CategoryProvider>
 		</ThemeProvider>
 	)

@@ -14,7 +14,6 @@
 	&__title {
 		margin-inline-start: 1rem;
 		font-size: 2rem;
-		font-family: 'Inter', sans-serif;
 		font-weight: 800;
 		span {
 			color: abstracts.$green;
@@ -34,7 +33,6 @@
 		svg {
 			width: 2.5rem;
 			height: 2.5rem;
-			pointer-events: none;
 		}
 		&::before {
 			content: '';
@@ -80,7 +78,6 @@
 			border-top-right-radius: 0;
 			border-bottom-right-radius: 0;
 			background-color: transparent;
-			font-family: 'Inter', sans-serif;
 			font-size: 1.6rem;
 			&:focus,
 			&:focus ~ .nav__searchbar-btn {
@@ -95,7 +92,6 @@
 			svg {
 				width: 2.5rem;
 				height: 2.5rem;
-				pointer-events: none;
 			}
 			&::before {
 				border-top-left-radius: 0;
@@ -213,7 +209,6 @@
 				border-top-right-radius: 0;
 				border-bottom-right-radius: 0;
 				background-color: transparent;
-				font-family: 'Inter', sans-serif;
 				font-size: 1.6rem;
 			}
 			&-btn {
@@ -224,7 +219,6 @@
 				svg {
 					width: 2.5rem;
 					height: 2.5rem;
-					pointer-events: none;
 				}
 			}
 		}
@@ -281,51 +275,15 @@
 	.nav {
 		.show-profile {
 			border-radius: abstracts.$borderRadius;
-			background-color: abstracts.$green;
 			text-decoration: none;
 			button:first-of-type {
 				display: none;
 			}
 			button:nth-of-type(2) {
 				padding-inline: 4rem;
-				position: relative;
 				display: block;
 				height: 4rem;
 				max-height: 4rem;
-				font-family: 'Inter', sans-serif;
-				font-size: 1.6rem;
-				font-weight: 500;
-				color: abstracts.$mainFontDark;
-				transition: color 0.15s;
-				z-index: 0;
-				&::before {
-					content: '';
-					position: absolute;
-					top: 0;
-					left: 0;
-					width: 100%;
-					height: 100%;
-					border-radius: abstracts.$borderRadius;
-					transition: opacity 0.15s;
-					z-index: -1;
-					opacity: 0;
-				}
-				&:hover::before {
-					opacity: 1;
-				}
-			}
-		}
-	}
-	.nav--dark,
-	.nav--light {
-		.show-profile {
-			button:nth-of-type(2) {
-				&::before {
-					background-color: abstracts.$mainFontDark;
-				}
-				&:hover {
-					color: abstracts.$green;
-				}
 			}
 		}
 	}

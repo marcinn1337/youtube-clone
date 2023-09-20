@@ -1,0 +1,102 @@
+@use '../abstracts';
+.comment-input {
+	margin-block-start: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	max-width: 70rem;
+	&__user-avatar {
+		width: 3rem;
+		height: 3rem;
+		background-image: url('../../test_data/user-avatar.png');
+		background-position: center;
+		background-size: cover;
+		border-radius: 50%;
+	}
+	&__textarea {
+		padding: 0.5rem 1rem;
+		margin-inline-start: 1rem;
+		min-width: calc(100% - 4rem);
+		border-radius: abstracts.$borderRadius;
+		resize: none;
+		// CUSTOM SCROLLBAR ON MOZILLA BROWSERS
+		scrollbar-width: thin;
+		scrollbar-color: abstracts.$scrollTrackDark abstracts.$scrollThumbDark;
+		// CUSTOM SCROLLBAR ON CHROMIUM BROWSERS
+		&::-webkit-scrollbar {
+			width: 5px;
+		}
+	}
+	&__add-btn {
+		margin-block-start: 0.5rem;
+		margin-inline-start: auto;
+		svg {
+			margin-inline-end: 1rem;
+		}
+	}
+}
+.comment-input--reply {
+	margin-inline-start: 3rem;
+	max-width: 60rem;
+	.comment-input__user-avatar {
+		width: 2rem;
+		height: 2rem;
+	}
+	.comment-input__textarea {
+		min-width: calc(100% - 3rem);
+	}
+}
+// THEMES
+.main-content--dark {
+	.comment-input {
+		&__textarea {
+			background-color: abstracts.$hoverBgDark;
+			color: abstracts.$mainFontDark;
+			// CUSTOM SCROLLBAR ON MOZILLA BROWSERS
+			scrollbar-color: abstracts.$scrollTrackDark abstracts.$scrollThumbDark;
+			// CUSTOM SCROLLBAR ON CHROMIUM BROWSERS
+			&::-webkit-scrollbar-thumb {
+				background-color: abstracts.$scrollThumbDark;
+			}
+			&::-webkit-scrollbar-track {
+				background-color: abstracts.$scrollTrackDark;
+			}
+		}
+		&__add-btn {
+			color: abstracts.$mainFontDark;
+		}
+	}
+}
+
+.main-content--light {
+	.comment-input {
+		&__textarea {
+			background-color: abstracts.$hoverBgLight;
+			color: abstracts.$mainFontLight;
+			// CUSTOM SCROLLBAR ON MOZILLA BROWSERS
+			scrollbar-color: abstracts.$scrollTrackLight abstracts.$scrollThumbLight;
+			// CUSTOM SCROLLBAR ON CHROMIUM BROWSERS
+			&::-webkit-scrollbar-thumb {
+				background-color: abstracts.$scrollThumbLight;
+			}
+			&::-webkit-scrollbar-track {
+				background-color: abstracts.$scrollTrackLight;
+			}
+		}
+		&__add-btn {
+			color: abstracts.$mainFontLight;
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.comment-input--reply {
+		.comment-input__user-avatar {
+			width: 3rem;
+			height: 3rem;
+		}
+		.comment-input__textarea {
+			min-width: calc(100% - 4rem);
+		}
+	}
+}

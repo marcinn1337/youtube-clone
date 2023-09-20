@@ -1,0 +1,113 @@
+@use '../abstracts';
+
+.featured-channel {
+	margin-block: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	&__avatar {
+		width: 8rem;
+		height: 8rem;
+		background-color: abstracts.$hoverBgDark;
+		background-position: center;
+		background-size: cover;
+		border-radius: 50%;
+	}
+	&__name {
+		margin-block-start: 0.5rem;
+		text-align: center;
+	}
+	&__subscribers {
+		margin-block-start: 0.3rem;
+		font-size: 1.2rem;
+		text-align: center;
+	}
+	&__subscribe-btn {
+		margin-block-start: 1.5rem;
+		padding: 1rem 2rem;
+		position: relative;
+		width: 10rem;
+		height: 4rem;
+		border-radius: abstracts.$borderRadius;
+		text-transform: capitalize;
+		color: abstracts.$mainFontDark;
+		overflow: hidden;
+		z-index: 0;
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: abstracts.$borderRadius;
+			line-height: 4rem;
+		}
+		&::before {
+			opacity: 0;
+			z-index: -1;
+		}
+		&::after {
+			content: 'Subscribe';
+			line-height: 4rem;
+		}
+		&:hover::before {
+			opacity: 1;
+		}
+	}
+}
+.featured-channel--subscribed {
+	button.featured-channel__subscribe-btn {
+		background-color: abstracts.$offDark;
+		&::after {
+			content: 'Unsubscribe';
+		}
+		&::before {
+		}
+	}
+}
+
+.main-content--dark {
+	.featured-channel {
+		&__subscribers {
+			color: abstracts.$offDark;
+		}
+		&__subscribe-btn {
+			background-color: abstracts.$subBgDark;
+			&::before {
+				background-color: abstracts.$hoverBgDark;
+			}
+		}
+	}
+	.featured-channel--subscribed {
+		.featured-channel__subscribe-btn::after {
+			content: 'Unsubscribe';
+		}
+	}
+}
+
+.main-content--light {
+	.featured-channel {
+		&__subscribers {
+			color: abstracts.$offLight;
+		}
+		&__subscribe-btn {
+			background-color: abstracts.$hoverBgLight;
+			color: abstracts.$mainFontLight;
+			&::before {
+				background-color: abstracts.$lineColorLight;
+			}
+		}
+	}
+	.featured-channel--subscribed {
+		.featured-channel__subscribe-btn {
+			background-color: abstracts.$offDark;
+			color: abstracts.$mainFontDark;
+			&:hover {
+				color: abstracts.$mainFontLight;
+			}
+		}
+	}
+}

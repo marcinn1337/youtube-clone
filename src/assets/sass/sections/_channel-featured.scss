@@ -1,0 +1,14 @@
+@use '../abstracts';
+.channel-featured {
+	&__list {
+		margin-block-start: 2rem;
+		&-title {
+			width: 100%;
+		}
+		&-content {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+			gap: 2rem;
+		}
+	}
+}

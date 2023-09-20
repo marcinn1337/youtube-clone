@@ -1,0 +1,56 @@
+@use '../abstracts';
+
+.playlist-card {
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: column;
+	&__thumbnail {
+		display: flex;
+		flex-direction: column-reverse;
+		aspect-ratio: 16/9;
+		background-size: cover;
+		background-position: center;
+		border-radius: abstracts.$cardRadius;
+		&:hover .playlist-card__details {
+			color: abstracts.$onFocusFontDark;
+		}
+	}
+	&__details {
+		padding: 0.7rem 1rem;
+		background-color: rgba(0, 0, 0, 0.9);
+		border-bottom-left-radius: abstracts.$cardRadius;
+		border-bottom-right-radius: abstracts.$cardRadius;
+		font-size: 1.4rem;
+		font-weight: 500;
+		color: abstracts.$mainFontDark;
+		transition: color 0.15s;
+	}
+	&__title {
+		margin-top: 0.7rem;
+		max-height: 4rem;
+		font-weight: 500;
+		overflow: hidden;
+	}
+	&__update-info {
+		margin-top: 0.7rem;
+		color: abstracts.$offDark;
+		font-size: 1.4rem;
+		font-weight: 500;
+	}
+}
+
+.main-content--dark {
+	.playlist-card {
+		&__update-info {
+			color: abstracts.$offDark;
+		}
+	}
+}
+
+.main-content--light {
+	.playlist-card {
+		&__update-info {
+			color: abstracts.$offLight;
+		}
+	}
+}

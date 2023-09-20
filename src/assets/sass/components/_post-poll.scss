@@ -1,0 +1,74 @@
+@use '../abstracts';
+.post-poll {
+	display: flex;
+	flex-direction: column;
+	&__votes {
+		margin-top: 1rem;
+		font-size: 1.2rem;
+	}
+	&__choice {
+		padding: 1rem;
+		margin-top: 1rem;
+		position: relative;
+		width: 100%;
+		max-width: 500px;
+		border-radius: abstracts.$borderRadius;
+		font-size: 1.6rem;
+		text-align: left;
+		word-wrap: break-word;
+		opacity: 0.75;
+		transition: opacity 0.15s;
+		z-index: 0;
+		&:hover {
+			opacity: 1;
+		}
+		&--chosen {
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(62, 165, 255, 0.2);
+				border: 1px solid #3ea6ff;
+				border-radius: abstracts.$borderRadius;
+				// opacity: 0.1;
+				z-index: -1;
+			}
+		}
+	}
+}
+
+// THEMES
+.main-content--dark {
+	.post-poll {
+		&__votes {
+			color: abstracts.$offDark;
+		}
+		&__choice {
+			border: 1px solid abstracts.$mainFontDark;
+			color: abstracts.$mainFontDark;
+		}
+		.post-poll__choice--chosen {
+			color: #fff;
+			border: 1px solid rgba(0, 0, 0, 0);
+		}
+	}
+}
+
+.main-content--light {
+	.post-poll {
+		&__votes {
+			color: abstracts.$offLight;
+		}
+		&__choice {
+			border: 1px solid abstracts.$mainFontLight;
+			color: abstracts.$mainFontLight;
+		}
+		.post-poll__choice--chosen {
+			color: #000;
+			border: 1px solid rgba(0, 0, 0, 0);
+		}
+	}
+}

@@ -1,0 +1,118 @@
+@use '../abstracts';
+
+.channel {
+	.video-card {
+		margin-top: 2rem;
+		display: flex;
+		flex-direction: column;
+		// max-width: 1000px;
+		&__thumbnail {
+			position: relative;
+			aspect-ratio: 16/9;
+			background-size: cover;
+			background-position: center;
+			border-radius: abstracts.$cardRadius;
+			.video-card__duration {
+				margin: 0 1rem 1rem 0;
+				padding: 0.2rem 0.5rem;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				background-color: rgba(0, 0, 0, 0.8);
+				border-radius: abstracts.$borderRadius;
+				color: abstracts.$mainFontDark;
+				font-size: 1.3rem;
+			}
+			.video-card__watch-later-btn {
+				margin: 1rem 1rem 0 0;
+				padding: 0.5rem 0.5rem;
+				position: absolute;
+				top: 0;
+				right: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: rgba(0, 0, 0, 0.8);
+				border-radius: abstracts.$borderRadius;
+				opacity: 0;
+				svg {
+					width: 2rem;
+					height: 2rem;
+					fill: abstracts.$mainFontDark;
+				}
+			}
+			&:hover .video-card__watch-later-btn {
+				opacity: 1;
+			}
+		}
+		&__info {
+			margin-top: 1rem;
+			position: relative;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		&__title {
+			width: calc(100% - 3rem);
+			max-height: 4rem;
+			font-weight: 500;
+			overflow: hidden;
+		}
+		&__details {
+			margin-top: 1rem;
+			font-size: 1.3rem;
+		}
+		&__options-btn {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 2rem;
+			height: 2rem;
+			svg {
+				width: 2rem;
+				height: 2rem;
+			}
+		}
+	}
+}
+
+// THEMES
+.main-content--dark {
+	.channel {
+		.video-card {
+			&__thumbnail {
+				background-color: abstracts.$hoverBgDark;
+			}
+			&__title {
+				color: abstracts.$mainFontDark;
+			}
+			&__details {
+				color: abstracts.$secondFontDark;
+			}
+			&__options-btn {
+				svg {
+					fill: abstracts.$mainFontDark;
+				}
+			}
+		}
+	}
+}
+.main-content--light {
+	.channel {
+		.video-card {
+			&__thumbnail {
+				background-color: abstracts.$hoverBgLight;
+			}
+			&__title {
+				color: abstracts.$mainFontLight;
+			}
+			&__details {
+				color: abstracts.$secondFontLight;
+			}
+			&__options-btn {
+				svg {
+					fill: abstracts.$mainFontLight;
+				}
+			}
+		}
+	}
+}

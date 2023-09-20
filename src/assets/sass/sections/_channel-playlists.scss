@@ -1,0 +1,4 @@
+@use '../abstracts';
+.channel-playlists {
+	@include abstracts.cards-grid;
+}

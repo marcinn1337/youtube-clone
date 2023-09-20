@@ -1,0 +1,60 @@
+{
+	"defaultReportOptions": [
+		{
+			"value": "Child abuse",
+			"toolTipText": "Content that includes sexual, predatory, or abusive communications towards minors"
+		},
+		{
+			"value": "Promotes terrorism",
+			"toolTipText": "Content that is intended to recruit for terrorist organizations, incite violence, glorify terrorist attacks, or otherwise promote acts of terrorism"
+		},
+		{
+			"value": "Harassment or bullying",
+			"toolTipText": "Content that threatens individuals or targets them with prolonged or malicious insults"
+		},
+		{
+			"value": "Misinformation",
+			"toolTipText": "Content that is misleading or deceptive with serious risk of egregious harm"
+		}
+	],
+	"commentPostReportOptions": [
+		{
+			"value": "Unwanted commercial content or spam",
+			"toolTipText": ""
+		},
+		{
+			"value": "Pornography or sexually explicit material",
+			"toolTipText": ""
+		},
+		{
+			"value": "Hate speech or graphic violence",
+			"toolTipText": ""
+		},
+		{
+			"value": "Suicide or self injury",
+			"toolTipText": ""
+		}
+	],
+	"videoReportOptions": [
+		{
+			"value": "Violent or repulsive content",
+			"toolTipText": "Content that is violent, graphic, or posted to shock viewers"
+		},
+		{
+			"value": "Hateful or abusive content",
+			"toolTipText": "Content that promotes hatred against protected groups, abuses vulnerable individuals, or engages in cyberbullying"
+		},
+		{
+			"value": "Spam or misleading",
+			"toolTipText": "Content that is massively posted or otherwise misleading in nature"
+		},
+		{
+			"value": "Legal issue",
+			"toolTipText": "Copyright, privacy, or other legal complaints"
+		},
+		{
+			"value": "Caption issue",
+			"toolTipText": "Missing, inaccurate, or abusive captions"
+		}
+	]
+}

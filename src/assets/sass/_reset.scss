@@ -23,9 +23,31 @@ a {
 button {
 	border: none;
 	background-color: transparent;
-	cursor: pointer;
+	svg {
+		pointer-events: none;
+	}
 }
 
 input {
 	border: none;
+}
+label,
+button,
+input,
+a {
+	cursor: pointer;
+}
+
+div,
+section,
+p,
+span,
+button,
+form,
+textarea,
+input,
+h1,
+h2,
+h4 {
+	font-family: 'Inter', sans-serif;
 }

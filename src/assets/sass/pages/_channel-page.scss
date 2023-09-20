@@ -1,0 +1,212 @@
+@use '../abstracts';
+.channel__banner {
+	height: 15vh;
+	background-color: abstracts.$offDark;
+	background-size: cover;
+	background-position: center;
+}
+.channel {
+	position: relative;
+	overflow-x: hidden;
+	&__header {
+		margin-top: 2rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.channel__avatar {
+			width: 5rem;
+			height: 5rem;
+			border-radius: 50%;
+			background-size: cover;
+			background-position: center;
+		}
+		.channel__name {
+			position: relative;
+			margin-top: 0.8rem;
+			font-weight: 700;
+			font-size: 1.7rem;
+		}
+		.channel__details {
+			margin-block-start: 0.5rem;
+			font-size: 1.2rem;
+		}
+		.channel__subscribe-btn {
+			margin-top: 1.5rem;
+			display: flex;
+			width: 15rem;
+			height: 3.5rem;
+			line-height: 3.5rem;
+			&::after {
+				content: 'Subscribe';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+	&__nav {
+		margin-top: 2rem;
+		position: sticky;
+		display: flex;
+		flex-wrap: nowrap;
+		overflow-x: scroll;
+		// Transparent horizontal scroll on mozilla browsers
+		scrollbar-color: transparent transparent;
+		// Hidden scroll on chromium browsers
+		&::-webkit-scrollbar {
+			height: 0px;
+		}
+		&-btn {
+			position: relative;
+			padding: 1rem 1.5rem;
+			font-size: 1.6rem;
+			text-transform: uppercase;
+		}
+		.active {
+			&::before {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 3px;
+			}
+		}
+	}
+	&__content {
+		padding-inline: 2rem;
+		.channel__sort {
+			margin-top: 2rem;
+		}
+	}
+}
+.channel--subscribed {
+	.channel__subscribe-btn {
+		&::after {
+			content: 'Unsubscribe';
+		}
+	}
+}
+// THEMES
+.main-content--dark {
+	.channel {
+		color: abstracts.$mainFontDark;
+		&__header {
+			.channel__details {
+				color: abstracts.$offDark;
+			}
+			.channel__avatar {
+				background-color: abstracts.$offDark;
+			}
+		}
+		&__nav {
+			&-btn {
+				color: abstracts.$offDark;
+			}
+			.active {
+				color: abstracts.$mainFontDark;
+				&::before {
+					background-color: #fff;
+				}
+			}
+		}
+	}
+	.channel--subscribed {
+		.channel__subscribe-btn {
+			background-color: abstracts.$offDark;
+		}
+	}
+}
+
+.main-content--light {
+	.channel {
+		color: abstracts.$mainFontLight;
+		&__header {
+			.channel__details {
+				color: abstracts.$offLight;
+			}
+			.channel__avatar {
+				background-color: abstracts.$offLight;
+			}
+		}
+		&__nav {
+			&-btn {
+				color: abstracts.$offLight;
+			}
+			.active {
+				color: abstracts.$mainFontLight;
+				&::before {
+					background-color: abstracts.$mainFontLight;
+				}
+			}
+		}
+		&__section {
+			.channel__sort {
+				&-btn {
+					background-color: abstracts.$hoverBgLight;
+					color: abstracts.$mainFontLight;
+				}
+				.active {
+					background-color: abstracts.$mainFontLight;
+					color: abstracts.$mainBgLight;
+				}
+			}
+		}
+	}
+	.channel--subscribed {
+		.channel__subscribe-btn {
+			background-color: abstracts.$offDark;
+		}
+		.channel__subscribe-btn:hover::after {
+			color: abstracts.$mainFontDark;
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.channel__banner {
+		height: 25vh;
+	}
+	.channel {
+		&__header {
+			padding-inline: 2rem;
+			display: grid;
+			grid-template-columns: 100px auto;
+			grid-template-rows: repeat(3, auto);
+			justify-items: start;
+			.channel__avatar {
+				grid-column: 1/2;
+				grid-row: 1/-1;
+				width: 10rem;
+				height: 10rem;
+			}
+			.channel__name {
+				margin-left: 2rem;
+				margin-top: unset;
+				display: inline;
+				grid-column: 2/3;
+				grid-row: 1/2;
+			}
+			.channel__details {
+				margin-left: 2rem;
+				grid-template-columns: 2/3;
+				grid-row: 2/3;
+			}
+			.channel__subscribe-btn {
+				margin-left: 2rem;
+				margin-top: unset;
+				grid-template-columns: 2/3;
+				grid-row: 3/4;
+				max-width: 150px;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.channel__banner {
+		height: 30vh;
+	}
+}

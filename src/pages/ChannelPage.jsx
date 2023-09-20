@@ -1,0 +1,117 @@
+import { useState } from 'react'
+
+import { useTheme } from '../context/ThemeContext'
+import { useAlert } from '../context/AlertContext'
+
+import VerifiedBadge from '../components/VerifiedBadge'
+
+import ChannelVideos from '../sections/ChannelVideos'
+import ChannelPlaylists from '../sections/ChannelPlaylists'
+import ChannelCommunity from '../sections/ChannelCommunity'
+import ChannelAbout from '../sections/ChannelAbout'
+import ChannelFeatured from '../sections/ChannelFeatured'
+
+import channelData from '../test_data/channel-info.json'
+
+export default function ChannelPage() {
+	const theme = useTheme().darkTheme ? 'dark' : 'light'
+	const showAlert = useAlert().showAlert
+	const [activeContent, setActiveContent] = useState(<ChannelVideos />)
+	const styles = {
+		avatar: {
+			backgroundImage: `url('${channelData.avatar[1].url}')`
+		},
+		banner: {
+			backgroundImage: `url('${channelData.banner[1].url}')`
+		}
+	}
+	const subscribeChannel = () => {
+		document.querySelector('.channel').classList.toggle('channel--subscribed')
+	}
+	const switchChannelContent = e => {
+		// If user want to switch to content which already is active do nothing and leave the function
+		if (e.target.classList.contains('active')) return
+
+		// // Add active class to clicked btn but previously delete it from every btn to avoid highlighting more than one btn
+		const navBtns = e.target.parentElement.querySelectorAll('button')
+		navBtns.forEach(btn => btn.classList.remove('active'))
+		e.target.classList.add('active')
+
+		// // Set active content state to refresh page and show chosen content
+		setActiveContent(prevActiveContent => {
+			switch (e.target.textContent) {
+				case 'videos':
+					return <ChannelVideos />
+					break
+				case 'playlists':
+					return <ChannelPlaylists />
+					break
+				case 'community':
+					return <ChannelCommunity avatarUrl={styles.avatar.backgroundImage} />
+					break
+				case 'about':
+					return <ChannelAbout />
+					break
+				case 'channels':
+					return <ChannelFeatured />
+					break
+			}
+		})
+	}
+	const sortChannelContent = e => {
+		// Highlight clicked sort option btn by adding 'active' class
+		const sortButtons = e.target.parentElement.querySelectorAll('button')
+		// Remove highlight from other buttons and add it to targeted button
+		sortButtons.forEach(btn => btn.classList.remove('active'))
+		e.target.classList.add('active')
+
+		// If user want to sort by latest, do nothing because it's default mode to display videos
+		if (e.target.textContent === 'Latest') return
+		// Sorting video not available by this API. Show pop up alert
+		showAlert('error', 0)
+	}
+	return (
+		<main className={`main-content main-content--${theme}`}>
+			<div style={styles.banner} className='channel__banner'></div>
+			<div className='center-wrapper'>
+				<div className='channel'>
+					<div className='channel__header'>
+						<div style={styles.avatar} className='channel__avatar'></div>
+						<h2 className='channel__name'>
+							{channelData.title} <VerifiedBadge />
+						</h2>
+						<p className='channel__details'>
+							{channelData.subscriberCountText} subscribers - {channelData.videosCountText} videos -{' '}
+							{parseInt(channelData.viewCount).toLocaleString('en-US', { notation: 'compact' })} - views
+						</p>
+						<button onClick={subscribeChannel} className='channel__subscribe-btn cta-btn'></button>
+					</div>
+					<div className='channel__nav'>
+						<button onClick={switchChannelContent} className='channel__nav-btn active'>
+							videos
+						</button>
+						<button onClick={switchChannelContent} className='channel__nav-btn'>
+							playlists
+						</button>
+						<button onClick={switchChannelContent} className='channel__nav-btn'>
+							community
+						</button>
+						{channelData.tabs.includes('Channels') && (
+							<button onClick={switchChannelContent} className='channel__nav-btn'>
+								channels
+							</button>
+						)}
+						<button onClick={switchChannelContent} className='channel__nav-btn'>
+							about
+						</button>
+						<button onClick={switchChannelContent} className='channel__nav-btn'>
+							search
+						</button>
+					</div>
+					<SearchBar />
+					<section className='channel__content'>{activeContent}</section>
+				</div>
+			</div>
+		</main>
+	)
+}

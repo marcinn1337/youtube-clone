@@ -1,8 +1,9 @@
 @use '../abstracts';
-
+.home-page {
+	padding: 2rem;
+}
 .main-content {
 	margin-top: abstracts.$navHeight;
-	padding: 2rem;
 	max-height: calc(100vh - abstracts.$navHeight);
 	overflow-y: scroll;
 	// CUSTOM SCROLLBAR FOR MOZILLA

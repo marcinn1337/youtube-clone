@@ -1,0 +1,183 @@
+@use '../abstracts';
+.community-post {
+	margin-top: 2rem;
+	padding: 1rem;
+	max-width: 850px;
+	border-radius: abstracts.$cardRadius;
+	.icon-btn {
+		padding: 1rem;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.2rem;
+		transition: opacity 0.15s;
+		opacity: 0.6;
+		z-index: 0;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: abstracts.$borderRadius;
+			transition: opacity 0.15s;
+			z-index: -1;
+			opacity: 0;
+		}
+		&:hover {
+			opacity: 1;
+		}
+		&:hover::before {
+			opacity: 1;
+		}
+	}
+	&__header {
+		position: relative;
+		display: grid;
+		grid-template-columns: 4rem auto;
+		grid-template-rows: auto auto;
+		align-items: center;
+		.community-post__channel-avatar {
+			grid-column: 1/2;
+			grid-row: 1/-1;
+			width: 4rem;
+			height: 4rem;
+			border-radius: 50%;
+			background-color: gray;
+			background-size: cover;
+			background-position: center;
+		}
+		.community-post__channel-name {
+			margin-left: 1rem;
+			grid-column: 2/-1;
+			grid-row: 1/2;
+			max-width: calc(100% - 5rem);
+			font-size: 1.4rem;
+			font-weight: 500;
+			overflow: hidden;
+		}
+		.community-post__publish-date {
+			margin-top: 0.5rem;
+			margin-left: 1rem;
+			grid-column: 2/-1;
+			grid-row: 2/3;
+			max-width: calc(100% - 5rem);
+			font-size: 1.4rem;
+		}
+		.community-post__report-btn {
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	}
+	&__content {
+		margin-top: 2rem;
+		position: relative;
+		max-width: 75rem;
+		max-height: 15rem;
+		overflow: hidden;
+		z-index: 0;
+		img {
+			margin-top: 1rem;
+			max-width: 100%;
+		}
+	}
+	.community-post__content--revealed {
+		max-height: 100%;
+	}
+	&__reveal-btn {
+		margin-top: 0.5rem;
+		padding: 0.7rem 0;
+		width: 100%;
+		font-weight: 500;
+		z-index: 1;
+		&--hidden {
+			display: none;
+		}
+	}
+
+	&__footer {
+		margin-top: 2rem;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		.community-post__dislike-btn {
+			margin-right: auto;
+		}
+		.community-post__like-btn,
+		.community-post__show-comments-btn {
+			.icon {
+				margin-right: 1rem;
+			}
+		}
+		.active {
+			opacity: 1;
+		}
+	}
+}
+
+// THEMES
+.main-content--dark {
+	.community-post {
+		border: 2px solid abstracts.$lineColorDark;
+		.icon-btn {
+			.icon {
+				fill: abstracts.$mainFontDark;
+			}
+			&::before {
+				background-color: abstracts.$hoverBgDark;
+			}
+		}
+		&__header {
+			.community-post__channel-name {
+				color: abstracts.$mainFontDark;
+			}
+			.community-post__publish-date {
+				color: abstracts.$offDark;
+			}
+		}
+		&__reveal-btn {
+			color: abstracts.$mainFontDark;
+		}
+		&__footer {
+			button {
+				color: abstracts.$mainFontDark;
+			}
+		}
+	}
+}
+
+.main-content--light {
+	.community-post {
+		border: 2px solid abstracts.$lineColorLight;
+		.icon-btn {
+			.icon {
+				fill: abstracts.$mainFontLight;
+			}
+			&::before {
+				background-color: abstracts.$hoverBgLight;
+			}
+		}
+		&__header {
+			.community-post__channel-name {
+				color: abstracts.$mainFontLight;
+			}
+			.community-post__publish-date {
+				color: abstracts.$offLight;
+			}
+		}
+		&__reveal-btn {
+			color: abstracts.$mainFontLight;
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.community-post {
+		&__content {
+			max-height: 40rem;
+		}
+	}
+}

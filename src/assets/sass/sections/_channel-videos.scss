@@ -1,0 +1,4 @@
+@use '../abstracts';
+.channel-videos {
+	@include abstracts.cards-grid;
+}

@@ -4,7 +4,7 @@ const CategoryContext = createContext()
 export const useCategory = () => useContext(CategoryContext)
 
 export function CategoryProvider({ children }) {
-	const [selectedCategory, setSelectedCategory] = useState('Home Page')
+	const [selectedCategory, setSelectedCategory] = useState('Trending')
 	const updateCategory = categoryName => {
 		setSelectedCategory(categoryName)
 	}

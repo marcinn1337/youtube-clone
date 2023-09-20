@@ -1,0 +1,133 @@
+@use '../abstracts';
+.channel-about {
+	display: flex;
+	flex-wrap: wrap;
+	section {
+		margin-block-start: 2rem;
+		padding-block-end: 2rem;
+		h4 {
+			margin-block-end: 1rem;
+			font-weight: 400;
+		}
+		p,
+		a {
+			font-size: 1.4rem;
+		}
+		a {
+			opacity: 0.8;
+			color: #1c7ed8;
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+	section:nth-of-type(2) {
+		border-bottom: none;
+	}
+	&__description {
+		width: 100%;
+	}
+	&__stats {
+		width: 100%;
+		p {
+			padding-block: 1.5rem;
+		}
+	}
+	&__links {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		overflow: hidden;
+		h4 {
+			width: 100%;
+		}
+		div {
+			margin-block: 1rem;
+			display: flex;
+			flex-direction: column;
+			width: 45%;
+			overflow: hidden;
+			p {
+				font-weight: 700;
+				font-size: 1.3rem;
+			}
+			a {
+				width: 100%;
+				white-space: nowrap;
+				padding-block: 0.5rem 1.5rem;
+				font-size: 1.3rem;
+			}
+		}
+	}
+}
+
+.main-content--dark {
+	.channel-about {
+		section {
+			border-bottom: 1px solid abstracts.$lineColorDark;
+			h4 {
+				color: abstracts.$offDark;
+			}
+		}
+		&__stats {
+			p {
+				border-bottom: 1px solid abstracts.$lineColorDark;
+			}
+		}
+		&__links {
+			p {
+				color: abstracts.$mainFontDark;
+			}
+		}
+	}
+}
+
+.main-content--light {
+	.channel-about {
+		section {
+			border-bottom: 1px solid abstracts.$lineColorLight;
+			h4 {
+				color: abstracts.$offLight;
+			}
+		}
+		&__stats {
+			p {
+				border-bottom: 1px solid abstracts.$lineColorLight;
+			}
+		}
+		&__links {
+			p {
+				color: abstracts.$mainFontLight;
+			}
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.channel-about {
+		justify-content: space-between;
+		&__description {
+			padding-block: 1.5rem;
+		}
+		&__stats {
+			width: 45%;
+		}
+		&__links {
+			width: 45%;
+			div {
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.channel-about {
+		&__links {
+			div {
+				width: 45%;
+			}
+		}
+	}
+}

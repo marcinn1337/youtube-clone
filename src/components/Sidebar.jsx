@@ -14,11 +14,14 @@ export default function Sidebar() {
 			</section>
 			<section className='sidebar__section section-explore'>
 				<h4 className='sidebar__section-title'>Explore</h4>
-				<SidebarItem itemName='Trending' />
-				<SidebarItem itemName='Music' />
-				<SidebarItem itemName='Gaming' />
-				<SidebarItem itemName='Sport' />
-				<SidebarItem itemName='News' />
+				<SidebarItem type={'category'} itemName='Trending' />
+				<SidebarItem type={'category'} itemName='Music' />
+				<SidebarItem type={'category'} itemName='Games' />
+				<SidebarItem type={'category'} itemName='Movies' />
+				<SidebarItem type={'hashtag'} itemName='Sport' />
+				<SidebarItem type={'hashtag'} itemName='Technology' />
+				<SidebarItem type={'hashtag'} itemName='Finance' />
+				<SidebarItem type={'hashtag'} itemName='News' />
 			</section>
 			<section className='sidebar__section section-settings'>
 				<h4 className='sidebar__section-title'>Settings</h4>

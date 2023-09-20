@@ -18,15 +18,16 @@ export default function VideoCard({
 		backgroundImage: `url(${avatarUrl})`
 	}
 	const isVerified = channelBadge === undefined ? false : true
+
 	return (
 		<div className={`video-card video-card--${theme}`}>
 			<a href='#' className='video-card__thumbnail' style={thumbnailStyles}></a>
 			<div className='video-card__info'>
 				<a href='#' className='video-card__channel-avatar' style={avatarStyles}></a>
-				<a href='#' className='video-card__title'>
+				<a href='#tytul' className='video-card__title'>
 					{videoTitle}
 				</a>
-				<a href='#' className='video-card__channel-name'>
+				<a href='#elo' className='video-card__channel-name'>
 					{channelName}
 					{isVerified && <VerifiedBadge />}
 				</a>

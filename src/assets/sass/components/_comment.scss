@@ -1,0 +1,142 @@
+@use '../abstracts';
+.comment {
+	margin-block-start: 1rem;
+	display: grid;
+	grid-template-columns: 2rem auto;
+	grid-template-rows: auto;
+	align-items: center;
+	max-width: 70rem;
+	&__author-avatar {
+		background-position: center;
+		background-size: cover;
+		grid-column: 1/2;
+		grid-row: 1/2;
+		width: 2rem;
+		height: 2rem;
+		border-radius: 50%;
+	}
+	&__header {
+		margin-inline-start: 1rem;
+		position: relative;
+		grid-column: 2/3;
+		grid-row: 1/2;
+		font-size: 1.6rem;
+		.comment__author-name {
+			transition: color 0.15s;
+		}
+		.comment__publish-date {
+			font-size: 1.3rem;
+		}
+		.comment__report-btn {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	}
+	&__content {
+		margin-block-start: 1rem;
+		margin-inline-start: 1rem;
+		grid-column: 2/3;
+		grid-row: 2/3;
+	}
+	&__footer {
+		margin-block-start: 1rem;
+		margin-inline-start: 1rem;
+		grid-column: 2/3;
+		grid-row: 3/4;
+		display: flex;
+		flex-wrap: wrap;
+		.comment__like-btn,
+		.comment__reply-btn {
+			svg {
+				margin-inline-end: 1rem;
+			}
+		}
+		.comment__dislike-btn {
+			margin-inline-end: auto;
+		}
+		.active {
+			opacity: 1;
+		}
+	}
+}
+.comment--reply {
+	margin-inline-start: 3rem;
+	max-width: 60rem;
+	.comment__header {
+		.comment__author-name,
+		.comment__publish-date {
+			font-size: 1.2rem;
+		}
+	}
+	.comment__content {
+		font-size: 1.4rem;
+	}
+	.comment__footer {
+		.comment__reply-btn {
+			display: none;
+		}
+	}
+}
+.comment--channel-owner {
+	.comment__header {
+		a.comment__author-name {
+			color: abstracts.$green;
+		}
+	}
+}
+
+// THEMES
+.main-content--dark {
+	.comment {
+		&__header {
+			.comment__author-name,
+			.comment__publish-date {
+				color: abstracts.$offDark;
+			}
+			.comment__author-name:hover {
+				color: abstracts.$mainFontDark;
+			}
+		}
+		&__content {
+			color: abstracts.$mainFontDark;
+		}
+		&__footer {
+			button {
+				color: abstracts.$mainFontDark;
+			}
+		}
+	}
+}
+
+.main-content--light {
+	.comment {
+		&__header {
+			.comment__author-name,
+			.comment__publish-date {
+				color: abstracts.$offLight;
+			}
+			.comment__author-name:hover {
+				color: abstracts.$mainFontLight;
+			}
+		}
+		&__content {
+			color: abstracts.$mainFontLight;
+		}
+		&__footer {
+			button {
+				color: abstracts.$mainFontLight;
+			}
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.comment {
+		grid-template-columns: 3rem auto;
+		&__author-avatar {
+			width: 3rem;
+			height: 3rem;
+		}
+	}
+}

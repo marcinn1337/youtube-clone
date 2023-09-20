@@ -1,0 +1,49 @@
+@use '../abstracts';
+
+.alert-box {
+	margin: 1rem 2rem;
+	padding: 1rem;
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translateX(-150%);
+	border-radius: abstracts.$borderRadius;
+	font-size: 1.6rem;
+	text-align: center;
+	z-index: 100;
+	svg {
+		margin-right: 1rem;
+	}
+}
+.alert-box--dark {
+	border: 2px solid abstracts.$secondFontDark;
+	background-color: abstracts.$mainBgDark;
+	color: abstracts.$mainFontDark;
+}
+.alert-box--light {
+	border: 2px solid abstracts.$secondFontLight;
+	background-color: abstracts.$mainBgLight;
+	color: abstracts.$mainFontLight;
+}
+.slide {
+	animation: slideAlert 0.3s linear forwards;
+}
+@keyframes slideAlert {
+	0% {
+		transform: translateX(-150%);
+	}
+	50% {
+		transform: translateX(3%);
+	}
+	60% {
+		transform: translateX(-3%);
+	}
+	90% {
+		transform: translateX(2%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}

@@ -1,0 +1,210 @@
+@use '../abstracts';
+
+.report-modal {
+	padding: 2rem;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: calc(100% - 4rem);
+	max-width: 500px;
+	border-radius: abstracts.$cardRadius;
+	z-index: 60;
+	&__header {
+		font-size: 1.8rem;
+		font-weight: 500;
+	}
+	&__form {
+		margin-block: 2rem 3rem;
+		.report-modal__option {
+			margin-top: 1.4rem;
+			position: relative;
+			display: grid;
+			grid-template-columns: 2rem auto 2rem;
+			align-items: center;
+			justify-content: start;
+			grid-template-rows: auto;
+			&-check {
+				margin: 0; // Margin 0 if Not removed via appearance
+				position: relative;
+				-webkit-appearance: none;
+				appearance: none;
+				grid-template-columns: 1/2;
+				grid-template-rows: 1/2;
+				display: grid;
+				place-content: center;
+				/* For iOS < 15 to remove gradient background */
+				// background-color: abstracts.$mainFontDark;
+				width: 2rem;
+				height: 2rem;
+				border-radius: abstracts.$borderRadius;
+				&::before {
+					content: '';
+					width: 100%;
+					height: 100%;
+					width: 2rem;
+					height: 2rem;
+					border-radius: abstracts.$borderRadius;
+					transform: scale(0);
+					transition: 0.15s transform ease-in-out;
+				}
+				&:checked::before {
+					transform: scale(0.5);
+				}
+			}
+			&-label {
+				margin-inline: 1rem;
+				grid-template-columns: 2/3;
+				grid-template-rows: 1/2;
+			}
+			&-help-btn {
+				grid-template-columns: 3/4;
+				grid-template-rows: 1/2;
+			}
+			.tooltip {
+				padding: 1rem;
+				position: absolute;
+				top: 3rem;
+				right: 0;
+				width: 100%;
+				border-radius: abstracts.$borderRadius;
+				font-weight: 500;
+				font-size: 1.3rem;
+				opacity: 0;
+				pointer-events: none;
+				z-index: 105;
+			}
+			&-help-btn:hover .tooltip {
+				opacity: 1;
+			}
+		}
+	}
+	&__footer {
+		display: flex;
+		justify-content: end;
+		button {
+			padding: 1rem 2rem;
+			border-radius: abstracts.$borderRadius;
+			font-size: 1.6rem;
+			text-transform: capitalize;
+		}
+		.report-modal__report-btn {
+			margin-inline-start: 2rem;
+			background-color: abstracts.$green;
+		}
+		.report-modal__cancel-btn {
+			position: relative;
+			z-index: 0;
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				border-radius: abstracts.$borderRadius;
+				z-index: -1;
+				opacity: 0;
+			}
+			&:hover::before {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+// THEMES
+.report-modal--dark {
+	background-color: abstracts.$mainBgDark;
+	color: abstracts.$mainFontDark;
+	border: 1px solid abstracts.$offDark;
+	.report-modal__header {
+		color: abstracts.$offDark;
+	}
+	.report-modal__form {
+		.report-modal__option {
+			&-check {
+				color: abstracts.$mainFontDark;
+				border: 1px solid abstracts.$mainFontDark;
+				&::before {
+					background-color: abstracts.$mainFontDark;
+				}
+				&:checked {
+					border: 1px solid abstracts.$mainFontDark;
+				}
+			}
+			&-help-btn {
+				svg {
+					fill: abstracts.$offDark;
+				}
+			}
+			.tooltip {
+				border: 1px solid abstracts.$lineColorDark;
+				background-color: abstracts.$mainBgDark;
+				color: abstracts.$mainFontDark;
+			}
+		}
+	}
+	.report-modal__footer {
+		.cta-btn::before {
+			background-color: abstracts.$mainFontDark;
+		}
+		.report-modal__cancel-btn {
+			background-color: abstracts.$subBgDark;
+			color: abstracts.$mainFontDark;
+			&::before {
+				background-color: abstracts.$offDark;
+			}
+		}
+	}
+}
+
+.report-modal--light {
+	background-color: abstracts.$mainBgLight;
+	color: abstracts.$mainFontLight;
+	border: 1px solid abstracts.$offLight;
+	.report-modal__header {
+		color: abstracts.$offLight;
+	}
+	.report-modal__form {
+		.report-modal__option {
+			&-check {
+				color: abstracts.$mainFontLight;
+				border: 1px solid abstracts.$mainFontLight;
+				&::before {
+					background-color: abstracts.$mainFontLight;
+				}
+				&:checked {
+					border: 1px solid abstracts.$mainFontLight;
+				}
+			}
+			&-help-btn {
+				svg {
+					fill: abstracts.$offLight;
+				}
+			}
+			.tooltip {
+				border: 1px solid abstracts.$lineColorLight;
+				background-color: abstracts.$mainBgLight;
+				color: abstracts.$mainFontLight;
+			}
+		}
+	}
+	.report-modal__footer {
+		.cta-btn {
+			&::before {
+				background-color: abstracts.$secondFontLight;
+			}
+			&:hover {
+				color: abstracts.$mainFontDark;
+			}
+		}
+		.report-modal__cancel-btn {
+			background-color: abstracts.$hoverBgLight;
+			color: abstracts.$mainFontLight;
+			&::before {
+				background-color: abstracts.$lineColorLight;
+			}
+		}
+	}
+}

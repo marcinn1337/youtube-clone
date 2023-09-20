@@ -1,0 +1,33 @@
+@use '../abstracts';
+
+.sort-btn {
+	margin-inline: 0.5rem;
+	padding: 1rem 2rem;
+	font-size: 1.4rem;
+	border-radius: abstracts.$borderRadius;
+}
+.sort-btn:first-of-type {
+	margin-inline: 0 0.5rem;
+}
+
+.main-content--dark {
+	.sort-btn {
+		background-color: abstracts.$hoverBgDark;
+		color: abstracts.$mainFontDark;
+	}
+	.sort-btn--active {
+		background-color: abstracts.$mainFontDark;
+		color: abstracts.$mainBgDark;
+	}
+}
+
+.main-content--light {
+	.sort-btn {
+		background-color: abstracts.$hoverBgLight;
+		color: abstracts.$mainFontLight;
+	}
+	.sort-btn--active {
+		background-color: abstracts.$mainFontLight;
+		color: abstracts.$mainBgLight;
+	}
+}

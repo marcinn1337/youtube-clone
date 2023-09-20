@@ -1,0 +1,1579 @@
+{
+	"meta": {
+		"channelId": "UCIfI7Yo22SMKp5PraztHM6w",
+		"title": "Kanał Sportowy",
+		"description": "W sprawach reklamowych zapraszamy do kontaktu pod adresem: biznes@kanalsportowy.pl\n\nKanał Sportowy Sp.z o.o.\nKonstruktorska 13\n02-673 Warszawa\nwww.kanalsportowy.pl \nkontakt@kanalsportowy.pl \n \nOrganem właściwym w sprawach audiowizualnych usług medialnych na żądanie jest KRRiT www.krrit.gov.pl \nDostawca usługi medialnej podlega jurysdykcji Rzeczypospolitej Polskiej \n \nZarząd Kanał Sportowy Sp.z o.o.: \nMaciej Sawicki – Prezes Zarządu\n \nWspólnicy Kanał Sportowy Sp. z o.o.: \nTomasz Smokowski \nMateusz Borek \nMichał Pol \nWESZŁOTV Sp.z o.o. z siedzibą w Warszawie\nMaciej Sawicki\n \nBeneficjentów rzeczywistych spółki Kanał Sportowy Sp z o.o. sprawdzisz tutaj: Portal Podatkowy Usługi: ADCRBR podatki.gov.pl wskazując podmiot Kanał Sportowy Sp.z.o.o\n \nLista wszystkich dostarczanych przez Kanał Sportowy Sp. z o.o. usług medialnych, platform udostępniania wideo oraz wydawanych dzienników lub czasopism: Kanał Sportowy platforma VOD, Kanał Sportowy, Kanał Sportowy Extra, Kwartalnik Sportowy czasopismo\n",
+		"channelHandle": "@Kanal_Sportowy",
+		"banner": [
+			{
+				"url": "https://yt3.googleusercontent.com/BAXLh1gJQNFpK3VDAEoEXE_8N2brArj7dmMZo-gdNJE8aigRpTBA19oLsOxXgt1AyuvbS1j4Gw=w1060-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+				"width": 1060,
+				"height": 175
+			},
+			{
+				"url": "https://yt3.googleusercontent.com/BAXLh1gJQNFpK3VDAEoEXE_8N2brArj7dmMZo-gdNJE8aigRpTBA19oLsOxXgt1AyuvbS1j4Gw=w1138-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+				"width": 1138,
+				"height": 188
+			},
+			{
+				"url": "https://yt3.googleusercontent.com/BAXLh1gJQNFpK3VDAEoEXE_8N2brArj7dmMZo-gdNJE8aigRpTBA19oLsOxXgt1AyuvbS1j4Gw=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+				"width": 1707,
+				"height": 283
+			},
+			{
+				"url": "https://yt3.googleusercontent.com/BAXLh1gJQNFpK3VDAEoEXE_8N2brArj7dmMZo-gdNJE8aigRpTBA19oLsOxXgt1AyuvbS1j4Gw=w2120-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+				"width": 2120,
+				"height": 351
+			},
+			{
+				"url": "https://yt3.googleusercontent.com/BAXLh1gJQNFpK3VDAEoEXE_8N2brArj7dmMZo-gdNJE8aigRpTBA19oLsOxXgt1AyuvbS1j4Gw=w2276-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+				"width": 2276,
+				"height": 377
+			},
+			{
+				"url": "https://yt3.googleusercontent.com/BAXLh1gJQNFpK3VDAEoEXE_8N2brArj7dmMZo-gdNJE8aigRpTBA19oLsOxXgt1AyuvbS1j4Gw=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+				"width": 2560,
+				"height": 424
+			}
+		],
+		"tvBanner": [
+			{
+				"url": "https://yt3.googleusercontent.com/BAXLh1gJQNFpK3VDAEoEXE_8N2brArj7dmMZo-gdNJE8aigRpTBA19oLsOxXgt1AyuvbS1j4Gw=w320-fcrop64=1,00000000ffffffff-k-c0xffffffff-no-nd-rj",
+				"width": 320,
+				"height": 180
+			},
+			{
+				"url": "https://yt3.googleusercontent.com/BAXLh1gJQNFpK3VDAEoEXE_8N2brArj7dmMZo-gdNJE8aigRpTBA19oLsOxXgt1AyuvbS1j4Gw=w854-fcrop64=1,00000000ffffffff-k-c0xffffffff-no-nd-rj",
+				"width": 854,
+				"height": 480
+			},
+			{
+				"url": "https://yt3.googleusercontent.com/BAXLh1gJQNFpK3VDAEoEXE_8N2brArj7dmMZo-gdNJE8aigRpTBA19oLsOxXgt1AyuvbS1j4Gw=w1280-fcrop64=1,00000000ffffffff-k-c0xffffffff-no-nd-rj",
+				"width": 1280,
+				"height": 720
+			},
+			{
+				"url": "https://yt3.googleusercontent.com/BAXLh1gJQNFpK3VDAEoEXE_8N2brArj7dmMZo-gdNJE8aigRpTBA19oLsOxXgt1AyuvbS1j4Gw=w1920-fcrop64=1,00000000ffffffff-k-c0xffffffff-no-nd-rj",
+				"width": 1920,
+				"height": 1080
+			},
+			{
+				"url": "https://yt3.googleusercontent.com/BAXLh1gJQNFpK3VDAEoEXE_8N2brArj7dmMZo-gdNJE8aigRpTBA19oLsOxXgt1AyuvbS1j4Gw=w2120-fcrop64=1,00000000ffffffff-k-c0xffffffff-no-nd-rj",
+				"width": 2120,
+				"height": 1192
+			}
+		],
+		"mobileBanner": [
+			{
+				"url": "https://yt3.googleusercontent.com/BAXLh1gJQNFpK3VDAEoEXE_8N2brArj7dmMZo-gdNJE8aigRpTBA19oLsOxXgt1AyuvbS1j4Gw=w320-fcrop64=1,32b75a57cd48a5a8-k-c0xffffffff-no-nd-rj",
+				"width": 320,
+				"height": 88
+			},
+			{
+				"url": "https://yt3.googleusercontent.com/BAXLh1gJQNFpK3VDAEoEXE_8N2brArj7dmMZo-gdNJE8aigRpTBA19oLsOxXgt1AyuvbS1j4Gw=w640-fcrop64=1,32b75a57cd48a5a8-k-c0xffffffff-no-nd-rj",
+				"width": 640,
+				"height": 175
+			},
+			{
+				"url": "https://yt3.googleusercontent.com/BAXLh1gJQNFpK3VDAEoEXE_8N2brArj7dmMZo-gdNJE8aigRpTBA19oLsOxXgt1AyuvbS1j4Gw=w960-fcrop64=1,32b75a57cd48a5a8-k-c0xffffffff-no-nd-rj",
+				"width": 960,
+				"height": 263
+			},
+			{
+				"url": "https://yt3.googleusercontent.com/BAXLh1gJQNFpK3VDAEoEXE_8N2brArj7dmMZo-gdNJE8aigRpTBA19oLsOxXgt1AyuvbS1j4Gw=w1280-fcrop64=1,32b75a57cd48a5a8-k-c0xffffffff-no-nd-rj",
+				"width": 1280,
+				"height": 351
+			},
+			{
+				"url": "https://yt3.googleusercontent.com/BAXLh1gJQNFpK3VDAEoEXE_8N2brArj7dmMZo-gdNJE8aigRpTBA19oLsOxXgt1AyuvbS1j4Gw=w1440-fcrop64=1,32b75a57cd48a5a8-k-c0xffffffff-no-nd-rj",
+				"width": 1440,
+				"height": 395
+			}
+		],
+		"avatar": [
+			{
+				"url": "https://yt3.googleusercontent.com/ytc/AOPolaRD7Bh8idptJ8JLsaOEJSINDnr4RFKp3I2opfCv=s48-c-k-c0x00ffffff-no-rj",
+				"width": 48,
+				"height": 48
+			},
+			{
+				"url": "https://yt3.googleusercontent.com/ytc/AOPolaRD7Bh8idptJ8JLsaOEJSINDnr4RFKp3I2opfCv=s88-c-k-c0x00ffffff-no-rj",
+				"width": 88,
+				"height": 88
+			},
+			{
+				"url": "https://yt3.googleusercontent.com/ytc/AOPolaRD7Bh8idptJ8JLsaOEJSINDnr4RFKp3I2opfCv=s176-c-k-c0x00ffffff-no-rj",
+				"width": 176,
+				"height": 176
+			}
+		],
+		"subscriberCountText": "1.1M",
+		"subscriberCount": 1100000,
+		"videosCountText": "4K",
+		"videosCount": 4000,
+		"isVerified": true,
+		"keywords": [
+			"kanał sportowy",
+			"mateusz borek",
+			"michał pol",
+			"michal pol",
+			"tomasz smokowski",
+			"krzysztof stanowski",
+			"piłka nożna",
+			"futbol",
+			"polsport",
+			"mejweni"
+		],
+		"isFamilySafe": true,
+		"availableCountries": [
+			"BS",
+			"GG",
+			"WF",
+			"LV",
+			"TC",
+			"GU",
+			"KE",
+			"HK",
+			"MN",
+			"SL",
+			"PM",
+			"BE",
+			"AO",
+			"CD",
+			"SA",
+			"PH",
+			"MV",
+			"BA",
+			"AQ",
+			"GN",
+			"LB",
+			"CR",
+			"SC",
+			"TN",
+			"TO",
+			"AM",
+			"CN",
+			"MP",
+			"IT",
+			"LK",
+			"FM",
+			"OM",
+			"ES",
+			"PY",
+			"ID",
+			"LA",
+			"BV",
+			"NA",
+			"UM",
+			"VI",
+			"EH",
+			"VN",
+			"UG",
+			"AU",
+			"MQ",
+			"NC",
+			"TH",
+			"GM",
+			"GD",
+			"CU",
+			"MG",
+			"RW",
+			"IM",
+			"MU",
+			"TL",
+			"PT",
+			"MX",
+			"PF",
+			"PK",
+			"DK",
+			"IO",
+			"NP",
+			"BL",
+			"GT",
+			"ET",
+			"TZ",
+			"KW",
+			"GP",
+			"SK",
+			"BF",
+			"PR",
+			"DJ",
+			"PN",
+			"AG",
+			"AI",
+			"AD",
+			"BJ",
+			"RU",
+			"JO",
+			"AF",
+			"HN",
+			"TM",
+			"FK",
+			"CC",
+			"MR",
+			"SX",
+			"BW",
+			"KI",
+			"ZW",
+			"MK",
+			"IE",
+			"TW",
+			"PE",
+			"GB",
+			"KY",
+			"PA",
+			"DO",
+			"HT",
+			"VC",
+			"PW",
+			"SZ",
+			"AT",
+			"GR",
+			"GF",
+			"HM",
+			"SS",
+			"EE",
+			"ST",
+			"LI",
+			"BT",
+			"GL",
+			"QA",
+			"SB",
+			"AE",
+			"DZ",
+			"SE",
+			"LU",
+			"SR",
+			"BG",
+			"SI",
+			"PS",
+			"ZA",
+			"BB",
+			"CG",
+			"MC",
+			"SN",
+			"SO",
+			"YT",
+			"KG",
+			"WS",
+			"BN",
+			"AL",
+			"NI",
+			"KP",
+			"FJ",
+			"GQ",
+			"GI",
+			"BI",
+			"KZ",
+			"NR",
+			"PL",
+			"NG",
+			"CZ",
+			"IL",
+			"CH",
+			"FR",
+			"IQ",
+			"MY",
+			"CI",
+			"VE",
+			"TJ",
+			"GH",
+			"MW",
+			"ZM",
+			"TK",
+			"MD",
+			"SV",
+			"PG",
+			"UA",
+			"KR",
+			"LT",
+			"NF",
+			"DE",
+			"VU",
+			"CK",
+			"BD",
+			"CL",
+			"SH",
+			"CF",
+			"BR",
+			"MO",
+			"ML",
+			"UZ",
+			"US",
+			"AS",
+			"CW",
+			"HR",
+			"MS",
+			"CA",
+			"GA",
+			"BZ",
+			"LY",
+			"YE",
+			"TF",
+			"BH",
+			"AW",
+			"MM",
+			"LR",
+			"NE",
+			"IR",
+			"FO",
+			"NL",
+			"GS",
+			"JE",
+			"KH",
+			"GE",
+			"LC",
+			"CY",
+			"GY",
+			"JP",
+			"JM",
+			"KN",
+			"MA",
+			"MH",
+			"ER",
+			"SM",
+			"MZ",
+			"NO",
+			"TD",
+			"MT",
+			"MF",
+			"IN",
+			"SG",
+			"SJ",
+			"TV",
+			"VA",
+			"TG",
+			"RE",
+			"VG",
+			"NU",
+			"BO",
+			"CV",
+			"HU",
+			"KM",
+			"NZ",
+			"EG",
+			"TR",
+			"SD",
+			"LS",
+			"FI",
+			"UY",
+			"AR",
+			"RS",
+			"BM",
+			"CX",
+			"IS",
+			"RO",
+			"ME",
+			"BQ",
+			"TT",
+			"AZ",
+			"GW",
+			"CM",
+			"DM",
+			"SY",
+			"EC",
+			"BY",
+			"CO",
+			"AX"
+		],
+		"tabs": ["Home", "Videos", "Shorts", "Live", "Podcasts", "Playlists", "Community", "Channels", "About", "Search"]
+	},
+	"continuation": "4qmFsgK1ChIYVUNJZkk3WW8yMlNNS3A1UHJhenRITTZ3GpgKOGdiT0J4ckxCM3JJQndyREJ3cWFCME55UVVaRFoxSnBXRE5TY2tWeFkwWkJVMnhtWlRkVGFDMVlRWEZsVFc4Mk1rWnZlRWRtYjJKVmExaEJWVEJRTTBOWWVXaG1TRU0wVTBOM2RuWjVUVTEyUlRNd09GcHZNR0o2UzNCNE5XMDJWRTVuVVRkdkxVOURabmxTTjBFMGJUTmhiREphUlZwd2EzZE1SMTlyY1V0VE1WZHllbnB0ZGtWR01qZEdVbUZUZDFWU1NscEhTMWhxVUdWWlltbERkbUZUYlhGQlNsVkhiakpRY2tsT2IyWlNlV1Y0ZEV4V1dVdGlSMUZ2U1hJNU9HSnRSWHB4ZW1ORmEzWlhZMkpwUTI1Q1dFUlJiRFJTT0RsUFN5MTRRV0l0ZW05aVkxQm9ZbEI2Ums1a2IzTTFZMUZTY0dNNVpWaHBUMnRTTkd3ME5VMW5OMDlzWldjelJqUlRTV2RVVHkxMk0xQXpaV1JoZUdseFJqTlJibEJqUlRSUmVqUmFVMDlEVlVVd1RqQkhkRkI1TFd0YWIwcERYM0pSZDNka01VbzFPRTR4U3psNWQxRndTVGRxUzJkc1RXbERRV2RyZDJ0Q1dXcG1SRk53WnpKYU1XMTFPR2R4T0VaYVRrNXpjMUIwZWs1VmNEVktVREI2UjFWbFgwSjVUSGhKTFc1VmVGbElXRWxPWlRSWVVUSlNRVmhXUTJGWlIwcE1kRWhqWDBoWll6ZDVZa1JKZEVwU05GWlFVRzVmVFZJdFVGVkhZVE40ZWprMlRXcFlaemxJVEU0M1pUaE9ha1pIUzIxU2IwNUxhelpFVkVJeGRVTjZkR2xrYldZNFpsaEJZMkZZWW14blZHWm9NVTVsZDFCbVRuSnRUbU5sWm1SMVZIaEVTWEZyWXpjeGEzaFNXV1V3WnpKS1dHd3RWV2xzUjNKcGVHVnRTRzQwYmxFMFYyZFJlRVZ2VnpNdFpFaFZWRmt4UkhSdk1VdFZXbnBXVDNrNGVUTk1TalJmVm5ReVdDMWZabnBLYjJkSFdGcHdNVU5SYzFnMVQwRmhaRUUzUzBoeGEyVmhOMHczYVVGMExWTk9ibFpuTVhoSlpXeHBaREEyYTNOZk1uVlhlSEpMYVhwcmJGZG5aa05XVFdaWlpYbExRbWhyY2pOelNsbGZaVGhETjBKU1QzUjBUV1J2UmpOZk9VZGZjM1JwTmtsU1QxOTBURVp5VGtGRlUxRXRhV2N3VDJGemQydExlazF4VFRkM1IwZDFabVpUVXpGaVVHaFBaREZIUzAxM1UybFJaMVF0WVZZM2JHaG1ZWGxPVDJKQ2VsUm1TSHBhWjB0d04wdDNOelZwTVc1WU1UWkdaVkI1Ym5CV2JHbzFibGxLV1UwMFdHMWhjMmhpUWxSdmIwbGZNazFtWjNOWU9XZDBVbEZKVVZkNVkwOUlYMk5EYlZSb1pFbDNUREJpYkVaRlMyd3hRa0ZXWkd0VlVtWXRaV0UyUkVKNWFXeFNRV0pwVWtnM2NEZ3lkazFWUkZsV1RrSXpNa3hhTm5Fd2IycHVVbGxGVGtsc1dXa3RkR3RvWlRsTVFraFhaazh4VlZka1JUaEZSRFpMVDJORlVFMTFaVGh3VEZWSk5sQlhibEEwWjFaS1ZXSjFhM1JRUmtFU0pEWTBabVZpWVdRd0xUQXdNREF0TW1Nek5pMDRabVUwTFRBNE9XVXdPR1UwWXpRMk1SZ0I%3D.CgtTSGZfTDh1QVFSayjv-NinBjIGCgJERRIA",
+	"data": [
+		{
+			"type": "video",
+			"videoId": "TakmUSsbeD8",
+			"title": "RAKÓW POŻEGNAŁ SIĘ Z MARZENIAMI O LIDZE MISTRZÓW. KULISY WYJAZDU DO KOPENHAGI",
+			"description": "Audycja przeznaczona dla osób powyżej 16. roku życia.\n#Raków Częstochowa zremisował na wyjeździe z #FCKopenhaga i pożegnał się z marzeniami o Lidze Mistrzów. Zapraszamy na kulisy...",
+			"viewCount": "8588",
+			"publishedTimeText": "3 days ago",
+			"publishDate": "2023-09-01",
+			"publishedAt": "2023-09-01T00:00:00Z",
+			"lengthText": "10:36",
+			"thumbnail": [
+				{
+					"url": "https://i.ytimg.com/vi/TakmUSsbeD8/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLByDhWKC-ZiXLuWaME7XE3bruC-uA",
+					"width": 168,
+					"height": 94
+				},
+				{
+					"url": "https://i.ytimg.com/vi/TakmUSsbeD8/hqdefault.jpg?sqp=-oaymwEbCMQBEG5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAUbWmOd6J77h3Sc35qZWjWBTFTWA",
+					"width": 196,
+					"height": 110
+				},
+				{
+					"url": "https://i.ytimg.com/vi/TakmUSsbeD8/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCm6um8C-7muzwRh7V47NO6F8IJTg",
+					"width": 246,
+					"height": 138
+				},
+				{
+					"url": "https://i.ytimg.com/vi/TakmUSsbeD8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB2hccJ7Gao89aQ8BXyJuf2p6ulJg",
+					"width": 336,
+					"height": 188
+				}
+			],
+			"richThumbnail": [
+				{
+					"url": "https://i.ytimg.com/an_webp/TakmUSsbeD8/mqdefault_6s.webp?du=3000&sqp=CM_w2KcG&rs=AOn4CLDHvdIATMSZHB9uDtU5MnR0kFrGVQ",
+					"width": 320,
+					"height": 180
+				}
+			]
+		},
+		{
+			"type": "video",
+			"videoId": "VN8x-d6RTH4",
+			"title": "ANSU FATI W BRIGHTON. DLACZEGO CITY SPRZEDAJE MŁODĄ GWIAZDĘ? DARWIN NUNEZ WRESZCIE ODPALI?",
+			"description": "Audycja przeznaczona dla osób powyżej 16. roku życia.\nPrzemysław #Rudzki zaprasza na kolejny odcinek vloga Full English!\n🏆 Najlepsza piłka w jednym miejscu! ⚽ Sprawdź ofertę CANAL+...",
+			"viewCount": "20734",
+			"publishedTimeText": "3 days ago",
+			"publishDate": "2023-09-01",
+			"publishedAt": "2023-09-01T00:00:00Z",
+			"lengthText": "23:22",
+			"thumbnail": [
+				{
+					"url": "https://i.ytimg.com/vi/VN8x-d6RTH4/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLClXSOW4VbCRiPxnx1FRwuc9N74dg",
+					"width": 168,
+					"height": 94
+				},
+				{
+					"url": "https://i.ytimg.com/vi/VN8x-d6RTH4/hqdefault.jpg?sqp=-oaymwEbCMQBEG5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLACD6Nyx5j9ElBbjB4Sy83QgMc98A",
+					"width": 196,
+					"height": 110
+				},
+				{
+					"url": "https://i.ytimg.com/vi/VN8x-d6RTH4/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDbBWQOjjvoN0AY0DwjBTlu3uulkw",
+					"width": 246,
+					"height": 138
+				},
+				{
+					"url": "https://i.ytimg.com/vi/VN8x-d6RTH4/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB7fR5O0WWOci_ZQ6k0MY_h5z5oYQ",
+					"width": 336,
+					"height": 188
+				}
+			],
+			"richThumbnail": [
+				{
+					"url": "https://i.ytimg.com/an_webp/VN8x-d6RTH4/mqdefault_6s.webp?du=3000&sqp=CMTR2KcG&rs=AOn4CLB2CMj08D29VaE_-DzMwYUj8IlJbw",
+					"width": 320,
+					"height": 180
+				}
+			]
+		},
+		{
+			"type": "video",
+			"videoId": "Wbi9F2J4l0Y",
+			"title": "NATALIA KACZMAREK - \"ILE KOSZTUJE MEDAL\"",
+			"description": "Audycja przeznaczona dla osób powyżej 16. roku życia.\nNatalia #Kaczmarek to mocny charakter. Dla tej dziewczyny ciężka praca to chleb powszedni. We wspinaniu się na światowy szczyt pomaga...",
+			"viewCount": "42457",
+			"publishedTimeText": "4 days ago",
+			"publishDate": "2023-08-31",
+			"publishedAt": "2023-08-31T00:00:00Z",
+			"lengthText": "39:14",
+			"thumbnail": [
+				{
+					"url": "https://i.ytimg.com/vi/Wbi9F2J4l0Y/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBrPKkwSHfFizOnQftW_uPwsgzYBw",
+					"width": 168,
+					"height": 94
+				},
+				{
+					"url": "https://i.ytimg.com/vi/Wbi9F2J4l0Y/hqdefault.jpg?sqp=-oaymwEbCMQBEG5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLA8L49wqq0RK_Z3gPHwevbPxtsXtQ",
+					"width": 196,
+					"height": 110
+				},
+				{
+					"url": "https://i.ytimg.com/vi/Wbi9F2J4l0Y/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDGTK7EHguBzZLIJER8oxggrTYYow",
+					"width": 246,
+					"height": 138
+				},
+				{
+					"url": "https://i.ytimg.com/vi/Wbi9F2J4l0Y/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDD3-Nb21b9mlYebswsCRmtwmBdRQ",
+					"width": 336,
+					"height": 188
+				}
+			],
+			"richThumbnail": [
+				{
+					"url": "https://i.ytimg.com/an_webp/Wbi9F2J4l0Y/mqdefault_6s.webp?du=3000&sqp=CMDp2KcG&rs=AOn4CLA0iGt-C1QHQ8iLrBf2f2eMemXcwA",
+					"width": 320,
+					"height": 180
+				}
+			]
+		},
+		{
+			"type": "video",
+			"videoId": "K4m8wO5f9Xs",
+			"title": "CHU… PADŁA TA BRAMKA - PIŁKARZE I TRENER RAKOWA PO REMISIE Z KOPENHAGĄ I ODPADNIĘCIU Z LIGI MISTRZÓW",
+			"description": "Audycja przeznaczona dla osób powyżej 16. roku życia.\n#Raków Częstochowa zremisował na wyjeździe 1:1 z #FCKopenhaga i pożegnał się z marzeniami o występach w fazie grupowej Ligi...",
+			"viewCount": "27810",
+			"publishedTimeText": "4 days ago",
+			"publishDate": "2023-08-31",
+			"publishedAt": "2023-08-31T00:00:00Z",
+			"lengthText": "16:27",
+			"thumbnail": [
+				{
+					"url": "https://i.ytimg.com/vi/K4m8wO5f9Xs/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAxnbLh7IzUSiyq1NHyqfID2__vvw",
+					"width": 168,
+					"height": 94
+				},
+				{
+					"url": "https://i.ytimg.com/vi/K4m8wO5f9Xs/hqdefault.jpg?sqp=-oaymwEbCMQBEG5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLADjkdTOP8PZ8_lI9Ajip1-jkwGVQ",
+					"width": 196,
+					"height": 110
+				},
+				{
+					"url": "https://i.ytimg.com/vi/K4m8wO5f9Xs/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBmf6cf6zpMXr-m9YvZ1HoXn7GObg",
+					"width": 246,
+					"height": 138
+				},
+				{
+					"url": "https://i.ytimg.com/vi/K4m8wO5f9Xs/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBw503ln4xx_U2KYd0o_1MqbiWkNA",
+					"width": 336,
+					"height": 188
+				}
+			],
+			"richThumbnail": [
+				{
+					"url": "https://i.ytimg.com/an_webp/K4m8wO5f9Xs/mqdefault_6s.webp?du=3000&sqp=CNXO2KcG&rs=AOn4CLCcfi74jmbLiA9woMoFagg4hxVdgA",
+					"width": 320,
+					"height": 180
+				}
+			]
+		},
+		{
+			"type": "video",
+			"videoId": "fUr730qw4s0",
+			"title": "DECATHLON – KANAŁ SPORTOWY: KULISY MECZU. TRENER STREJLAU ZARZĄDZA, LEGENDY POLSKIEJ PIŁKI W AKCJI!",
+			"description": "Klimat piłkarskiej szatni to coś, za czym najbardziej tęsknią zawodnicy po zakończeniu kariery, dlatego właśnie tyle emocji było przy spotkaniu podczas meczu #Decathlon – #KanałSportowy....",
+			"viewCount": "43706",
+			"publishedTimeText": "6 days ago",
+			"publishDate": "2023-08-29",
+			"publishedAt": "2023-08-29T00:00:00Z",
+			"lengthText": "15:59",
+			"thumbnail": [
+				{
+					"url": "https://i.ytimg.com/vi/fUr730qw4s0/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLD5D1_iOGOl-zm04CbMpvaK_2jeIg",
+					"width": 168,
+					"height": 94
+				},
+				{
+					"url": "https://i.ytimg.com/vi/fUr730qw4s0/hqdefault.jpg?sqp=-oaymwEbCMQBEG5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLA6Ruk88OeNxSdYb_wXPCaGZw3nCA",
+					"width": 196,
+					"height": 110
+				},
+				{
+					"url": "https://i.ytimg.com/vi/fUr730qw4s0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC9wVU077Bo7Bn4IfHSfuNtQ7xNeA",
+					"width": 246,
+					"height": 138
+				},
+				{
+					"url": "https://i.ytimg.com/vi/fUr730qw4s0/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAtNZBwKr7QmOmJfCeldHL80wepFw",
+					"width": 336,
+					"height": 188
+				}
+			],
+			"richThumbnail": [
+				{
+					"url": "https://i.ytimg.com/an_webp/fUr730qw4s0/mqdefault_6s.webp?du=3000&sqp=COLL2KcG&rs=AOn4CLDyFJeaVLuvZ6RlVIVJcU5dU0Hrlw",
+					"width": 320,
+					"height": 180
+				}
+			]
+		},
+		{
+			"type": "video",
+			"videoId": "BpEIjJwX3g4",
+			"title": "MATEUSZ BOREK LEPSZY NIŻ FERNANDO SANTOS? ODPRAWA, EMOCJE NA MECZU DECATHLON – KANAŁ SPORTOWY",
+			"description": "Audycja przeznaczona dla osób powyżej 16. roku życia.\nMateusz #Borek sprawdził się w roli selekcjonera i trenera drużyny Kanału Sportowego w wielkim meczu z Decathlonem na Stadionie...",
+			"viewCount": "122403",
+			"publishedTimeText": "7 days ago",
+			"publishDate": "2023-08-28",
+			"publishedAt": "2023-08-28T00:00:00Z",
+			"lengthText": "17:13",
+			"thumbnail": [
+				{
+					"url": "https://i.ytimg.com/vi/BpEIjJwX3g4/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCLc9IbW7z-2PFijPWIqebuw-UYWg",
+					"width": 168,
+					"height": 94
+				},
+				{
+					"url": "https://i.ytimg.com/vi/BpEIjJwX3g4/hqdefault.jpg?sqp=-oaymwEbCMQBEG5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBfIo-obtfYGRzMPOHgEUm91VCHPw",
+					"width": 196,
+					"height": 110
+				},
+				{
+					"url": "https://i.ytimg.com/vi/BpEIjJwX3g4/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCm0FwUXX6_LZADYp1FImvxPuHVSQ",
+					"width": 246,
+					"height": 138
+				},
+				{
+					"url": "https://i.ytimg.com/vi/BpEIjJwX3g4/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC-XAy3Dkc7OlHir25ccAh7xmqe5Q",
+					"width": 336,
+					"height": 188
+				}
+			],
+			"richThumbnail": [
+				{
+					"url": "https://i.ytimg.com/an_webp/BpEIjJwX3g4/mqdefault_6s.webp?du=3000&sqp=CL7d2KcG&rs=AOn4CLDE3ySY8N8KLWeOtR3N51oV6XSXAA",
+					"width": 320,
+					"height": 180
+				}
+			]
+		},
+		{
+			"type": "video",
+			"videoId": "NmMgsLPGy2I",
+			"title": "BERNARDO SILVA NIE DLA SZEJKÓW. CZY BRUNO FERNANDES TO DOBRY KAPITAN? KONIEC SPRAWY GREENWOODA",
+			"description": "Audycja przeznaczona dla osób powyżej 16. roku życia.\nBernardo #Silva zostaje w Manchesterze City! Co wybierze Mason #Greenwood? Czy Bruno #Fernandes to dobry kapitan United? Przemysław...",
+			"viewCount": "18378",
+			"publishedTimeText": "10 days ago",
+			"publishDate": "2023-08-25",
+			"publishedAt": "2023-08-25T00:00:00Z",
+			"lengthText": "25:44",
+			"thumbnail": [
+				{
+					"url": "https://i.ytimg.com/vi/NmMgsLPGy2I/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBdjfQBHMFHGnWJ-K3N9JYVBmhv5Q",
+					"width": 168,
+					"height": 94
+				},
+				{
+					"url": "https://i.ytimg.com/vi/NmMgsLPGy2I/hqdefault.jpg?sqp=-oaymwEbCMQBEG5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLC5Czhf1qdWycBfzwVNvvbN5x_dsA",
+					"width": 196,
+					"height": 110
+				},
+				{
+					"url": "https://i.ytimg.com/vi/NmMgsLPGy2I/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCAkN2zsJar0kRusVDo8fD-ymUU8g",
+					"width": 246,
+					"height": 138
+				},
+				{
+					"url": "https://i.ytimg.com/vi/NmMgsLPGy2I/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB81dU-uUm-ARAf2Y88BIXLESkdSg",
+					"width": 336,
+					"height": 188
+				}
+			],
+			"richThumbnail": [
+				{
+					"url": "https://i.ytimg.com/an_webp/NmMgsLPGy2I/mqdefault_6s.webp?du=3000&sqp=CIjX2KcG&rs=AOn4CLDCign_XOrbUjRHUPwBrbAOUxIgaw",
+					"width": 320,
+					"height": 180
+				}
+			]
+		},
+		{
+			"type": "video",
+			"videoId": "BzB94x8-3yM",
+			"title": "RAKÓW CZĘSTOCHOWA- FC KOPENHAGA 0:1. PIŁKARZE PO MECZU: CZUJEMY, ŻE BYLIŚMY LEPSI OD RYWALI",
+			"description": "Audycja przeznaczona dla osób powyżej 16. roku życia.\n#Raków Częstochowa przegrał 0:1 z #FCKopenhaga w pierwszym meczu IV rundy eliminacji Ligi Mistrzów. Zobacz co powiedzieli piłkarze...",
+			"viewCount": "22399",
+			"publishedTimeText": "12 days ago",
+			"publishDate": "2023-08-23",
+			"publishedAt": "2023-08-23T00:00:00Z",
+			"lengthText": "10:26",
+			"thumbnail": [
+				{
+					"url": "https://i.ytimg.com/vi/BzB94x8-3yM/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBRII10vH6TZaPwDEDCPqGoQtnhlw",
+					"width": 168,
+					"height": 94
+				},
+				{
+					"url": "https://i.ytimg.com/vi/BzB94x8-3yM/hqdefault.jpg?sqp=-oaymwEbCMQBEG5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDK0Jh0te4Xw154f52ZcDu2c2-aow",
+					"width": 196,
+					"height": 110
+				},
+				{
+					"url": "https://i.ytimg.com/vi/BzB94x8-3yM/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAiyfH0OJcZWq2JNN59s5B7bL68Ew",
+					"width": 246,
+					"height": 138
+				},
+				{
+					"url": "https://i.ytimg.com/vi/BzB94x8-3yM/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCcZLQfZF5kMU7-qyahg8fOIyE-iQ",
+					"width": 336,
+					"height": 188
+				}
+			],
+			"richThumbnail": [
+				{
+					"url": "https://i.ytimg.com/an_webp/BzB94x8-3yM/mqdefault_6s.webp?du=3000&sqp=CPnc2KcG&rs=AOn4CLCYwC5Yc7YYMcihz6tPxhSpnCDl3g",
+					"width": 320,
+					"height": 180
+				}
+			]
+		},
+		{
+			"type": "video",
+			"videoId": "XZxSkVcWUBY",
+			"title": "CZYM PARNASSE ZASKOCZYŁ RUCHAŁĘ? JAKI BYŁ PLAN? - TRENERZY POLAKA PO XTB KSW 85",
+			"description": "Audycja przeznaczona dla osób powyżej 16. roku życia.\nTrenerzy Roberta Ruchały przeanalizowali walkę wieczoru gali XTB #KSW 85.\n🏆 Najlepsza piłka w jednym miejscu! ⚽ Sprawdź ofertę...",
+			"viewCount": "11222",
+			"publishedTimeText": "2 weeks ago",
+			"publishDate": "2023-08-21",
+			"publishedAt": "2023-08-21T00:00:00Z",
+			"lengthText": "10:42",
+			"thumbnail": [
+				{
+					"url": "https://i.ytimg.com/vi/XZxSkVcWUBY/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLABV5QXF7be4V9WN2FXOF2cvwtaSQ",
+					"width": 168,
+					"height": 94
+				},
+				{
+					"url": "https://i.ytimg.com/vi/XZxSkVcWUBY/hqdefault.jpg?sqp=-oaymwEbCMQBEG5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBurZS5BnfZgqfLUpqmCZIeAG1WnQ",
+					"width": 196,
+					"height": 110
+				},
+				{
+					"url": "https://i.ytimg.com/vi/XZxSkVcWUBY/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDQ_BaTqXt6vEt7gy4NEvIjRHBTKQ",
+					"width": 246,
+					"height": 138
+				},
+				{
+					"url": "https://i.ytimg.com/vi/XZxSkVcWUBY/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBK-wDawrfXYLI18xo4GFQtf1Q5qA",
+					"width": 336,
+					"height": 188
+				}
+			],
+			"richThumbnail": [
+				{
+					"url": "https://i.ytimg.com/an_webp/XZxSkVcWUBY/mqdefault_6s.webp?du=3000&sqp=CPay2KcG&rs=AOn4CLAso9yJTWqodzNYka5SMsr8ctxrLA",
+					"width": 320,
+					"height": 180
+				}
+			]
+		},
+		{
+			"type": "video",
+			"videoId": "Y6gKCG5vMVg",
+			"title": "RUCHAŁA PO WALCE Z PARNASSE: GŁOWA BYŁA NA WYŻYNACH, NIE WIDZIAŁEM KOPNIĘCIA | PO XTB KSW 85",
+			"description": "Audycja przeznaczona dla osób powyżej 16. roku życia.\nRobert #Ruchała w rozmowie z Maciejem Turskim skomentował swoją porażkę na gali XTB #KSW 85.\n🏆 Najlepsza piłka w jednym miejscu!...",
+			"viewCount": "38803",
+			"publishedTimeText": "2 weeks ago",
+			"publishDate": "2023-08-21",
+			"publishedAt": "2023-08-21T00:00:00Z",
+			"lengthText": "10:08",
+			"thumbnail": [
+				{
+					"url": "https://i.ytimg.com/vi/Y6gKCG5vMVg/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCfs2ts1fD7lcyggSScjbl6rupfXw",
+					"width": 168,
+					"height": 94
+				},
+				{
+					"url": "https://i.ytimg.com/vi/Y6gKCG5vMVg/hqdefault.jpg?sqp=-oaymwEbCMQBEG5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAFu_EoQt_AZci8q_wfxs7A0hcirA",
+					"width": 196,
+					"height": 110
+				},
+				{
+					"url": "https://i.ytimg.com/vi/Y6gKCG5vMVg/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCX3PTCW-mpbseGTxjzqMwPzXuuZg",
+					"width": 246,
+					"height": 138
+				},
+				{
+					"url": "https://i.ytimg.com/vi/Y6gKCG5vMVg/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCq0ApagFoibTtDKfdm_CYWzel5eQ",
+					"width": 336,
+					"height": 188
+				}
+			],
+			"richThumbnail": [
+				{
+					"url": "https://i.ytimg.com/an_webp/Y6gKCG5vMVg/mqdefault_6s.webp?du=3000&sqp=CJjo2KcG&rs=AOn4CLDUBeWJuyO0PajhP6hsXCAXMkXRSw",
+					"width": 320,
+					"height": 180
+				}
+			]
+		},
+		{
+			"type": "video",
+			"videoId": "HWpOatYLwlk",
+			"title": "BOREK O RUCHAŁA VS PARNASSE: GRA DO JEDNEJ BRAMKI, JESZCZE TROCHĘ DO PRZEJŚCIA | PO XTB KSW 85",
+			"description": "Audycja przeznaczona dla osób powyżej 16. roku życia.\n🏆 Najlepsza piłka w jednym miejscu! ⚽ Sprawdź ofertę CANAL+ online https://can.al/kanal_sportowy_WielkaPilka_082023\n✅ 3754...",
+			"viewCount": "38274",
+			"publishedTimeText": "2 weeks ago",
+			"publishDate": "2023-08-21",
+			"publishedAt": "2023-08-21T00:00:00Z",
+			"lengthText": "14:50",
+			"thumbnail": [
+				{
+					"url": "https://i.ytimg.com/vi/HWpOatYLwlk/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBQD8cE7kYMtXtK7S-Spkx9kfQwHQ",
+					"width": 168,
+					"height": 94
+				},
+				{
+					"url": "https://i.ytimg.com/vi/HWpOatYLwlk/hqdefault.jpg?sqp=-oaymwEbCMQBEG5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBJYOwYMlj-oYHfr4_Yt4jtXorHDA",
+					"width": 196,
+					"height": 110
+				},
+				{
+					"url": "https://i.ytimg.com/vi/HWpOatYLwlk/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB1fT8pq9rVMHF-1S6XoDLEuKCNXw",
+					"width": 246,
+					"height": 138
+				},
+				{
+					"url": "https://i.ytimg.com/vi/HWpOatYLwlk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCZdQ8pVonPqIwskByUesIWCrLHNw",
+					"width": 336,
+					"height": 188
+				}
+			],
+			"richThumbnail": [
+				{
+					"url": "https://i.ytimg.com/an_webp/HWpOatYLwlk/mqdefault_6s.webp?du=3000&sqp=CKbp2KcG&rs=AOn4CLCP2sLo0SuI_CW2vaFdrUqbmurqwA",
+					"width": 320,
+					"height": 180
+				}
+			]
+		},
+		{
+			"type": "video",
+			"videoId": "T9ioljG2MYc",
+			"title": "ANNA KIEŁBASIŃSKA - \"NIE ZA WSZELKĄ CENĘ\"",
+			"description": "Audycja przeznaczona dla osób powyżej 16. roku życia.\nAnna #Kiełbasińska to jedna z najbardziej charakterystycznych i ciekawych postaci w lekkiej atletyce. Kobieta pełna charakteru, pasji,...",
+			"viewCount": "54262",
+			"publishedTimeText": "2 weeks ago",
+			"publishDate": "2023-08-21",
+			"publishedAt": "2023-08-21T00:00:00Z",
+			"lengthText": "34:53",
+			"thumbnail": [
+				{
+					"url": "https://i.ytimg.com/vi/T9ioljG2MYc/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBulLkOXalm6C78vAK8luuMc8hAzQ",
+					"width": 168,
+					"height": 94
+				},
+				{
+					"url": "https://i.ytimg.com/vi/T9ioljG2MYc/hqdefault.jpg?sqp=-oaymwEbCMQBEG5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLA8UW4qq-9ZoygsZaFajkY1yzsmrw",
+					"width": 196,
+					"height": 110
+				},
+				{
+					"url": "https://i.ytimg.com/vi/T9ioljG2MYc/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCJeq-IrbeyUa2tSgQor904mpBJMA",
+					"width": 246,
+					"height": 138
+				},
+				{
+					"url": "https://i.ytimg.com/vi/T9ioljG2MYc/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAV6_szDDt7XZaIZ01DmacyGyRRLg",
+					"width": 336,
+					"height": 188
+				}
+			],
+			"richThumbnail": [
+				{
+					"url": "https://i.ytimg.com/an_webp/T9ioljG2MYc/mqdefault_6s.webp?du=3000&sqp=COK52KcG&rs=AOn4CLCcCvyOZnYBEo3200pscI75B31NpQ",
+					"width": 320,
+					"height": 180
+				}
+			]
+		},
+		{
+			"type": "video",
+			"videoId": "GbcFzFIIlvI",
+			"title": "MOISES CAICEDO I ROMEO LAVIA W CHELSEA. BOEHLY ZNÓW SZALEJE Z ZAKUPAMI. POCHETTINO ZBUDUJE POTĘGĘ?",
+			"description": "Audycja przeznaczona dla osób powyżej 16. roku życia.\nCzy #Chelsea odbuduje swoją potęgę w nadchodzącym sezonie Premier League? Przemysław #Rudzki zaprasza na kolejny odcinek vloga...",
+			"viewCount": "24982",
+			"publishedTimeText": "2 weeks ago",
+			"publishDate": "2023-08-21",
+			"publishedAt": "2023-08-21T00:00:00Z",
+			"lengthText": "24:50",
+			"thumbnail": [
+				{
+					"url": "https://i.ytimg.com/vi/GbcFzFIIlvI/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLD7bqdWggt74RgVH9O106FJVvCQIA",
+					"width": 168,
+					"height": 94
+				},
+				{
+					"url": "https://i.ytimg.com/vi/GbcFzFIIlvI/hqdefault.jpg?sqp=-oaymwEbCMQBEG5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLD8tbPe3uU-3WgR7_UMf7-K5y0L_A",
+					"width": 196,
+					"height": 110
+				},
+				{
+					"url": "https://i.ytimg.com/vi/GbcFzFIIlvI/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCMNHl8ZI_DCavfMG0uLyxI_5wu9Q",
+					"width": 246,
+					"height": 138
+				},
+				{
+					"url": "https://i.ytimg.com/vi/GbcFzFIIlvI/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBGABovaDWo10xsjp9nN8YW86Vsog",
+					"width": 336,
+					"height": 188
+				}
+			],
+			"richThumbnail": [
+				{
+					"url": "https://i.ytimg.com/an_webp/GbcFzFIIlvI/mqdefault_6s.webp?du=3000&sqp=CLD32KcG&rs=AOn4CLB32JTls8OxzoUfj2LShGKHRhc3ig",
+					"width": 320,
+					"height": 180
+				}
+			]
+		},
+		{
+			"type": "video",
+			"videoId": "v8di3XQUVdE",
+			"title": "KULISY AWANSU RAKOWA! BOREK ANALIZUJE MECZ Z ARISEM, SENTYMENTALNY POWRÓT ŻEWŁAKOWA",
+			"description": "Audycja przeznaczona dla osób powyżej 16. roku życia.\n#Raków Częstochowa pokonał Aris Limassol 1:0 i awansował do IV rundy eliminacji Ligi Mistrzów! Mateusz Borek, Marcin Żewłakow...",
+			"viewCount": "33609",
+			"publishedTimeText": "2 weeks ago",
+			"publishDate": "2023-08-21",
+			"publishedAt": "2023-08-21T00:00:00Z",
+			"lengthText": "13:37",
+			"thumbnail": [
+				{
+					"url": "https://i.ytimg.com/vi/v8di3XQUVdE/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDnGRBuKfkR8ty7yujKTRaFEUgixg",
+					"width": 168,
+					"height": 94
+				},
+				{
+					"url": "https://i.ytimg.com/vi/v8di3XQUVdE/hqdefault.jpg?sqp=-oaymwEbCMQBEG5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLB_Vs9SI0t5XnVtTejcpnnaz8Gk0Q",
+					"width": 196,
+					"height": 110
+				},
+				{
+					"url": "https://i.ytimg.com/vi/v8di3XQUVdE/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAXWrLsoLajT9nzFJkNPaYyvjc9WA",
+					"width": 246,
+					"height": 138
+				},
+				{
+					"url": "https://i.ytimg.com/vi/v8di3XQUVdE/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLChKiWEntQCfKbMfRi1V_oRLfCUYw",
+					"width": 336,
+					"height": 188
+				}
+			],
+			"richThumbnail": [
+				{
+					"url": "https://i.ytimg.com/an_webp/v8di3XQUVdE/mqdefault_6s.webp?du=3000&sqp=CNTz2KcG&rs=AOn4CLB0IHs-pYAFOwFEkFasgymUugtlRw",
+					"width": 320,
+					"height": 180
+				}
+			]
+		},
+		{
+			"type": "video",
+			"videoId": "emnn0P3Mh0I",
+			"title": "STEVE McMANAMAN (REAL MADRID, LIVERPOOL FC, MANCHESTER CITY). INTERVIEW [ENG/PL SUBS]",
+			"description": "Audycja przeznaczona dla osób powyżej 16. roku życia.\nSteve #McManaman was interviewed by Kanał Sportowy. He also answered the questions from viewers. \n\n✅Zakład bez ryzyka 100% do 300...",
+			"viewCount": "12405",
+			"publishedTimeText": "3 weeks ago",
+			"publishDate": "2023-08-14",
+			"publishedAt": "2023-08-14T00:00:00Z",
+			"lengthText": "2:04:39",
+			"thumbnail": [
+				{
+					"url": "https://i.ytimg.com/vi/emnn0P3Mh0I/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDQH7ZziTnVlD0HJ_JZfohp1JRhxg",
+					"width": 168,
+					"height": 94
+				},
+				{
+					"url": "https://i.ytimg.com/vi/emnn0P3Mh0I/hqdefault.jpg?sqp=-oaymwEbCMQBEG5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLACTIGJqV9Xhpw2-SXMTTYxwhG3-w",
+					"width": 196,
+					"height": 110
+				},
+				{
+					"url": "https://i.ytimg.com/vi/emnn0P3Mh0I/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBaJvD2i4fh6fBYmSzOVx2U3NxGxg",
+					"width": 246,
+					"height": 138
+				},
+				{
+					"url": "https://i.ytimg.com/vi/emnn0P3Mh0I/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDQvWTXJmev_QtEhZ127yMKq7oAJg",
+					"width": 336,
+					"height": 188
+				}
+			],
+			"richThumbnail": [
+				{
+					"url": "https://i.ytimg.com/an_webp/emnn0P3Mh0I/mqdefault_6s.webp?du=3000&sqp=CLjp2KcG&rs=AOn4CLCpmcHFnKYpjzPzpPUgII1Htt_9Ug",
+					"width": 320,
+					"height": 180
+				}
+			]
+		},
+		{
+			"type": "video",
+			"videoId": "tRB4BTsyBtI",
+			"title": "QUIZ PIŁKARSKI: KOWAL VS PACZUL! EKSTRAKLASA TEAM KONTRA KS PORANEK! GRY I ZABAWY TOWARZYSKIE #4",
+			"description": "Audycja przeznaczona dla osób powyżej 16. roku życia.\nTomasz #Smokowski zaprasza na kolejny odcinek quizu \"Gry i Zabawy Towarzyskie!\". W teamie #Ekstraklasa znaleźli się Wojciech #Kowalczyk...",
+			"viewCount": "82978",
+			"publishedTimeText": "3 weeks ago",
+			"publishDate": "2023-08-14",
+			"publishedAt": "2023-08-14T00:00:00Z",
+			"lengthText": "45:55",
+			"thumbnail": [
+				{
+					"url": "https://i.ytimg.com/vi/tRB4BTsyBtI/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLC-n9ITlHfBMJzTnd1bv5ER_GV4ww",
+					"width": 168,
+					"height": 94
+				},
+				{
+					"url": "https://i.ytimg.com/vi/tRB4BTsyBtI/hqdefault.jpg?sqp=-oaymwEbCMQBEG5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBbguOkicRZJoY-87jAI-ZT1Bg2qg",
+					"width": 196,
+					"height": 110
+				},
+				{
+					"url": "https://i.ytimg.com/vi/tRB4BTsyBtI/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBfGxhUW3_KIwNB0qjBk2etpq62VQ",
+					"width": 246,
+					"height": 138
+				},
+				{
+					"url": "https://i.ytimg.com/vi/tRB4BTsyBtI/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCCGOjNDSJQ8AgSr6OVblQt5pCjjw",
+					"width": 336,
+					"height": 188
+				}
+			],
+			"richThumbnail": [
+				{
+					"url": "https://i.ytimg.com/an_webp/tRB4BTsyBtI/mqdefault_6s.webp?du=3000&sqp=CPC72KcG&rs=AOn4CLDNpAc7Ps-5jsucekYtPgyB8D6WFQ",
+					"width": 320,
+					"height": 180
+				}
+			]
+		},
+		{
+			"type": "video",
+			"videoId": "7X3Apqqy5Fc",
+			"title": "ARSENAL ZAGROZI CITY? LIVERPOOL WRÓCI DO TOP 4? UNITED POWALCZY O MISTRZA? NOWE ROZDANIE W CHELSEA!",
+			"description": "Audycja przeznaczona dla osób powyżej 16. roku życia.\nPrzemysław Rudzki zaprasza na kolejny odcinek vloga Full English przed nadchodzącym sezonem #PremierLeague!\n🏆 Najlepsza piłka...",
+			"viewCount": "40324",
+			"publishedTimeText": "3 weeks ago",
+			"publishDate": "2023-08-14",
+			"publishedAt": "2023-08-14T00:00:00Z",
+			"lengthText": "43:23",
+			"thumbnail": [
+				{
+					"url": "https://i.ytimg.com/vi/7X3Apqqy5Fc/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDp0yvSmMIP_T7Wg5ZDVDWO3IKXPg",
+					"width": 168,
+					"height": 94
+				},
+				{
+					"url": "https://i.ytimg.com/vi/7X3Apqqy5Fc/hqdefault.jpg?sqp=-oaymwEbCMQBEG5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAYNDZ7EHrYxU9hYVxfJADv08kNIg",
+					"width": 196,
+					"height": 110
+				},
+				{
+					"url": "https://i.ytimg.com/vi/7X3Apqqy5Fc/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCi64yNtbi6WMTfrP9dyyY84gatOg",
+					"width": 246,
+					"height": 138
+				},
+				{
+					"url": "https://i.ytimg.com/vi/7X3Apqqy5Fc/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB2MgM3r3JCYSryxuXY6Tb6I2onbA",
+					"width": 336,
+					"height": 188
+				}
+			],
+			"richThumbnail": [
+				{
+					"url": "https://i.ytimg.com/an_webp/7X3Apqqy5Fc/mqdefault_6s.webp?du=3000&sqp=CJHh2KcG&rs=AOn4CLDTCZTJLgmuQhP0KdIiJxxccOouig",
+					"width": 320,
+					"height": 180
+				}
+			]
+		},
+		{
+			"type": "video",
+			"videoId": "M2rEJWuYy7w",
+			"title": "RAKÓW ZATRZYMAŁ KARABACH! MISTRZ POLSKI DALEJ W GRZE O LM! - KULISY STARCIA W BAKU",
+			"description": "Audycja przeznaczona dla osób powyżej 16. roku życia.\n#Raków Częstochowa wyeliminował #Karabach w II rundzie eliminacji Ligi Mistrzów! Zapraszamy za kulisy zwycięskiego remisu w Baku!...",
+			"viewCount": "21165",
+			"publishedTimeText": "4 weeks ago",
+			"publishDate": "2023-08-07",
+			"publishedAt": "2023-08-07T00:00:00Z",
+			"lengthText": "8:38",
+			"thumbnail": [
+				{
+					"url": "https://i.ytimg.com/vi/M2rEJWuYy7w/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDWhz5TqEMMe-RbCVkTJeBrc-_t_w",
+					"width": 168,
+					"height": 94
+				},
+				{
+					"url": "https://i.ytimg.com/vi/M2rEJWuYy7w/hqdefault.jpg?sqp=-oaymwEbCMQBEG5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBjsvUIsyHd1TuPiHGYAyJNJDnCrA",
+					"width": 196,
+					"height": 110
+				},
+				{
+					"url": "https://i.ytimg.com/vi/M2rEJWuYy7w/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAcO7BDihsEbngZ6T-KYGlw5nPtjQ",
+					"width": 246,
+					"height": 138
+				},
+				{
+					"url": "https://i.ytimg.com/vi/M2rEJWuYy7w/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBeocUJHhhaILxuzMY3MsYE4zGXJw",
+					"width": 336,
+					"height": 188
+				}
+			],
+			"richThumbnail": [
+				{
+					"url": "https://i.ytimg.com/an_webp/M2rEJWuYy7w/mqdefault_6s.webp?du=3000&sqp=COTT2KcG&rs=AOn4CLDNub2iOs3syZBj4gkFJsbLbQfoHw",
+					"width": 320,
+					"height": 180
+				}
+			]
+		},
+		{
+			"type": "video",
+			"videoId": "Jj1KzEDzUVU",
+			"title": "ŚWIR NIE BYŁ W STRACHU! KULISY DEBIUTU W FAME, BOREK I OKNIŃSKI W NAROŻNIKU",
+			"description": "Audycja przeznaczona dla osób powyżej 16. roku życia.\nPiotr #Świerczewski pokonał Dariusza Kaźmierczuka (Dario Lwa) na gali FAME. Jak na walkę popularnego \"Świra\" reagowali Mateusz...",
+			"viewCount": "77473",
+			"publishedTimeText": "1 month ago",
+			"publishDate": "2023-08-04",
+			"publishedAt": "2023-08-04T00:00:00Z",
+			"lengthText": "16:32",
+			"thumbnail": [
+				{
+					"url": "https://i.ytimg.com/vi/Jj1KzEDzUVU/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLB43xbfeYD54nayeVlbD8fZOPW1ag",
+					"width": 168,
+					"height": 94
+				},
+				{
+					"url": "https://i.ytimg.com/vi/Jj1KzEDzUVU/hqdefault.jpg?sqp=-oaymwEbCMQBEG5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAVnsL7_eIcTlULsoU6j03ylpEnsA",
+					"width": 196,
+					"height": 110
+				},
+				{
+					"url": "https://i.ytimg.com/vi/Jj1KzEDzUVU/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC9Fjh3NagAlfdtGBMpY-L_wIUPSQ",
+					"width": 246,
+					"height": 138
+				},
+				{
+					"url": "https://i.ytimg.com/vi/Jj1KzEDzUVU/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB5KcjU77QTqfYkEbmLd_YCqrbwRw",
+					"width": 336,
+					"height": 188
+				}
+			],
+			"richThumbnail": [
+				{
+					"url": "https://i.ytimg.com/an_webp/Jj1KzEDzUVU/mqdefault_6s.webp?du=3000&sqp=CLLH2KcG&rs=AOn4CLCMhaSal0B66aEbe4RJ59BX89dcuA",
+					"width": 320,
+					"height": 180
+				}
+			]
+		},
+		{
+			"type": "video",
+			"videoId": "hA_srdETZuk",
+			"title": "QUIZ PIŁKARSKI: BUNDESLIGA VS LA LIGA. SMOKOWSKI | BORZĘCKI I GĄSKA KONTRA LABOGA I PIECHOTA",
+			"description": "Audycja przeznaczona dla osób powyżej 16. roku życia.\n#Bundesliga kontra #LaLiga! Tomasz #Smokowski zaprasza na kolejny odcinek programu \"Gry i Zabawy Towarzyskie\"! W quizie piłkarskim...",
+			"viewCount": "66270",
+			"publishedTimeText": "1 month ago",
+			"publishDate": "2023-08-04",
+			"publishedAt": "2023-08-04T00:00:00Z",
+			"lengthText": "51:12",
+			"thumbnail": [
+				{
+					"url": "https://i.ytimg.com/vi/hA_srdETZuk/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBkRjC3Aq6Q2pLbK2SS7CjxXdXkvw",
+					"width": 168,
+					"height": 94
+				},
+				{
+					"url": "https://i.ytimg.com/vi/hA_srdETZuk/hqdefault.jpg?sqp=-oaymwEbCMQBEG5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBARSb8Ge3LpTvcfsqzji35YqcIoQ",
+					"width": 196,
+					"height": 110
+				},
+				{
+					"url": "https://i.ytimg.com/vi/hA_srdETZuk/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBepYtkIpCd--j6W_cgX1Eg2gK79Q",
+					"width": 246,
+					"height": 138
+				},
+				{
+					"url": "https://i.ytimg.com/vi/hA_srdETZuk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBfM09PonwVUW22iC-YLSuVU7zppg",
+					"width": 336,
+					"height": 188
+				}
+			],
+			"richThumbnail": [
+				{
+					"url": "https://i.ytimg.com/an_webp/hA_srdETZuk/mqdefault_6s.webp?du=3000&sqp=CKrs2KcG&rs=AOn4CLChZL8TDnBfKV6DLSW69YAZHxOm5g",
+					"width": 320,
+					"height": 180
+				}
+			]
+		},
+		{
+			"type": "video",
+			"videoId": "oKYBBVQa8NY",
+			"title": "BOLLYWOODZKIE ZERO: NATALIA JANOSZEK. THE END",
+			"description": "Audycja przeznaczona dla osób powyżej 16. roku życia.\nKrzysztof #Stanowski zaprasza na vlog Bollywoodzkie Zero!\n✅Zakład bez ryzyka 100% do 300 zł na start od sponsora  kanału, Fuksiarz.pl...",
+			"viewCount": "7566879",
+			"publishedTimeText": "1 month ago",
+			"publishDate": "2023-08-04",
+			"publishedAt": "2023-08-04T00:00:00Z",
+			"lengthText": "2:44:15",
+			"thumbnail": [
+				{
+					"url": "https://i.ytimg.com/vi/oKYBBVQa8NY/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBLgGsXRG9FUQ_50z2_BiX4ENwBvw",
+					"width": 168,
+					"height": 94
+				},
+				{
+					"url": "https://i.ytimg.com/vi/oKYBBVQa8NY/hqdefault.jpg?sqp=-oaymwEbCMQBEG5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLASbkp1bLGE0d26JfbdMUKukxnJHA",
+					"width": 196,
+					"height": 110
+				},
+				{
+					"url": "https://i.ytimg.com/vi/oKYBBVQa8NY/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDvOfZOv8lTRi49y8jnEvNu130g5A",
+					"width": 246,
+					"height": 138
+				},
+				{
+					"url": "https://i.ytimg.com/vi/oKYBBVQa8NY/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDNlWUJjN-2DO-PJ9vdl1PiQBydfw",
+					"width": 336,
+					"height": 188
+				}
+			],
+			"richThumbnail": null
+		},
+		{
+			"type": "video",
+			"videoId": "iVyFE9rlGAc",
+			"title": "JOE LEWIS I WIELKA AFERA. JAK TO WPŁYNIE NA TOTTENHAM? HARRY KANE - CO DALEJ? - FULL ENGLISH #42",
+			"description": "Audycja przeznaczona dla osób powyżej 16. roku życia.\nPrzemysław #Rudzki zaprasza na kolejny odcinek vloga Full English, którego bohaterami są Joe Lewis, Harry #Kane i #Tottenham.\n⚽️...",
+			"viewCount": "25389",
+			"publishedTimeText": "1 month ago",
+			"publishDate": "2023-08-04",
+			"publishedAt": "2023-08-04T00:00:00Z",
+			"lengthText": "18:32",
+			"thumbnail": [
+				{
+					"url": "https://i.ytimg.com/vi/iVyFE9rlGAc/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLC0K_zU_M2xgZQCEwbqb1KOU0G8TA",
+					"width": 168,
+					"height": 94
+				},
+				{
+					"url": "https://i.ytimg.com/vi/iVyFE9rlGAc/hqdefault.jpg?sqp=-oaymwEbCMQBEG5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAbd7Wl_0-fiAlxcW4BONKXb2MOpw",
+					"width": 196,
+					"height": 110
+				},
+				{
+					"url": "https://i.ytimg.com/vi/iVyFE9rlGAc/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAEc-cH28UpNJ6Z73fNlkPAXrfoEw",
+					"width": 246,
+					"height": 138
+				},
+				{
+					"url": "https://i.ytimg.com/vi/iVyFE9rlGAc/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDtF596xH2B5595Aheyxb6NjPEuFQ",
+					"width": 336,
+					"height": 188
+				}
+			],
+			"richThumbnail": [
+				{
+					"url": "https://i.ytimg.com/an_webp/iVyFE9rlGAc/mqdefault_6s.webp?du=3000&sqp=CI7R2KcG&rs=AOn4CLDiQeKdmf4RTxtmGIQrL2omhfqtJw",
+					"width": 320,
+					"height": 180
+				}
+			]
+		},
+		{
+			"type": "video",
+			"videoId": "9o1Ch6qm2ag",
+			"title": "KULISY RAKÓW - KARABACH 3:2 - KOWAL ODWIEDZA MISTRZA POLSKI I JEŹDZI TRAMWAJEM",
+			"description": "Audycja przeznaczona dla osób powyżej 16. roku życia.\n#Raków #Częstochowa ugościł nas podczas meczu eliminacji Ligi Mistrzów z Karabachem i z bliska mogliśmy oglądać, jak mistrz...",
+			"viewCount": "27970",
+			"publishedTimeText": "1 month ago",
+			"publishDate": "2023-08-04",
+			"publishedAt": "2023-08-04T00:00:00Z",
+			"lengthText": "14:15",
+			"thumbnail": [
+				{
+					"url": "https://i.ytimg.com/vi/9o1Ch6qm2ag/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCDx33OKGaN5R31qbyAmQ-uRScr0w",
+					"width": 168,
+					"height": 94
+				},
+				{
+					"url": "https://i.ytimg.com/vi/9o1Ch6qm2ag/hqdefault.jpg?sqp=-oaymwEbCMQBEG5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAim2_xEVHpXHxZnltqcO90a4TZxQ",
+					"width": 196,
+					"height": 110
+				},
+				{
+					"url": "https://i.ytimg.com/vi/9o1Ch6qm2ag/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC3zJIw_PtrJiOlqzEVlftHmS5ovA",
+					"width": 246,
+					"height": 138
+				},
+				{
+					"url": "https://i.ytimg.com/vi/9o1Ch6qm2ag/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAqjDPAKmaAe-uJFr6UKbOqY09ieg",
+					"width": 336,
+					"height": 188
+				}
+			],
+			"richThumbnail": [
+				{
+					"url": "https://i.ytimg.com/an_webp/9o1Ch6qm2ag/mqdefault_6s.webp?du=3000&sqp=CMDu2KcG&rs=AOn4CLBr63EoD9SYET8rYNAcAiEl3R5CXw",
+					"width": 320,
+					"height": 180
+				}
+			]
+		},
+		{
+			"type": "video",
+			"videoId": "xojSXdiBHPU",
+			"title": "MANCHESTER UNITED – ERIK TEN HAG CHCE WIĘCEJ. ANDRE ONANA JAKO SYMBOL REWOLUCJI NA OLD TRAFFORD",
+			"description": "Audycja przeznaczona dla osób powyżej 16. roku życia.\nPrzemysław #Rudzki zaprasza na kolejny odcinek vloga Full English! #Manchester #United i sytuacja na Old Trafford – jak w nowym sezonie...",
+			"viewCount": "42847",
+			"publishedTimeText": "1 month ago",
+			"publishDate": "2023-08-04",
+			"publishedAt": "2023-08-04T00:00:00Z",
+			"lengthText": "27:41",
+			"thumbnail": [
+				{
+					"url": "https://i.ytimg.com/vi/xojSXdiBHPU/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBUjG30hTnPWcuxpWUT2cshrkczRA",
+					"width": 168,
+					"height": 94
+				},
+				{
+					"url": "https://i.ytimg.com/vi/xojSXdiBHPU/hqdefault.jpg?sqp=-oaymwEbCMQBEG5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCacoDXEJ4JQWkPhoPG9se19EKSUw",
+					"width": 196,
+					"height": 110
+				},
+				{
+					"url": "https://i.ytimg.com/vi/xojSXdiBHPU/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAeenmNk-KwAR_6nMBitT4oWHVhFw",
+					"width": 246,
+					"height": 138
+				},
+				{
+					"url": "https://i.ytimg.com/vi/xojSXdiBHPU/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCe7XPf-ae5Y_lM1uuilZaJ-MgCXw",
+					"width": 336,
+					"height": 188
+				}
+			],
+			"richThumbnail": [
+				{
+					"url": "https://i.ytimg.com/an_webp/xojSXdiBHPU/mqdefault_6s.webp?du=3000&sqp=CN_f2KcG&rs=AOn4CLCaPfw7sKXneqsPho2dgA_IA3bAyg",
+					"width": 320,
+					"height": 180
+				}
+			]
+		},
+		{
+			"type": "video",
+			"videoId": "LtT-rZ564Cc",
+			"title": "STANOWISKO #91 – KULESZA, STASIAK I ŚPIEWY W MOŁDAWII",
+			"description": "Audycja przeznaczona dla osób powyżej 16. roku życia.\nKrzysztof #Stanowski zaprasza na kolejny odcinek vloga #Stanowisko!\n⚽️ Wraca PKO Bank Polski EKSTRAKLASA!  Sprawdź ofertę CANAL+...",
+			"viewCount": "601329",
+			"publishedTimeText": "1 month ago",
+			"publishDate": "2023-08-04",
+			"publishedAt": "2023-08-04T00:00:00Z",
+			"lengthText": "12:13",
+			"thumbnail": [
+				{
+					"url": "https://i.ytimg.com/vi/LtT-rZ564Cc/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDUqvdkeCBJSF6ZEG2KkTpPDNn_7w",
+					"width": 168,
+					"height": 94
+				},
+				{
+					"url": "https://i.ytimg.com/vi/LtT-rZ564Cc/hqdefault.jpg?sqp=-oaymwEbCMQBEG5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBrNbVLHmXFatmbJPdq6F3DQab-lw",
+					"width": 196,
+					"height": 110
+				},
+				{
+					"url": "https://i.ytimg.com/vi/LtT-rZ564Cc/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBSHag4HQCytdU_Ga_FTtKSh3JJsg",
+					"width": 246,
+					"height": 138
+				},
+				{
+					"url": "https://i.ytimg.com/vi/LtT-rZ564Cc/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDrlW9wI5BRe8YgEd2AzXgDEk-voQ",
+					"width": 336,
+					"height": 188
+				}
+			],
+			"richThumbnail": [
+				{
+					"url": "https://i.ytimg.com/an_webp/LtT-rZ564Cc/mqdefault_6s.webp?du=3000&sqp=CIjq2KcG&rs=AOn4CLDW2q9roGqhBA4-Db3eezhMvaNGJw",
+					"width": 320,
+					"height": 180
+				}
+			]
+		},
+		{
+			"type": "video",
+			"videoId": "73HjFUU4ZgM",
+			"title": "KSW 84 - KREW, POT I ŁZY. NAROŻNIKI I BACKSTAGE. TEGO NIE BYŁO W TRANSMISJI",
+			"description": "Audycja przeznaczona dla osób powyżej 16. roku życia.\n#KSW84 już za nami! Zapraszamy za #kulisy tego wydarzenia.\n⚽️ Sportowe emocje w CANAL+ online! 🏀🎾 Sprawdź ofertę ➡️...",
+			"viewCount": "11004",
+			"publishedTimeText": "1 month ago",
+			"publishDate": "2023-08-04",
+			"publishedAt": "2023-08-04T00:00:00Z",
+			"lengthText": "10:38",
+			"thumbnail": [
+				{
+					"url": "https://i.ytimg.com/vi/73HjFUU4ZgM/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBYs2SSa33UVB3Xu_-4t6tQdrCJ2A",
+					"width": 168,
+					"height": 94
+				},
+				{
+					"url": "https://i.ytimg.com/vi/73HjFUU4ZgM/hqdefault.jpg?sqp=-oaymwEbCMQBEG5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDord-RwmETNREAYvgDTdpbQrnPJg",
+					"width": 196,
+					"height": 110
+				},
+				{
+					"url": "https://i.ytimg.com/vi/73HjFUU4ZgM/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAC1Mp1CBL16m0NaCGyEZ8TLl-cOw",
+					"width": 246,
+					"height": 138
+				},
+				{
+					"url": "https://i.ytimg.com/vi/73HjFUU4ZgM/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD9GwUysw8RgOzyPYaDpZ0X_hfYiA",
+					"width": 336,
+					"height": 188
+				}
+			],
+			"richThumbnail": [
+				{
+					"url": "https://i.ytimg.com/an_webp/73HjFUU4ZgM/mqdefault_6s.webp?du=3000&sqp=CJjz2KcG&rs=AOn4CLDRobBNs0EzwhHffU9JNj88bfScEQ",
+					"width": 320,
+					"height": 180
+				}
+			]
+		},
+		{
+			"type": "video",
+			"videoId": "ka3MZuXfw5s",
+			"title": "MAREK PAPSZUN: DOJRZAŁEM, ABY OBJĄĆ REPREZENTACJĘ POLSKI",
+			"description": "Audycja przeznaczona dla osób powyżej 16. roku życia.\nMarek #Papszun, który prowadził #Raków Częstochowa w latach 2016-2023, wieńcząc pracę w tym klubie mistrzostwem Polski, odpowiada...",
+			"viewCount": "93169",
+			"publishedTimeText": "1 month ago",
+			"publishDate": "2023-08-04",
+			"publishedAt": "2023-08-04T00:00:00Z",
+			"lengthText": "1:05:08",
+			"thumbnail": [
+				{
+					"url": "https://i.ytimg.com/vi/ka3MZuXfw5s/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLC8j6IaFfUoS4Px5AsIaW_guuNi-A",
+					"width": 168,
+					"height": 94
+				},
+				{
+					"url": "https://i.ytimg.com/vi/ka3MZuXfw5s/hqdefault.jpg?sqp=-oaymwEbCMQBEG5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDwEaO8iA5lzdLYGv8F9SK8o0zLqg",
+					"width": 196,
+					"height": 110
+				},
+				{
+					"url": "https://i.ytimg.com/vi/ka3MZuXfw5s/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCBrc3r1GUtq39IyltH5hkjSmqabw",
+					"width": 246,
+					"height": 138
+				},
+				{
+					"url": "https://i.ytimg.com/vi/ka3MZuXfw5s/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBZLGhpTPqNpr9WTei2h9yoUmQaZw",
+					"width": 336,
+					"height": 188
+				}
+			],
+			"richThumbnail": [
+				{
+					"url": "https://i.ytimg.com/an_webp/ka3MZuXfw5s/mqdefault_6s.webp?du=3000&sqp=CIT02KcG&rs=AOn4CLCVaSXO9IXgBaQ03E7P-JlsKJnjzQ",
+					"width": 320,
+					"height": 180
+				}
+			]
+		},
+		{
+			"type": "video",
+			"videoId": "XGRMxXQtEHU",
+			"title": "KSW MA PROBLEM? KTO DLA MISTRZA? CO DALEJ Z PRZYBYSZEM I JANIKOWSKIM? BŁĘDY SĘDZIOWSKIE?",
+			"description": "Audycja przeznaczona dla osób powyżej 16. roku życia.\nPo gali #KSW84 rozmawiamy z dyrektorem sportowym organizacji Wojsławem Rysiewskim! Co dalej z takimi zawodnikami jak #DeFries, Przybysz,...",
+			"viewCount": "24227",
+			"publishedTimeText": "1 month ago",
+			"publishDate": "2023-08-04",
+			"publishedAt": "2023-08-04T00:00:00Z",
+			"lengthText": "12:29",
+			"thumbnail": [
+				{
+					"url": "https://i.ytimg.com/vi/XGRMxXQtEHU/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBSGOAX9HmzZhZJGGCzg9tB6WB2IQ",
+					"width": 168,
+					"height": 94
+				},
+				{
+					"url": "https://i.ytimg.com/vi/XGRMxXQtEHU/hqdefault.jpg?sqp=-oaymwEbCMQBEG5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCRQXB37aCp9gGyVhK-Zanxk55lrA",
+					"width": 196,
+					"height": 110
+				},
+				{
+					"url": "https://i.ytimg.com/vi/XGRMxXQtEHU/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA-ENL_j87S9FGu3Ls6KR1muGfzjQ",
+					"width": 246,
+					"height": 138
+				},
+				{
+					"url": "https://i.ytimg.com/vi/XGRMxXQtEHU/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAf2JUjpkudE9wi--I0GO17BHx7iw",
+					"width": 336,
+					"height": 188
+				}
+			],
+			"richThumbnail": [
+				{
+					"url": "https://i.ytimg.com/an_webp/XGRMxXQtEHU/mqdefault_6s.webp?du=3000&sqp=COvU2KcG&rs=AOn4CLC3WAUDH8iFZxQuk4bx0FqaMHWFEw",
+					"width": 320,
+					"height": 180
+				}
+			]
+		},
+		{
+			"type": "video",
+			"videoId": "M4HdIP5p9Ow",
+			"title": "NAJWIĘKSZE WPADKI PIŁKARZY W SOCIAL MEDIA. TWEETY Z KIESZENI, KOPIUJ-WKLEJ I INNE BŁĘDY",
+			"description": "Audycja przeznaczona dla osób powyżej 16. roku życia.\nPrzemysław #Rudzki zaprasza na kolejny odcinek vloga #FullEnglish!\n⚽️ Sportowe emocje w CANAL+ online! 🏀🎾 Sprawdź ofertę...",
+			"viewCount": "24251",
+			"publishedTimeText": "1 month ago",
+			"publishDate": "2023-08-04",
+			"publishedAt": "2023-08-04T00:00:00Z",
+			"lengthText": "15:30",
+			"thumbnail": [
+				{
+					"url": "https://i.ytimg.com/vi/M4HdIP5p9Ow/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBGCbEhwVZGstUE-ulhgQrM64kyjg",
+					"width": 168,
+					"height": 94
+				},
+				{
+					"url": "https://i.ytimg.com/vi/M4HdIP5p9Ow/hqdefault.jpg?sqp=-oaymwEbCMQBEG5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCwIFmfNBoLWXsUNmGwp_fClwyO0w",
+					"width": 196,
+					"height": 110
+				},
+				{
+					"url": "https://i.ytimg.com/vi/M4HdIP5p9Ow/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAadcgRdJImBJVTevTR5ldT-xzMHQ",
+					"width": 246,
+					"height": 138
+				},
+				{
+					"url": "https://i.ytimg.com/vi/M4HdIP5p9Ow/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBwmkVyThQOQVLT3xC2qWIUX5dHnw",
+					"width": 336,
+					"height": 188
+				}
+			],
+			"richThumbnail": [
+				{
+					"url": "https://i.ytimg.com/an_webp/M4HdIP5p9Ow/mqdefault_6s.webp?du=3000&sqp=CPTX2KcG&rs=AOn4CLDuZeWgOPzVw9znAwutPYRruPwlow",
+					"width": 320,
+					"height": 180
+				}
+			]
+		},
+		{
+			"type": "video",
+			"videoId": "hA653riYYbM",
+			"title": "QUIZ PIŁKARSKI: EKSTRAKLASA VS SERIE A. SMOKOWSKI | POL I LIPIŃSKI KONTRA PODOLIŃSKI I GLEŃ",
+			"description": "Audycja przeznaczona dla osób powyżej 16. roku życia.\nTomasz #Smokowski zaprasza na drugi odcinek programu \"Gry i Zabawy Towarzyskie\"! W quizie piłkarskim zmierzą się dwie drużyny: Michał...",
+			"viewCount": "90869",
+			"publishedTimeText": "1 month ago",
+			"publishDate": "2023-08-04",
+			"publishedAt": "2023-08-04T00:00:00Z",
+			"lengthText": "41:48",
+			"thumbnail": [
+				{
+					"url": "https://i.ytimg.com/vi/hA653riYYbM/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBf-h-1TdoWXD9V2jm7MKtMNL4ZwA",
+					"width": 168,
+					"height": 94
+				},
+				{
+					"url": "https://i.ytimg.com/vi/hA653riYYbM/hqdefault.jpg?sqp=-oaymwEbCMQBEG5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCDZhghtOjxZpc-FsZkQua-BTc4YA",
+					"width": 196,
+					"height": 110
+				},
+				{
+					"url": "https://i.ytimg.com/vi/hA653riYYbM/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC_NjviGQft2OR_ASrp3RG9tJ5K7A",
+					"width": 246,
+					"height": 138
+				},
+				{
+					"url": "https://i.ytimg.com/vi/hA653riYYbM/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC6rl8XqEVkBfMi4AMlMlEKYBp96Q",
+					"width": 336,
+					"height": 188
+				}
+			],
+			"richThumbnail": [
+				{
+					"url": "https://i.ytimg.com/an_webp/hA653riYYbM/mqdefault_6s.webp?du=3000&sqp=CM_U2KcG&rs=AOn4CLBBlvKU6hmiPebbbYxthaJGdgVnUQ",
+					"width": 320,
+					"height": 180
+				}
+			]
+		}
+	],
+	"msg": ""
+}
