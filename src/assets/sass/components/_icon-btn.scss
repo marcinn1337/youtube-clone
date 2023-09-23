@@ -1,0 +1,54 @@
+@use '../abstracts';
+.icon-btn {
+	padding: 1.8rem;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	border-radius: abstracts.$borderRadius;
+	text-decoration: none;
+	z-index: 0;
+	svg {
+		width: 2.5rem;
+		height: 2.5rem;
+	}
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: abstracts.$borderRadius;
+		transition: opacity 0.15s;
+		opacity: 0;
+		z-index: -1;
+	}
+	&:hover::before {
+		opacity: 1;
+	}
+}
+
+.nav--dark,
+.main-content--dark {
+	.icon-btn {
+		svg {
+			fill: abstracts.$mainFontDark;
+		}
+		&::before {
+			background-color: abstracts.$hoverBgDark;
+		}
+	}
+}
+.nav--light,
+.main-content--light {
+	.icon-btn {
+		svg {
+			fill: abstracts.$mainFontLight;
+		}
+		&::before {
+			background-color: abstracts.$hoverBgLight;
+		}
+	}
+}

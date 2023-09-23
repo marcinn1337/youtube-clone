@@ -13,8 +13,8 @@ export default function ChannelAbout() {
 
 	const linkElements =
 		channel.links &&
-		channel.links.map(({ title, link }) => {
-			return <ChannelLink title={title} link={link} />
+		channel.links.map(({ title, link }, i) => {
+			return <ChannelLink key={i} title={title} link={link} />
 		})
 	return (
 		<div className='channel-about'>

@@ -10,6 +10,7 @@ import ChannelPlaylists from '../sections/ChannelPlaylists'
 import ChannelCommunity from '../sections/ChannelCommunity'
 import ChannelAbout from '../sections/ChannelAbout'
 import ChannelFeatured from '../sections/ChannelFeatured'
+import SearchBar from '../components/SearchBar'
 
 import channelData from '../test_data/channel-info.json'
 
@@ -19,10 +20,10 @@ export default function ChannelPage() {
 	const [activeContent, setActiveContent] = useState(<ChannelVideos />)
 	const styles = {
 		avatar: {
-			backgroundImage: `url('${channelData.avatar[1].url}')`
+			backgroundImage: `url(${channelData.avatar[1].url})`
 		},
 		banner: {
-			backgroundImage: `url('${channelData.banner[1].url}')`
+			backgroundImage: `url(${channelData.banner[1].url})`
 		}
 	}
 	const subscribeChannel = () => {
@@ -70,6 +71,9 @@ export default function ChannelPage() {
 		// Sorting video not available by this API. Show pop up alert
 		showAlert('error', 0)
 	}
+	const toggleSearchBar = () => {
+		document.querySelector('.searchbar--channel').classList.toggle('searchbar--visible')
+	}
 	return (
 		<main className={`main-content main-content--${theme}`}>
 			<div style={styles.banner} className='channel__banner'></div>
@@ -104,11 +108,11 @@ export default function ChannelPage() {
 						<button onClick={switchChannelContent} className='channel__nav-btn'>
 							about
 						</button>
-						<button onClick={switchChannelContent} className='channel__nav-btn'>
+						<button onClick={toggleSearchBar} className='channel__nav-btn'>
 							search
 						</button>
 					</div>
-					<SearchBar />
+					<SearchBar parent='channel' />
 					<section className='channel__content'>{activeContent}</section>
 				</div>
 			</div>

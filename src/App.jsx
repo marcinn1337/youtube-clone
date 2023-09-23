@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
 import HomePage from './pages/HomePage'
 import ChannelPage from './pages/ChannelPage'
+import VideoPage from './pages/VideoPage'
 import SearchResultsPage from './pages/SearchResultsPage'
 import AlertBox from './components/AlertBox'
 import ReportModal from './sections/ReportModal'
@@ -23,10 +24,11 @@ export default function App() {
 							<Route path='/' element={<HomePage />} />
 							<Route path='/search' element={<SearchResultsPage />} />
 							<Route path='/channel' element={<ChannelPage />} />
+							<Route path='/video' element={<VideoPage />} />
 						</Routes>
 						<ReportModal />
 						<AlertBox />
-						<div className="shadow"></div>
+						<div className='shadow'></div>
 					</ReportProvider>
 				</AlertProvider>
 			</CategoryProvider>

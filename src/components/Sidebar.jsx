@@ -9,6 +9,7 @@ export default function Sidebar() {
 		<aside className={`sidebar sidebar--${theme}`}>
 			<section className='sidebar__section section-main'>
 				<SidebarItem itemName='Home Page' />
+				<SidebarItem itemName='Watch Later' />
 				<SidebarLink itemName='History' />
 				<SidebarLink itemName='Playlists' />
 			</section>
