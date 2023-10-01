@@ -80,7 +80,7 @@ export default function Comment({
 						{authorName}
 					</a>
 					<p className='comment__publish-date'>{publishedTime}</p>
-					<button onClick={reportComment} className='comment__report-btn icon-btn'>
+					<button onClick={reportComment} className='icon-btn comment__report-btn'>
 						<Icon type='small' name='report' />
 					</button>
 				</div>

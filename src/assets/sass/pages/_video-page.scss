@@ -1,13 +1,399 @@
 @use '../abstracts';
 .video {
 	&__player {
-		background-color: abstracts.$hoverBgDark;
+		position: sticky;
+		top: 0;
 		width: 100%;
-		height: 20rem;
+		max-width: 108rem;
+		aspect-ratio: 16/9;
+		z-index: 5;
+		iframe {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&__title,
+	&__author,
+	&__description {
+		margin-inline: 2rem;
+	}
+	&__title {
+		margin-block-start: 2rem;
+	}
+	&__description {
+		margin-block-start: 0.5rem;
+		display: flex;
+		flex-wrap: wrap;
+		font-size: 1.3rem;
+		&-views {
+			margin-inline-end: 1rem;
+		}
+		&-more-btn {
+			margin-inline-start: 1rem;
+			color: abstracts.$blue;
+		}
+		&-text {
+			margin-block-start: 1rem;
+			display: none;
+			width: 100%;
+			color: abstracts.$secondFontDark;
+			a {
+				color: abstracts.$blue;
+			}
+			&--visible {
+				display: block;
+			}
+		}
+	}
+	&__author {
+		margin-block-start: 1rem;
+		position: relative;
+		display: grid;
+		grid-template-columns: 3rem auto auto;
+		grid-row: auto;
+		&-avatar {
+			grid-column: 1/1;
+			grid-row: 1/3;
+			display: block;
+			width: 3rem;
+			height: 3rem;
+			border-radius: 50%;
+			background-color: rgba(0, 40, 100, 0.5);
+			background-size: cover;
+			background-position: center;
+		}
+		&-name {
+			margin-inline-start: 1rem;
+			grid-column: 2/3;
+			grid-row: 1/2;
+			font-size: 1.5rem;
+		}
+		&-subscribers {
+			margin-inline-start: 1rem;
+			grid-column: 2/3;
+			grid-row: 2/3;
+			font-size: 1.2rem;
+			color: abstracts.$offDark;
+		}
+		.video__author-subscribe-btn {
+			margin-inline-start: auto;
+			padding-block: 0.5rem;
+			grid-column: 3/4;
+			grid-row: 1/3;
+			align-self: center;
+			width: 12rem;
+			max-width: 15rem;
+			font-size: 1.2rem;
+		}
+	}
+	&__author--subscribed {
+		.video__author-subscribe-btn {
+			background-color: abstracts.$offDark;
+		}
+	}
+	&__actions {
+		margin-block-start: 2rem;
+		margin-inline: 2rem;
+		position: relative;
+		display: flex;
+		button {
+			padding: 1rem;
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			opacity: 0.7;
+			z-index: 0;
+			overflow: hidden;
+			transition: opacity abstracts.$colorTransitionTime ease-in-out;
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				opacity: 0;
+				z-index: -1;
+			}
+			&:hover,
+			&:hover::before {
+				opacity: 1;
+			}
+		}
+		&-like-btn {
+			position: relative;
+			border-top-left-radius: abstracts.$borderRadius;
+			border-bottom-left-radius: abstracts.$borderRadius;
+			svg {
+				margin-inline-end: 1rem;
+			}
+		}
+		&-dislike-btn {
+			border-top-right-radius: abstracts.$borderRadius;
+			border-bottom-right-radius: abstracts.$borderRadius;
+		}
+		&-more-btn {
+			margin-inline-start: auto;
+			border-radius: abstracts.$borderRadius;
+		}
+		&-more {
+			padding-block: 1rem;
+			position: absolute;
+			top: 120%;
+			right: 3%;
+			display: none;
+			flex-direction: column;
+			justify-items: flex-start;
+			border-radius: abstracts.$borderRadius;
+			width: 12rem;
+			z-index: 4;
+			button {
+				justify-content: flex-start;
+				opacity: 1;
+				svg {
+					margin-inline-end: 1.5rem;
+				}
+			}
+		}
+		&-more--visible {
+			display: flex;
+		}
+	}
+	&__show-comments-btn {
+		margin-block-start: 1rem;
+		margin-inline: 2rem;
+		padding: 1rem;
+		display: flex;
+		align-items: center;
+		width: calc(100% - 2rem - 2rem); // 100% - margins (2rem from left and 2rem from right side)
+		font-size: 1.4rem;
+		opacity: 0.7;
+		transition: opacity abstracts.$colorTransitionTime ease-in-out;
+		cursor: pointer;
+		&:hover {
+			opacity: 1;
+		}
+		svg {
+			margin-inline-start: auto;
+		}
+	}
+}
+.video--disliked {
+	.video__actions {
+		.video__actions-dislike-btn {
+			color: abstracts.$red;
+			svg {
+				fill: abstracts.$red;
+			}
+		}
+	}
+}
+.main-content--dark {
+	.video {
+		color: abstracts.$mainFontDark;
+		background-color: abstracts.$mainBgDark;
+		&__description {
+			&-text {
+				color: abstracts.$secondFontDark;
+			}
+		}
+		&__author--subscribed {
+			.video__author-subscribe-btn {
+				background-color: abstracts.$offDark;
+			}
+			.video__author-subscribe-btn:hover {
+				// color: abstracts.$onFocusFontDark;
+			}
+		}
+		&__actions {
+			button {
+				background-color: abstracts.$scrollTrackDark;
+				color: abstracts.$mainFontDark;
+				&::before {
+					background-color: abstracts.$hoverBgDark;
+				}
+			}
+			svg {
+				fill: abstracts.$mainFontDark;
+			}
+			&-more {
+				background-color: abstracts.$scrollTrackDark;
+				button::before {
+					background-color: abstracts.$lineColorDark;
+				}
+			}
+		}
+		&__show-comments-btn {
+			background-color: abstracts.$scrollTrackDark;
+			color: abstracts.$mainFontDark;
+			svg {
+				fill: abstracts.$mainFontDark;
+			}
+		}
+	}
+	.video--liked {
+		.video__actions {
+			.video__actions-like-btn {
+				color: abstracts.$secondGreen;
+				svg {
+					fill: abstracts.$secondGreen;
+				}
+			}
+		}
+	}
+	.video--disliked {
+		.video__actions {
+			.video__actions-dislike-btn {
+				color: abstracts.$secondRed;
+				svg {
+					fill: abstracts.$secondRed;
+				}
+			}
+		}
 	}
 }
 
+.main-content--light {
+	.video {
+		color: abstracts.$mainFontLight;
+		background-color: abstracts.$mainBgLight;
+		&__description {
+			&-text {
+				color: abstracts.$secondFontLight;
+			}
+		}
+		&__author--subscribed {
+			.video__author-subscribe-btn {
+				background-color: abstracts.$offDark;
+			}
+			.video__author-subscribe-btn:hover {
+				color: abstracts.$mainFontDark;
+			}
+		}
+		&__actions {
+			button {
+				background: abstracts.$scrollTrackLight;
+				color: abstracts.$mainFontLight;
+				&::before {
+					background-color: abstracts.$hoverBgLight;
+				}
+			}
+			svg {
+				fill: abstracts.$mainFontLight;
+			}
+			&-more {
+				background-color: abstracts.$scrollTrackLight;
+				button::before {
+					background-color: abstracts.$lineColorLight;
+				}
+			}
+		}
+		&__show-comments-btn {
+			background-color: abstracts.$scrollTrackLight;
+			color: abstracts.$mainFontLight;
+			svg {
+				fill: abstracts.$mainFontLight;
+			}
+		}
+	}
+	.video--liked {
+		.video__actions {
+			.video__actions-like-btn {
+				color: abstracts.$green;
+				svg {
+					fill: abstracts.$green;
+				}
+			}
+		}
+	}
+	.video--disliked {
+		.video__actions {
+			.video__actions-dislike-btn {
+				color: abstracts.$red;
+				svg {
+					fill: abstracts.$red;
+				}
+			}
+		}
+	}
+}
 
-.main-content--dark {
-    
+@media (min-width: 576px) {
+	.video {
+		&__recommendations {
+			margin-inline: 2rem;
+		}
+		&__author {
+			margin-block-start: 1.5rem;
+			grid-template-columns: 4rem auto auto;
+			&-avatar {
+				width: 4rem;
+				height: 4rem;
+			}
+			.video__author-subscribe-btn {
+				padding-block: 0.7rem;
+				width: 13rem;
+				font-size: 1.3rem;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.video {
+		&__player {
+			margin-block-start: 2rem;
+			margin-inline: 2rem;
+			position: unset;
+			width: unset;
+			border-radius: abstracts.$cardRadius;
+			iframe {
+				border-radius: abstracts.$cardRadius;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.video {
+		.center-wrapper {
+			position: relative;
+			display: grid;
+			grid-template-columns: 5fr auto;
+			grid-auto-rows: min-content;
+			align-content: start;
+		}
+		&__player {
+			grid-row: 1/2;
+			min-width: 640px;
+		}
+		.video__player,
+		.video__title,
+		.video__author,
+		.video__description,
+		.video__actions,
+		.video__show-comments-btn {
+			grid-column: 1/2;
+		}
+		&__title {
+			grid-row: 2/3;
+		}
+		&__description {
+			grid-row: 3/4;
+		}
+		&__author {
+			grid-row: 4/5;
+		}
+		&__actions {
+			grid-row: 5/6;
+		}
+		&__show-comments-btn {
+			grid-row: 6/7;
+		}
+		&__recommendations {
+			grid-column: 2/3;
+			grid-row: 1/9;
+		}
+	}
 }

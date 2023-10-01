@@ -24,7 +24,7 @@
 		margin-left: auto;
 	}
 	.show-profile {
-		button:nth-of-type(2) {
+		.nav__login-btn {
 			display: none;
 		}
 	}
@@ -103,7 +103,7 @@
 			button:first-of-type {
 				display: none;
 			}
-			button:nth-of-type(2) {
+			.nav__login-btn {
 				padding-inline: 4rem;
 				display: block;
 				height: 4rem;

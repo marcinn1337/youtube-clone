@@ -23,7 +23,7 @@
 		font-size: 1.4rem;
 		font-weight: 500;
 		color: abstracts.$mainFontDark;
-		transition: color 0.15s;
+		transition: color abstracts.$colorTransitionTime;
 	}
 	&__title {
 		margin-top: 0.7rem;

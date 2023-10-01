@@ -1,9 +1,20 @@
-.comments {
-	max-width: 75rem;
-	display: flex;
-	flex-direction: column;
-	align-content: stretch;
-	align-items: stretch;
-	justify-content: stretch;
-	justify-items: stretch;
+.ikdcotobylo {
+	.comments {
+		max-width: 75rem;
+		display: flex;
+		flex-direction: column;
+		align-content: stretch;
+		align-items: stretch;
+		justify-content: stretch;
+		justify-items: stretch;
+	}
+}
+
+.video {
+	.comments {
+		margin-block-start: 2rem;
+		margin-inline: 2rem;
+		grid-column: 1/2;
+		grid-row: 7/8;
+	}
 }

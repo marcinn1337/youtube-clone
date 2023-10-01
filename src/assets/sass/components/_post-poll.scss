@@ -17,7 +17,7 @@
 		text-align: left;
 		word-wrap: break-word;
 		opacity: 0.75;
-		transition: opacity 0.15s;
+		transition: opacity abstracts.$colorTransitionTime;
 		z-index: 0;
 		&:hover {
 			opacity: 1;

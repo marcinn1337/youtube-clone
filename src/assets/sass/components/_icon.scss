@@ -1,3 +1,4 @@
+@use '../abstracts';
 .small-icon {
 	width: 2rem;
 	height: 2rem;
@@ -14,7 +15,7 @@
 }
 
 .error {
-	fill: rgb(145, 23, 42);
+	fill: abstracts.$red;
 }
 
 .success {
