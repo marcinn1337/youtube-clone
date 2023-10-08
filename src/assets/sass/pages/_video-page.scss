@@ -138,26 +138,7 @@
 			border-radius: abstracts.$borderRadius;
 		}
 		&-more {
-			padding-block: 1rem;
-			position: absolute;
-			top: 120%;
-			right: 3%;
-			display: none;
-			flex-direction: column;
-			justify-items: flex-start;
-			border-radius: abstracts.$borderRadius;
-			width: 12rem;
-			z-index: 4;
-			button {
-				justify-content: flex-start;
-				opacity: 1;
-				svg {
-					margin-inline-end: 1.5rem;
-				}
-			}
-		}
-		&-more--visible {
-			display: flex;
+			@include abstracts.actions-list;
 		}
 	}
 	&__show-comments-btn {
@@ -201,9 +182,6 @@
 		&__author--subscribed {
 			.video__author-subscribe-btn {
 				background-color: abstracts.$offDark;
-			}
-			.video__author-subscribe-btn:hover {
-				// color: abstracts.$onFocusFontDark;
 			}
 		}
 		&__actions {

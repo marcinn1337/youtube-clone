@@ -71,8 +71,9 @@ export default function ChannelPage() {
 		// Sorting video not available by this API. Show pop up alert
 		showAlert('error', 0)
 	}
-	const toggleSearchBar = () => {
+	const toggleSearchBar = e => {
 		document.querySelector('.searchbar--channel').classList.toggle('searchbar--visible')
+		e.target.classList.toggle('active')
 	}
 	return (
 		<main className={`main-content main-content--${theme}`}>
@@ -108,9 +109,11 @@ export default function ChannelPage() {
 						<button onClick={switchChannelContent} className='channel__nav-btn'>
 							about
 						</button>
-						<button onClick={toggleSearchBar} className='channel__nav-btn'>
-							search
-						</button>
+						{(activeContent.type.name === 'ChannelVideos' || activeContent.type.name === 'ChannelPlaylists') && (
+							<button onClick={toggleSearchBar} className='channel__nav-btn'>
+								search
+							</button>
+						)}
 					</div>
 					<SearchBar parent='channel' />
 					<section className='channel__content'>{activeContent}</section>

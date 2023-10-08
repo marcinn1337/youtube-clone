@@ -28,7 +28,6 @@ export default function App() {
 						</Routes>
 						<ReportModal />
 						<AlertBox />
-						<div className='shadow'></div>
 					</ReportProvider>
 				</AlertProvider>
 			</CategoryProvider>

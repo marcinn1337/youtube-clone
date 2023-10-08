@@ -15,6 +15,8 @@ export default function Comment({
 	authorIsChannelOwner
 }) {
 	const [comment, setComment] = useState({
+		reactionState: null,
+		isReply: type === 'reply' ? true : false,
 		hasReplies: replyCount > 0 ? true : false,
 		replies: [],
 		hiddenReplies: true
@@ -23,13 +25,20 @@ export default function Comment({
 	const avatarStyles = {
 		backgroundImage: `url('${avatarUrl}')`
 	}
+
 	const reactToComment = e => {
-		e.target.classList.toggle('active')
+		let reactionState = comment.reactionState
 		if (e.target.classList.contains('comment__like-btn')) {
-			e.target.nextElementSibling.classList.remove('active')
-			return
+			reactionState = reactionState === 'liked' ? null : 'liked'
+		} else if (e.target.classList.contains('comment__dislike-btn')) {
+			reactionState = reactionState === 'disliked' ? null : 'disliked'
 		}
-		e.target.previousElementSibling.classList.remove('active')
+		setComment(prevComment => {
+			return {
+				...prevComment,
+				reactionState: reactionState
+			}
+		})
 	}
 	const toggleReplies = () => {
 		setComment(prevComment => {
@@ -64,15 +73,13 @@ export default function Comment({
 			})
 		}
 	}
-	const reportComment = () => {
-		// Open report modal
-		openReportModal('comment')
-	}
 	return (
 		<>
 			<div
-				className={`comment ${authorIsChannelOwner ? 'comment--channel-owner' : ''} ${
-					type === 'reply' ? 'comment--reply' : ''
+				className={`comment${authorIsChannelOwner ? ' comment--channel-owner' : ''}${
+					comment.isReply ? ' comment--reply' : ''
+				}${comment.reactionState === 'liked' ? ' comment--liked' : ''}${
+					comment.reactionState === 'disliked' ? ' comment--disliked' : ''
 				}`}>
 				<div style={avatarStyles} className='comment__author-avatar'></div>
 				<div className='comment__header'>
@@ -80,7 +87,7 @@ export default function Comment({
 						{authorName}
 					</a>
 					<p className='comment__publish-date'>{publishedTime}</p>
-					<button onClick={reportComment} className='icon-btn comment__report-btn'>
+					<button onClick={() => {openReportModal('comment')}} className='icon-btn comment__report-btn'>
 						<Icon type='small' name='report' />
 					</button>
 				</div>

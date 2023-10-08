@@ -5,6 +5,14 @@
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+	.icon-btn {
+		padding: 1rem;
+		margin-block-start: 0.5rem;
+		margin-inline-start: auto;
+		svg {
+			margin-inline-end: 1rem;
+		}
+	}
 	&__user-avatar {
 		width: 3rem;
 		height: 3rem;

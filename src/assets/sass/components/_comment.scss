@@ -7,8 +7,8 @@
 	grid-template-rows: auto;
 	align-items: center;
 	max-width: 70rem;
-	&:hover .comment__report-btn {
-		opacity: 1;
+	.icon-btn {
+		padding-inline: 1rem;
 	}
 	&__author-avatar {
 		background-position: center;
@@ -32,7 +32,10 @@
 			font-size: 1.3rem;
 		}
 		.comment__report-btn {
-			opacity: 0;
+			position: absolute;
+			height: 100%;
+			right: 0;
+			top: 0;
 		}
 	}
 	&__content {
@@ -48,17 +51,23 @@
 		grid-row: 3/4;
 		display: flex;
 		flex-wrap: wrap;
+		.icon-btn {
+			padding-block: 1rem;
+			opacity: 0.7;
+			transition: opacity abstracts.$colorTransitionTime;
+			&:hover {
+				opacity: 1;
+			}
+		}
 		.comment__like-btn,
 		.comment__reply-btn {
 			svg {
 				margin-inline-end: 1rem;
 			}
 		}
-		.active {
-			opacity: 1;
-		}
 	}
 }
+
 .comment--reply {
 	margin-inline-start: 3rem;
 	max-width: 60rem;
@@ -111,6 +120,26 @@
 			}
 		}
 	}
+	.comment--liked {
+		.comment__footer {
+			.comment__like-btn {
+				color: abstracts.$secondGreen;
+				svg {
+					fill: abstracts.$secondGreen;
+				}
+			}
+		}
+	}
+	.comment--disliked {
+		.comment__footer {
+			.comment__dislike-btn {
+				color: abstracts.$secondRed;
+				svg {
+					fill: abstracts.$secondRed;
+				}
+			}
+		}
+	}
 }
 
 .main-content--light {
@@ -133,6 +162,26 @@
 			}
 		}
 	}
+	.comment--liked {
+		.comment__footer {
+			.comment__like-btn {
+				color: abstracts.$green;
+				svg {
+					fill: abstracts.$green;
+				}
+			}
+		}
+	}
+	.comment--disliked {
+		.comment__footer {
+			.comment__dislike-btn {
+				color: abstracts.$red;
+				svg {
+					fill: abstracts.$red;
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 576px) {
@@ -141,6 +190,18 @@
 		&__author-avatar {
 			width: 3rem;
 			height: 3rem;
+		}
+	}
+}
+@media (min-width: 992px) {
+	.comment {
+		&:hover .comment__report-btn {
+			opacity: 1;
+		}
+		&__header {
+			.comment__report-btn {
+				opacity: 0;
+			}
 		}
 	}
 }

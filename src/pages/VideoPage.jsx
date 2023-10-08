@@ -5,11 +5,14 @@ import VideoCard from '../components/VideoCard'
 import videoDetailsData from '../test_data/video-details.json'
 import Comments from '../sections/Comments'
 import { formatText } from '../utils/formatText'
+import ModalBackground from '../components/ModalBackground'
 export default function VideoPage() {
 	const theme = useTheme().darkTheme ? 'dark' : 'light'
 	const [video, setVideo] = useState(videoDetailsData)
-	const [hiddenComments, setHiddenComments] = useState(true)
-	const [hiddenRecommendations, setHiddenRecommendations] = useState(false)
+	const [visibleComponents, setVisibleComponents] = useState({
+		actionsList: false,
+		comments: false
+	})
 	const avatarUrlStyle = {
 		backgroundImage: `url(${video.channelThumbnail[0].url})`
 	}
@@ -45,13 +48,20 @@ export default function VideoPage() {
 		video.classList.toggle('video--disliked')
 	}
 	const toggleMoreActionsMenu = () => {
-		document.querySelector('.video__actions-more').classList.toggle('video__actions-more--visible')
+		setVisibleComponents(prevVisibleComponents => {
+			return {
+				...prevVisibleComponents,
+				actionsList: !prevVisibleComponents.actionsList
+			}
+		})
 	}
 	const toggleCommentsList = () => {
-		setHiddenComments(prevHiddenComments => !prevHiddenComments)
-	}
-	const toggleRecommendations = () => {
-		setHiddenRecommendations(prevHiddenRecommendations => !prevHiddenRecommendations)
+		setVisibleComponents(prevVisibleComponents => {
+			return {
+				...prevVisibleComponents,
+				comments: !prevVisibleComponents.comments
+			}
+		})
 	}
 	const recommendedVideosElements = videoDetailsData.relatedVideos.data.map(video => (
 		<VideoCard
@@ -117,27 +127,31 @@ export default function VideoPage() {
 						<button onClick={toggleMoreActionsMenu} className='video__actions-more-btn'>
 							<Icon type='small' name='more-vertical' />
 						</button>
-						<div className='video__actions-more'>
-							<button className='video__actions-save-btn'>
-								<Icon type='small' name='add-to-playlist' />
-								Save
-							</button>
-							<button className='video__actions-share-btn'>
-								<Icon type='small' name='share' />
-								Share
-							</button>
-							<button className='video__actions-report-btn'>
-								<Icon type='small' name='report' />
-								Report
-							</button>
-						</div>
+						{visibleComponents.actionsList && (
+							<>
+								<ModalBackground closeModal={toggleMoreActionsMenu} />
+								<div className='video__actions-more'>
+									<button className='video__actions-save-btn'>
+										<Icon type='small' name='add-to-playlist' />
+										Save
+									</button>
+									<button className='video__actions-share-btn'>
+										<Icon type='small' name='share' />
+										Share
+									</button>
+									<button className='video__actions-report-btn'>
+										<Icon type='small' name='report' />
+										Report
+									</button>
+								</div>
+							</>
+						)}
 					</div>
 					<button onClick={toggleCommentsList} className='video__show-comments-btn'>
 						Comments {parseInt(video.commentCount).toLocaleString('en-US', { notation: 'compact' })}{' '}
-						<Icon type='small' name={hiddenComments ? 'chevron-down' : 'chevron-up'} />
+						<Icon type='small' name={visibleComponents.comments ? 'chevron-up' : 'chevron-down'} />
 					</button>
-					{!hiddenComments && <Comments />}
-
+					{visibleComponents.comments && <Comments />}
 					<div className='video__recommendations'>{recommendedVideosElements}</div>
 				</div>
 			</div>

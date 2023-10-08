@@ -49,26 +49,29 @@
 			position: relative;
 			display: flex;
 			flex-wrap: wrap;
-		}
-		&__title {
-			width: calc(100% - 3rem);
-			max-height: 4rem;
-			font-weight: 500;
-			overflow: hidden;
-		}
-		&__details {
-			margin-top: 1rem;
-			font-size: 1.3rem;
-		}
-		&__options-btn {
-			position: absolute;
-			top: 0;
-			right: 0;
-			width: 2rem;
-			height: 2rem;
-			svg {
+			.video-card__title {
+				width: calc(100% - 3rem);
+				max-height: 4rem;
+				font-weight: 500;
+				overflow: hidden;
+			}
+			.video-card__details {
+				margin-top: 1rem;
+				font-size: 1.3rem;
+			}
+			.video-card__actions-btn {
+				position: absolute;
+				top: 0;
+				right: 0;
 				width: 2rem;
 				height: 2rem;
+				svg {
+					width: 2rem;
+					height: 2rem;
+				}
+			}
+			.video-card__actions {
+				@include abstracts.actions-list;
 			}
 		}
 	}
@@ -81,15 +84,29 @@
 			&__thumbnail {
 				background-color: abstracts.$hoverBgDark;
 			}
-			&__title {
-				color: abstracts.$mainFontDark;
-			}
-			&__details {
-				color: abstracts.$secondFontDark;
-			}
-			&__options-btn {
-				svg {
-					fill: abstracts.$mainFontDark;
+			&__info {
+				.video-card__title {
+					color: abstracts.$mainFontDark;
+				}
+				.video-card__details {
+					color: abstracts.$secondFontDark;
+				}
+				.video-card__actions-btn {
+					svg {
+						fill: abstracts.$mainFontDark;
+					}
+				}
+				.video-card__actions {
+					background-color: abstracts.$scrollTrackDark;
+					button {
+						color: abstracts.$mainFontDark;
+						svg {
+							fill: abstracts.$mainFontDark;
+						}
+					}
+					button::before {
+						background-color: abstracts.$lineColorDark;
+					}
 				}
 			}
 		}
@@ -101,15 +118,17 @@
 			&__thumbnail {
 				background-color: abstracts.$hoverBgLight;
 			}
-			&__title {
-				color: abstracts.$mainFontLight;
-			}
-			&__details {
-				color: abstracts.$secondFontLight;
-			}
-			&__options-btn {
-				svg {
-					fill: abstracts.$mainFontLight;
+			&__info {
+				.video-card__title {
+					color: abstracts.$mainFontLight;
+				}
+				.video-card__details {
+					color: abstracts.$secondFontLight;
+				}
+				.video-card__actions-btn {
+					svg {
+						fill: abstracts.$mainFontLight;
+					}
 				}
 			}
 		}

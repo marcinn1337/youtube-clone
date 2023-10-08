@@ -4,7 +4,8 @@ import { useTheme } from '../context/ThemeContext'
 import { useReport } from '../context/ReportContext'
 import reportOptions from '../test_data/report-options.json'
 import ReportOption from '../components/ReportOption'
-// dodac klase do body zeby nie dalo sie scrollowac
+import ModalBackground from '../components/ModalBackground'
+
 export default function ReportModal() {
 	const [report, setReport] = useState({
 		selectedOptions: []
@@ -72,17 +73,20 @@ export default function ReportModal() {
 	// Don't render modal until user want to open it by clicking report btn
 	if (useReport().reportModal.isHidden) return null
 	return (
-		<div className={`report-modal report-modal--${theme}`}>
-			<h2 className='report-modal__header'>Report {referenceType}</h2>
-			<div className='report-modal__form'>{checkboxElements}</div>
-			<div className='report-modal__footer'>
-				<button onClick={closeReportModal} className='report-modal__cancel-btn'>
-					cancel
-				</button>
-				<button onClick={sendReport} className='report-modal__report-btn cta-btn'>
-					report
-				</button>
+		<>
+			<ModalBackground closeModal={closeReportModal} type='shadow' />
+			<div className={`report-modal report-modal--${theme}`}>
+				<h2 className='report-modal__header'>Report {referenceType}</h2>
+				<div className='report-modal__form'>{checkboxElements}</div>
+				<div className='report-modal__footer'>
+					<button onClick={closeReportModal} className='report-modal__cancel-btn'>
+						cancel
+					</button>
+					<button onClick={sendReport} className='report-modal__report-btn cta-btn'>
+						report
+					</button>
+				</div>
 			</div>
-		</div>
+		</>
 	)
 }

@@ -1,0 +1,38 @@
+@use '../variables';
+@mixin actions-list {
+	// Colors for actions-list are set in parent element
+	padding-block: 1rem;
+	position: absolute;
+	top: 3.5rem;
+	right: 6%;
+	display: flex;
+	flex-wrap: wrap;
+	border-radius: variables.$borderRadius;
+	width: 15rem;
+	z-index: 4;
+	button {
+		position: relative;
+		padding: 1rem;
+		display: flex;
+		width: 100%;
+		align-items: center;
+		justify-content: flex-start;
+		z-index: 0;
+		svg {
+			margin-inline-end: 1rem;
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			opacity: 0;
+		}
+		&:hover::before {
+			opacity: 1;
+		}
+	}
+}

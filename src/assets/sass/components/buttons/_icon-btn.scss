@@ -1,4 +1,5 @@
 @use '../../abstracts';
+// Default styles for icon-btn. Padding and positioning are defined in parent element .scss file. 
 .icon-btn {
 	position: relative;
 	display: flex;
@@ -24,51 +25,7 @@
 		opacity: 1;
 	}
 }
-.nav {
-	.icon-btn {
-		padding: 1.8rem;
-		svg {
-			width: 2.5rem;
-			height: 2.5rem;
-		}
-	}
-}
 
-.comment {
-	.icon-btn {
-		padding-inline: 1rem;
-	}
-	&__footer {
-		.icon-btn {
-			padding-block: 1rem;
-		}
-	}
-	&__header {
-		.icon-btn {
-			height: 100%;
-			position: absolute;
-			top: 0;
-			right: 0;
-		}
-	}
-}
-// Icon Btn styles in <CommentInput /> component
-.comment-input {
-	.icon-btn {
-		padding: 1rem;
-		margin-block-start: 0.5rem;
-		margin-inline-start: auto;
-		svg {
-			margin-inline-end: 1rem;
-		}
-	}
-}
-// Icon Btn style in channel searchbar
-.channel {
-	.searchbar-btn {
-		padding: 1rem 2rem;
-	}
-}
 // THEMES
 .nav--dark,
 .main-content--dark {
