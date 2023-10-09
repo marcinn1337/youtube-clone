@@ -33,7 +33,7 @@ export default function ChannelVideoCard({ videoTitle, thumbnailUrl, publishDate
 				</button>
 				{actionsListIsVisible && (
 					<div className='video-card__actions'>
-						<ModalBackground closeModal={toggleActionsList} />
+						<ModalBackground closeModal={toggleActionsList} type='transparent' />
 						<button>
 							<Icon type='small' name='clock' />
 							Watch later

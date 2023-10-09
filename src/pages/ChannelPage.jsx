@@ -18,12 +18,24 @@ export default function ChannelPage() {
 	const theme = useTheme().darkTheme ? 'dark' : 'light'
 	const showAlert = useAlert().showAlert
 	const [activeContent, setActiveContent] = useState(<ChannelVideos />)
+	const getChannelBanner = () => {
+		// Pick channel banner url depending on screen size
+		let url = channelData.mobileBanner[1].url
+		if (window.innerWidth > 1700) {
+			url = channelData.banner[5].url
+		} else if (window.innerWidth > 960) {
+			url = channelData.banner[2].url
+		} else if (window.innerWidth > 640) {
+			url = channelData.mobileBanner[2].url
+		}
+		return url
+	}
 	const styles = {
 		avatar: {
 			backgroundImage: `url(${channelData.avatar[1].url})`
 		},
 		banner: {
-			backgroundImage: `url(${channelData.banner[1].url})`
+			backgroundImage: `url(${getChannelBanner()})`
 		}
 	}
 	const subscribeChannel = () => {
