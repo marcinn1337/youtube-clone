@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { useAlert } from '../context/AlertContext'
 import { useTheme } from '../context/ThemeContext'
 import { useReport } from '../context/ReportContext'
-import reportOptions from '../test_data/report-options.json'
+import reportOptions from '../data/report-options.json'
 import ReportOption from '../components/ReportOption'
 import ModalBackground from '../components/ModalBackground'
 

@@ -12,32 +12,13 @@
 	border-radius: 50%;
 	background-color: abstracts.$green;
 	fill: abstracts.$mainFontDark;
-	z-index: 0;
+	z-index: 15;
 	svg {
 		width: 0.8rem;
 		height: 0.8rem;
 		pointer-events: none;
 	}
-	&::after {
-		content: 'Channel Verified';
-		padding: 1rem 2rem;
-		position: absolute;
-		top: -5rem;
-		left: 50%;
-		transform: translateX(-50%);
-		width: 200px;
-		background-color: abstracts.$hoverBgDark;
-		border: 1px solid abstracts.$secondFontDark;
-		border-radius: abstracts.$borderRadius;
-		color: abstracts.$mainFontDark;
-		text-align: center;
-		cursor: pointer;
-		transition: opacity abstracts.$colorTransitionTime;
-		opacity: 0;
-		pointer-events: none;
-		z-index: 100;
-	}
-	&:hover::after {
+	&:hover .tooltip {
 		opacity: 1;
 	}
 }

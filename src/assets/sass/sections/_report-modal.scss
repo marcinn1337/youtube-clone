@@ -34,7 +34,6 @@
 				display: grid;
 				place-content: center;
 				/* For iOS < 15 to remove gradient background */
-				// background-color: abstracts.$mainFontDark;
 				width: 2rem;
 				height: 2rem;
 				border-radius: abstracts.$borderRadius;
@@ -62,17 +61,7 @@
 				grid-template-rows: 1/2;
 			}
 			.tooltip {
-				padding: 1rem;
-				position: absolute;
-				top: 3rem;
 				right: 0;
-				width: 100%;
-				border-radius: abstracts.$borderRadius;
-				font-weight: 500;
-				font-size: 1.3rem;
-				opacity: 0;
-				pointer-events: none;
-				z-index: 105;
 			}
 			&-help-btn:hover .tooltip {
 				opacity: 1;
@@ -138,11 +127,6 @@
 					fill: abstracts.$offDark;
 				}
 			}
-			.tooltip {
-				border: 1px solid abstracts.$lineColorDark;
-				background-color: abstracts.$mainBgDark;
-				color: abstracts.$mainFontDark;
-			}
 		}
 	}
 	.report-modal__footer {
@@ -183,11 +167,7 @@
 					fill: abstracts.$offLight;
 				}
 			}
-			.tooltip {
-				border: 1px solid abstracts.$lineColorLight;
-				background-color: abstracts.$mainBgLight;
-				color: abstracts.$mainFontLight;
-			}
+
 		}
 	}
 	.report-modal__footer {

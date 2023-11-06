@@ -1,21 +1,20 @@
-import { getIcon } from '../utils/getIcon'
 import { useCategory } from '../context/CategoryContext'
 import { toggleSidebar } from '../utils/toggleSidebar'
+import Icon from './Icon'
 
-export default function SidebarItem({ itemName }) {
+export default function SidebarItem({ itemName, type }) {
 	const updateCategory = useCategory().updateCategory
+	const isActive = useCategory().selectedCategory === itemName ? true : false
 
 	return (
 		<button
-			className='sidebar__item'
+			className={`sidebar__item ${isActive ? 'sidebar__item--active' : ''}`}
 			onClick={() => {
-				updateCategory(itemName)
+				updateCategory({ name: itemName, type: type })
 				toggleSidebar()
 			}}>
-			<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 -960 960 960'>
-				<path d={getIcon(itemName)} />
-			</svg>
-			<span className='sidebar__item-name'>{itemName}</span>
+			<Icon type='regular' name={itemName} />
+			<span className='sidebar__item-name'>{itemName.charAt(0).toUpperCase() + itemName.slice(1)}</span>
 		</button>
 	)
 }

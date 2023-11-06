@@ -1,5 +1,5 @@
 import PlaylistCard from '../components/PlaylistCard'
-import playlistData from '../test_data/channel-playlists.json'
+import playlistData from '../data/channel-playlists.json'
 export default function ChannelPlaylists() {
 	const playlistCards = playlistData.data.map(playlist => (
 		<PlaylistCard

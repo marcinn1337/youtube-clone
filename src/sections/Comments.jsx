@@ -1,5 +1,5 @@
 import Comment from '../components/Comment'
-import postComments from '../test_data/post-comments.json'
+import postComments from '../data/post-comments.json'
 import CommentInput from '../components/CommentInput'
 export default function Comments() {
 	const commentsElements = postComments.data.map(comment => (

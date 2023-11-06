@@ -1,8 +1,9 @@
 @use '../abstracts';
 .home-page {
 	&__title {
-		margin-bottom: 2rem;
+		margin: 2rem;
 		font-weight: 400;
+		text-transform: capitalize;
 	}
 	&__cards {
 		display: grid;
@@ -21,7 +22,13 @@
 		color: abstracts.$mainFontLight;
 	}
 }
-@media (min-width: 576px) {
+@media (min-width: 570px) {
+	.home-page {
+		padding-inline: 2rem;
+		&__title {
+			margin: 2rem 0;
+		}
+	}
 	.home-page__cards {
 		grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
 	}

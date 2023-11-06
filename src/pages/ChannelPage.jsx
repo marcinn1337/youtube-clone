@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 import { useTheme } from '../context/ThemeContext'
 import { useAlert } from '../context/AlertContext'
-
+import { formatNumberToLocalString } from '../utils/formatNumberToLocalString'
 import VerifiedBadge from '../components/VerifiedBadge'
 
 import ChannelVideos from '../sections/ChannelVideos'
@@ -12,14 +12,14 @@ import ChannelAbout from '../sections/ChannelAbout'
 import ChannelFeatured from '../sections/ChannelFeatured'
 import SearchBar from '../components/SearchBar'
 
-import channelData from '../test_data/channel-info.json'
+import channelData from '../data/channel-info.json'
 
 export default function ChannelPage() {
 	const theme = useTheme().darkTheme ? 'dark' : 'light'
 	const showAlert = useAlert().showAlert
 	const [activeContent, setActiveContent] = useState(<ChannelVideos />)
 	const getChannelBanner = () => {
-		// Pick channel banner url depending on screen size
+		// Pick channel banner with the appropriate resolution depending on the screen size
 		let url = channelData.mobileBanner[1].url
 		if (window.innerWidth > 1700) {
 			url = channelData.banner[5].url
@@ -99,7 +99,7 @@ export default function ChannelPage() {
 						</h2>
 						<p className='channel__details'>
 							{channelData.subscriberCountText} subscribers - {channelData.videosCountText} videos -{' '}
-							{parseInt(channelData.viewCount).toLocaleString('en-US', { notation: 'compact' })} - views
+							{formatNumberToLocalString(channelData.viewCount)} - views
 						</p>
 						<button onClick={subscribeChannel} className='channel__subscribe-btn cta-btn'></button>
 					</div>

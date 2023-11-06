@@ -1,21 +1,46 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useTheme } from '../context/ThemeContext'
+import { useLocation, useParams } from 'react-router-dom'
+import Comments from '../sections/Comments'
 import Icon from '../components/Icon'
 import VideoCard from '../components/VideoCard'
-import videoDetailsData from '../test_data/video-details.json'
-import Comments from '../sections/Comments'
-import { formatText } from '../utils/formatText'
 import ModalBackground from '../components/ModalBackground'
+
+import { formatText } from '../utils/formatText'
+import { formatNumberToLocalString } from '../utils/formatNumberToLocalString'
+import { fetchVideo } from '../utils/fetchVideo'
+
 export default function VideoPage() {
 	const theme = useTheme().darkTheme ? 'dark' : 'light'
-	const [video, setVideo] = useState(videoDetailsData)
+	const [video, setVideo] = useState({
+		description: '',
+		id: '',
+		title: '',
+		channelTitle: '',
+		viewCount: 0,
+		subscriberCountText: '',
+		commentCount: 0,
+		channelThumbnail: [{ url: '' }],
+		relatedVideos: { data: [] }
+	})
 	const [visibleComponents, setVisibleComponents] = useState({
 		actionsList: false,
 		comments: false
 	})
-	const avatarUrlStyle = {
-		backgroundImage: `url(${video.channelThumbnail[0].url})`
-	}
+	const location = useLocation()
+	let { videoId } = useParams()
+	const { avatarUrlStyle } = location.state
+	useEffect(() => {
+		// Fetching data...
+		const params = {
+			id: videoId,
+			extend: '1'
+		}
+		fetchVideo(params).then(data => {
+			setVideo(data)
+		})
+	}, [videoId])
+
 	const showDescription = e => {
 		// Show whole description by adding --visible class modifier
 		document.querySelector('.video__description-text').classList.toggle('video__description-text--visible')
@@ -63,15 +88,19 @@ export default function VideoPage() {
 			}
 		})
 	}
-	const recommendedVideosElements = videoDetailsData.relatedVideos.data.map(video => (
+	const recommendedVideoCards = video.relatedVideos.data.map(video => (
 		<VideoCard
 			key={video.videoId}
+			videoId={video.videoId}
+			thumbnailUrl={video.thumbnail[video.thumbnail.length - 1].url}
 			videoTitle={video.title}
-			channelName={video.channelTitle}
-			thumbnailUrl={video.thumbnail[1].url}
-			publishDate={video.publishedTimeText}
-			views={parseInt(video.viewCount).toLocaleString('en-US', { notation: 'compact' })}
-			avatarUrl={video.channelThumbnail[0].url}
+			authorName={video.channelTitle}
+			authorId={video.channelId}
+			authorIsVerified={null}
+			authorAvatarUrl={video.channelThumbnail[0].url}
+			videoPublishDate={video.publishedTimeText}
+			viewCount={parseInt(video.viewCount)}
+			videoLength={video.lengthText}
 		/>
 	))
 	return (
@@ -85,12 +114,9 @@ export default function VideoPage() {
 							allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
 							allowFullScreen={true}></iframe>
 					</div>
-
 					<p className='video__title'>{video.title}</p>
 					<div className='video__description'>
-						<span className='video__description-views'>
-							{parseInt(video.viewCount).toLocaleString('en-US', { notation: 'compact' })} Views
-						</span>
+						<span className='video__description-views'>{formatNumberToLocalString(video.viewCount)} Views</span>
 						<span className='video__description-publish-date'>
 							{new Date(video.uploadDate).toLocaleDateString('en-us', {
 								year: 'numeric',
@@ -109,9 +135,7 @@ export default function VideoPage() {
 					<div className='video__author'>
 						<a style={avatarUrlStyle} className='video__author-avatar'></a>
 						<a className='video__author-name'>{video.channelTitle}</a>
-						<p className='video__author-subscribers'>
-							{parseInt(video.subscriberCount).toLocaleString('en-US', { notation: 'compact' })} Subscribers
-						</p>
+						<p className='video__author-subscribers'>{video.subscriberCountText}</p>
 						<button onClick={subscribeChannel} className='video__author-subscribe-btn cta-btn'>
 							Subscribe
 						</button>
@@ -119,7 +143,7 @@ export default function VideoPage() {
 					<div className='video__actions'>
 						<button onClick={reactToVideo} className='video__actions-like-btn'>
 							<Icon type='small' name='thumb-up' />
-							{parseInt(video.likeCount).toLocaleString('en-US', { notation: 'compact' })}
+							{formatNumberToLocalString(video.likeCount)}
 						</button>
 						<button onClick={reactToVideo} className='video__actions-dislike-btn'>
 							<Icon type='small' name='thumb-down' />
@@ -148,11 +172,11 @@ export default function VideoPage() {
 						)}
 					</div>
 					<button onClick={toggleCommentsList} className='video__show-comments-btn'>
-						Comments {parseInt(video.commentCount).toLocaleString('en-US', { notation: 'compact' })}{' '}
+						Comments {formatNumberToLocalString(video.commentCount)}{' '}
 						<Icon type='small' name={visibleComponents.comments ? 'chevron-up' : 'chevron-down'} />
 					</button>
 					{visibleComponents.comments && <Comments />}
-					<div className='video__recommendations'>{recommendedVideosElements}</div>
+					<div className='video__recommendations'>{recommendedVideoCards}</div>
 				</div>
 			</div>
 		</main>

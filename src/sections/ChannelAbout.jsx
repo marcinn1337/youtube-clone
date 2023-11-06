@@ -1,5 +1,6 @@
-import channelInfo from '../test_data/channel-info.json'
+import channelInfo from '../data/channel-info.json'
 import ChannelLink from '../components/ChannelLink'
+import { formatNumberToLocalString } from '../utils/formatNumberToLocalString'
 import { useState } from 'react'
 export default function ChannelAbout() {
 	const [channel, setChannel] = useState({
@@ -32,9 +33,9 @@ export default function ChannelAbout() {
 						day: '2-digit'
 					})}
 				</p>
-				<p>{parseInt(channel.viewCount).toLocaleString('en-us', { notation: 'standard' })} views</p>
-				<p>{parseInt(channel.subscriberCount).toLocaleString('en-us', { notation: 'standard' })} subscribers</p>
-				<p>{parseInt(channel.videosCount).toLocaleString('en-us', { notation: 'standard' })} videos</p>
+				<p>{formatNumberToLocalString(channel.viewCount)} views</p>
+				<p>{formatNumberToLocalString(channel.subscriberCount)} subscribers</p>
+				<p>{formatNumberToLocalString(channel.videosCount)} videos</p>
 			</section>
 			<section className='channel-about__links'>
 				<h4>Links</h4>

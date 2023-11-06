@@ -1,7 +1,7 @@
 import { useTheme } from '../context/ThemeContext'
 import { toggleSidebar } from '../utils/toggleSidebar'
-import SearchBar from './SearchBar'
-import Icon from './Icon'
+import SearchBar from '../components/SearchBar'
+import Icon from '../components/Icon'
 
 export default function Navbar() {
 	const theme = useTheme().darkTheme ? 'dark' : 'light'

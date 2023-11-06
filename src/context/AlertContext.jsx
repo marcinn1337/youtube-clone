@@ -3,15 +3,6 @@ import { useState, createContext, useContext, useRef } from 'react'
 const AlertContext = createContext()
 export const useAlert = () => useContext(AlertContext)
 
-const messages = {
-	error: {
-		0: 'Option unavailable due to lack of API capabilities :(',
-		1: 'Please select at least one option'
-	},
-	success: {
-		0: 'Your report has been sent. Thank you !'
-	}
-}
 
 export function AlertProvider({ children }) {
 	const [alert, setAlert] = useState({

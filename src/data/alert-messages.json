@@ -1,0 +1,13 @@
+{
+	"error:": {
+		"0": "Option unavailable due to lack of API capabilities :(",
+		"1": "Please select at least one option",
+        "2": "Option currently unavailable"
+	},
+	"success": {
+		"0": "Your report has been sent. Thank you !",
+        "1": "Theme has been changed.",
+        "2": "Video removed from you feed",
+        "3": "Saved to watch later"
+	}
+}

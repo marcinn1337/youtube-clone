@@ -1,51 +1,150 @@
 @use '../abstracts';
-
-.home-page__cards,
-.search-results,
-.video__recommendations {
-	.video-card {
-		margin-top: 2rem;
-		display: flex;
-		flex-direction: column;
-		max-width: 1000px;
-		&__thumbnail {
-			aspect-ratio: 16/9;
-			background-size: cover;
-			background-position: center;
+// Default styles for all cards no matter where they are located
+.video-card {
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: column;
+	&__thumbnail {
+		position: relative;
+		aspect-ratio: 16/9;
+		background-size: cover;
+		background-position: center;
+		.video-card__duration {
+			margin: 0 1rem 1rem 0;
+			padding: 0.2rem 0.5rem;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			background-color: rgba(0, 0, 0, 0.8);
+			border-radius: abstracts.$borderRadius;
+			color: abstracts.$mainFontDark;
+			font-size: 1.3rem;
 		}
-		&__info {
-			margin-top: 1rem;
-			padding-inline: 1rem;
+		.thumbnail-btn {
+			padding: 0.5rem 0.5rem;
+			position: absolute;
+			top: 0;
 			display: flex;
-			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			background-color: rgba(0, 0, 0, 0.8);
+			border-radius: abstracts.$borderRadius;
+			opacity: 0;
+			svg {
+				width: 2rem;
+				height: 2rem;
+				fill: abstracts.$mainFontDark;
+			}
 		}
-		&__channel-avatar {
-			grid-column: 1/2;
-			grid-row: 1/2;
-			width: 4rem;
-			height: 4rem;
-			border-radius: 50%;
-			background-size: contain;
-			background-position: center;
+		&:hover .thumbnail-btn {
+			opacity: 1;
 		}
-		&__title {
-			margin-left: 1rem;
-			width: calc(100% - 5rem);
+		.video-card__watch-later-btn {
+			margin: 1rem 0 0 1rem;
+			left: 0;
+			.tooltip {
+				top: 4rem;
+			}
+			&:hover .tooltip {
+				opacity: 1;
+			}
+		}
+		.video-card__actions-btn {
+			margin: 1rem 1rem 0 0;
+			right: 0;
+		}
+		.video-card__actions {
+			@include abstracts.actions-list;
+		}
+	}
+	&__info {
+		margin-top: 1rem;
+		padding-inline: 1rem;
+		.video-card__title {
 			max-height: 4rem;
 			font-weight: 500;
 			overflow: hidden;
 		}
-		&__channel-name {
-			margin-top: 1rem;
-			position: relative;
-			font-size: 1.4rem;
-		}
-		&__details {
-			margin-top: 1rem;
-			padding-left: 3rem;
-			margin-left: auto;
+		.video-card__details {
+			margin-top: 0.5rem;
 			font-size: 1.3rem;
+			text-align: right;
 		}
+	}
+}
+.video-card:first-of-type {
+	.video-card__watch-later-btn {
+		.tooltip {
+			left: 1rem;
+		}
+	}
+}
+
+// Styles for video card located on channel page
+.channel {
+	.video-card {
+		&__info {
+			display: flex;
+			flex-wrap: wrap;
+			.video-card__title {
+			}
+			.video-card__author-avatar {
+				display: none;
+			}
+			.video-card__author-name {
+				display: none;
+			}
+		}
+	}
+}
+// Styles for video card located on home page, search results page and recommendations on video page
+.home-page,
+.search-results,
+.video__recommendations {
+	.video-card {
+		&__info {
+			display: grid;
+			grid-template-columns: 4rem auto;
+			grid-template-rows: 4rem auto auto;
+			.video-card__author-avatar {
+				grid-column: 1/2;
+				grid-row: 1/2;
+				width: 4rem;
+				height: 4rem;
+				background-color: gray;
+				background-size: cover;
+				background-position: center;
+				border-radius: 50%;
+			}
+			.video-card__title {
+				margin-inline-start: 1rem;
+				grid-column: 2/3;
+				grid-row: 1/2;
+			}
+			.video-card__author-name {
+				margin-block-start: 1rem;
+				grid-column: 1/3;
+				grid-row: 2/3;
+				font-size: 1.3rem;
+				font-weight: 500;
+			}
+			.video-card__details {
+				grid-column: 1/3;
+				grid-row: 3/4;
+			}
+		}
+	}
+}
+
+// Video card on devices with touchscreen will have visible buttons on thumbnail. On desktop these buttons will be visible after hover (set as default)
+.video-card--onmobile {
+	.video-card__thumbnail {
+		.thumbnail-btn {
+			opacity: 1;
+		}
+	}
+	.tooltip {
+		display: none;
 	}
 }
 
@@ -53,17 +152,34 @@
 .main-content--dark {
 	.home-page__cards,
 	.search-results,
-	.video__recommendations {
+	.video__recommendations,
+	.channel {
 		.video-card {
 			&__thumbnail {
 				background-color: abstracts.$hoverBgDark;
+				.video-card__actions {
+					background-color: abstracts.$subBgDark;
+					button {
+						background-color: abstracts.$subBgDark;
+						color: abstracts.$mainFontDark;
+						svg {
+							fill: abstracts.$mainFontDark;
+						}
+						&::before {
+							background-color: abstracts.$hoverBgDark;
+						}
+					}
+				}
 			}
 			&__title {
 				color: abstracts.$mainFontDark;
 			}
-			&__channel-name,
-			&__details {
+			&__details,
+			&__author-name {
 				color: abstracts.$secondFontDark;
+			}
+			.video-card__author-name:hover {
+				color: abstracts.$mainFontDark;
 			}
 		}
 	}
@@ -78,59 +194,138 @@
 }
 .main-content--light {
 	.home-page__cards,
-	.video__recommendations {
+	.video__recommendations,
+	.channel {
 		.video-card {
 			&__thumbnail {
 				background-color: abstracts.$hoverBgLight;
+				.video-card__actions {
+					background-color: abstracts.$subBgLight;
+					button {
+						background-color: abstracts.$subBgLight;
+						color: abstracts.$mainFontLight;
+						svg {
+							fill: abstracts.$mainFontLight;
+						}
+						&::before {
+							background-color: abstracts.$hoverBgLight;
+						}
+					}
+				}
 			}
-			&__title {
-				color: abstracts.$mainFontLight;
-			}
-			&__channel-name,
+			&__title,
+			&__author-name,
 			&__details {
 				color: abstracts.$secondFontLight;
+			}
+			.video-card__author-name:hover {
+				color: #000;
 			}
 		}
 	}
 }
 
-@media (min-width: 576px) {
-	.search-results,
-	.video__recommendations {
+@media (min-width: 570px) {
+	.home-page {
 		.video-card {
-			flex-direction: row;
 			&__thumbnail {
-				min-width: 275px;
 				border-radius: abstracts.$cardRadius;
 			}
 			&__info {
+				padding-inline: unset;
+			}
+		}
+	}
+	.channel {
+		.video-card {
+			&__thumbnail {
+				border-radius: abstracts.$cardRadius;
+			}
+			&__info {
+				padding-inline: unset;
+			}
+		}
+	}
+	.search-results,
+	.video__recommendations {
+		.video-card {
+			.video-card__info {
 				margin-block-start: unset;
-				padding-inline: 1rem 0;
+				padding-inline: unset;
+				margin-inline-start: 2rem;
 				display: flex;
 				align-content: flex-start;
 				align-items: center;
 				flex-wrap: wrap;
 				flex-direction: row;
 			}
-			&__channel-avatar {
+			.video-card__author-avatar {
 				margin-block-start: 1rem;
 				order: 3;
 				width: 2.4rem;
 				height: 2.4rem;
 			}
-			&__title {
-				margin-left: unset;
+			.video-card__title {
+				margin-inline-start: unset;
 				order: 1;
 				width: 100%;
 			}
-			&__channel-name {
+			.video-card__author-name {
 				margin-left: 1rem;
 				margin-top: 1rem;
 				order: 4;
 			}
-			&__details {
-				padding-left: unset;
-				margin-left: unset;
+			.video-card__details {
+				margin-top: 0.3rem;
+				order: 2;
+				width: 100%;
+				text-align: left;
+			}
+		}
+	}
+	.search-results {
+		.video-card {
+			flex-direction: row;
+			.video-card__thumbnail {
+				min-width: 275px;
+				border-radius: abstracts.$cardRadius;
+			}
+		}
+	}
+	.video__recommendations {
+		.video-card {
+			flex-direction: row;
+			.video-card__thumbnail {
+				min-width: 20rem;
+				border-radius: abstracts.$borderRadius;
+			}
+			.video-card__info {
+				margin-block-start: unset;
+				padding-inline: unset;
+				margin-inline-start: 2rem;
+				display: flex;
+				align-content: flex-start;
+				align-items: center;
+				flex-wrap: wrap;
+				flex-direction: row;
+			}
+			.video-card__author-avatar {
+				margin-block-start: 1rem;
+				order: 3;
+				width: 2.4rem;
+				height: 2.4rem;
+			}
+			.video-card__title {
+				margin-inline-start: unset;
+				order: 1;
+				width: 100%;
+			}
+			.video-card__author-name {
+				margin-left: 1rem;
+				margin-top: 1rem;
+				order: 4;
+			}
+			.video-card__details {
 				margin-top: 0.3rem;
 				order: 2;
 				width: 100%;
@@ -139,18 +334,26 @@
 		}
 	}
 }
-
+@media (min-width: 768px) {
+	.video__recommendations {
+		.video-card {
+			.video-card__thumbnail {
+				min-width: 275px;
+			}
+		}
+	}
+}
 @media (min-width: 992px) {
 	.video__recommendations {
 		.video-card {
 			flex-direction: column;
 			max-width: 330px;
-			&__thumbnail {
+			.video-card__thumbnail {
 				min-width: unset;
 			}
-			&__info {
+			.video-card__info {
 				margin-block-start: 1rem;
-				padding-inline: 0;
+				margin-inline-start: unset;
 			}
 		}
 	}

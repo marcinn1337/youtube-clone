@@ -16,7 +16,7 @@ export default function ReportOption({ id, optionValue, toolTipText, selectCheck
 			{toolTipText && (
 				<button className='report-modal__option-help-btn'>
 					<Icon type='small' name='help-square' />
-					<p className='tooltip'>{toolTipText}</p>
+					<span className='tooltip'>{toolTipText}</span>
 				</button>
 			)}
 		</div>

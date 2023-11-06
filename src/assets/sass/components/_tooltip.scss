@@ -1,0 +1,35 @@
+@use '../abstracts';
+.tooltip {
+	padding: 1rem;
+	position: absolute;
+	top: 3rem;
+	min-width: 15rem;
+	width: 100%;
+	border-radius: abstracts.$borderRadius;
+	font-weight: 500;
+	font-size: 1.3rem;
+	text-align: center;
+	opacity: 0;
+	pointer-events: none;
+	z-index: 105;
+}
+
+// THEMES
+
+.report-modal--dark,
+.main-content--dark {
+	.tooltip {
+		border: 1px solid abstracts.$lineColorDark;
+		background-color: abstracts.$mainBgDark;
+		color: abstracts.$mainFontDark;
+	}
+}
+
+.report-modal--light,
+.main-content--light {
+	.tooltip {
+		border: 1px solid abstracts.$lineColorLight;
+		background-color: abstracts.$mainBgLight;
+		color: abstracts.$mainFontLight;
+	}
+}

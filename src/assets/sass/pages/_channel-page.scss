@@ -76,8 +76,8 @@
 		}
 	}
 	&__content {
-		padding-inline: 2rem;
 		.channel__sort {
+			padding-inline: 2rem;
 			margin-top: 2rem;
 		}
 	}
@@ -165,7 +165,7 @@
 	}
 }
 
-@media (min-width: 576px) {
+@media (min-width: 570px) {
 	.channel__banner {
 		height: 25vh;
 	}
@@ -200,6 +200,12 @@
 				grid-template-columns: 2/3;
 				grid-row: 3/4;
 				max-width: 150px;
+			}
+		}
+		&__content {
+			padding-inline: 2rem;
+			.channel__sort {
+				padding-inline: unset;
 			}
 		}
 	}

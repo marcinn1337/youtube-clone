@@ -1,18 +1,40 @@
-import ChannelVideoCard from '../components/ChannelVideoCard'
-import { useState } from 'react'
-import channelVideos from '../test_data/channel-videos.json'
+import VideoCard from '../components/VideoCard'
+import { useState, useEffect } from 'react'
+import fetchedData from '../data/channel-videos.json'
 
-export default function ChannelVideos() {
-	const testData = channelVideos.data.filter(video => video.type === 'video')
-	const videoCards = testData.map(video => (
-		<ChannelVideoCard
+export default function ChannelVideos(videosArray) {
+	const [videosData, setVideosData] = useState({
+		authorName: null,
+		authorId: null,
+		authorIsVerified: null,
+		authorAvatarUrl: null,
+		videos: []
+	})
+	useEffect(() => {
+		// Fetching data
+
+		setVideosData({
+			authorName: fetchedData.meta.title,
+			authorId: fetchedData.meta.channelId,
+			authorIsVerified: fetchedData.meta.isVerified,
+			authorAvatarUrl: fetchedData.meta.avatar[0].url,
+			videos: fetchedData.data.filter(video => video.type === 'video')
+		})
+	}, [])
+
+	const videoCards = videosData.videos.map(video => (
+		<VideoCard
 			key={video.videoId}
 			videoId={video.videoId}
-			videoTitle={video.title}
 			thumbnailUrl={video.thumbnail[3].url}
-			publishDate={video.publishedTimeText}
-			views={parseInt(video.viewCount)}
-			length={video.lengthText}
+			videoTitle={video.title}
+			authorName={videosData.authorName}
+			authorId={videosData.authorId}
+			authorIsVerified={videosData.authorIsVerified}
+			authorAvatarUrl={null}
+			videoPublishDate={video.publishedTimeText}
+			viewCount={parseInt(video.viewCount)}
+			videoLength={video.lengthText}
 		/>
 	))
 	return (

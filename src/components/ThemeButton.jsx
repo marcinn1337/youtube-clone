@@ -1,13 +1,11 @@
-import { getIcon } from '../utils/getIcon'
+import Icon from './Icon'
 import { useTheme } from '../context/ThemeContext'
 
 export default function ThemeButton() {
-	const theme = useTheme().darkTheme ? 'Dark Theme' : 'Light Theme'
+	const theme = useTheme().darkTheme ? 'dark theme' : 'light theme'
 	return (
 		<button onClick={useTheme().toggleTheme} className='sidebar__item'>
-			<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 -960 960 960'>
-				<path d={getIcon(theme)} />
-			</svg>
+			<Icon type='regular' name={theme} />
 			<span className='sidebar__item-name'>{theme}</span>
 		</button>
 	)

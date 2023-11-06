@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useReport } from '../context/ReportContext'
 import Icon from './Icon'
 import CommentInput from './CommentInput'
-import commentReplies from '../test_data/comment-replies.json'
+import commentReplies from '../data/comment-replies.json'
 export default function Comment({
 	type,
 	authorName,
@@ -87,7 +87,11 @@ export default function Comment({
 						{authorName}
 					</a>
 					<p className='comment__publish-date'>{publishedTime}</p>
-					<button onClick={() => {openReportModal('comment')}} className='icon-btn comment__report-btn'>
+					<button
+						onClick={() => {
+							openReportModal('comment')
+						}}
+						className='icon-btn comment__report-btn'>
 						<Icon type='small' name='report' />
 					</button>
 				</div>

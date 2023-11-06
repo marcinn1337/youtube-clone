@@ -1,13 +1,10 @@
-import { getIcon } from '../utils/getIcon'
+import Icon from './Icon'
 import { toggleSidebar } from '../utils/toggleSidebar'
 
 export default function SidebarLink({ itemName }) {
-
 	return (
 		<button className='sidebar__item'>
-			<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 -960 960 960'>
-				<path d={getIcon(itemName)} />
-			</svg>
+			<Icon type='regular' name={itemName} />
 			<span className='sidebar__item-name'>{itemName}</span>
 		</button>
 	)

@@ -65,9 +65,13 @@
 				right: 0;
 				width: 2rem;
 				height: 2rem;
+				transition: transform abstracts.$colorTransitionTime;
 				svg {
 					width: 2rem;
 					height: 2rem;
+				}
+				&:hover {
+					transform: scale(1.4);
 				}
 			}
 			.video-card__actions {

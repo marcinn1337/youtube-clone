@@ -1,5 +1,5 @@
 import CommunityPost from '../components/CommunityPost'
-import communityData from '../test_data/channel-community.json'
+import communityData from '../data/channel-community.json'
 
 export default function ChannelCommunity({ avatarUrl }) {
 	const postCards = communityData.data.map(post => {

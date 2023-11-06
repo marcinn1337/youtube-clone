@@ -1,7 +1,5 @@
 @use '../abstracts';
-.home-page {
-	padding: 2rem;
-}
+
 .main-content {
 	margin-top: abstracts.$navHeight;
 	max-height: calc(100vh - abstracts.$navHeight);

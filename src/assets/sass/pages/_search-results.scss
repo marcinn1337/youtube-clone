@@ -1,3 +1,24 @@
+@use '../abstracts';
+.search-details {
+	margin: 2rem 2rem 0;
+}
+// THEMES
+.main-content--dark {
+	.search-details {
+		color: abstracts.$mainFontDark;
+		span {
+			color: abstracts.$secondFontDark;
+		}
+	}
+}
+.main-content--light {
+	.search-details {
+		color: abstracts.$mainFontLight;
+		span {
+			color: abstracts.$secondFontLight;
+		}
+	}
+}
 @media (min-width: 576px) {
 	.search-results {
 		padding-inline: 2rem;

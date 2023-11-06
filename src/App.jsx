@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import Sidebar from './components/Sidebar'
+import Navbar from './sections/Navbar'
+import Sidebar from './sections/Sidebar'
 import HomePage from './pages/HomePage'
 import ChannelPage from './pages/ChannelPage'
 import VideoPage from './pages/VideoPage'
@@ -24,7 +24,7 @@ export default function App() {
 							<Route path='/' element={<HomePage />} />
 							<Route path='/search' element={<SearchResultsPage />} />
 							<Route path='/channel' element={<ChannelPage />} />
-							<Route path='/video' element={<VideoPage />} />
+							<Route path='/video/:videoId' element={<VideoPage />} />
 						</Routes>
 						<ReportModal />
 						<AlertBox />
