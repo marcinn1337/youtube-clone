@@ -75,6 +75,27 @@
 			}
 		}
 	}
+	&__search-results {
+		margin-block-start: 2rem;
+		padding-inline: 2rem;
+		h3 {
+			text-transform: capitalize;
+			font-weight: 400;
+			button {
+				margin-inline-start: 1rem;
+				color: abstracts.$blue;
+				font-weight: 500;
+				opacity: 0.8;
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+		span {
+			margin-block-start: 1rem;
+			font-size: 1.3rem;
+		}
+	}
 	&__content {
 		.channel__sort {
 			padding-inline: 2rem;

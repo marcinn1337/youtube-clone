@@ -79,7 +79,7 @@
 
 // THEMES
 .sidebar--dark {
-	background-color: abstracts.$subBgDark;
+	background-color: abstracts.$mainBgDark;
 	// CUSTOM SCROLLBAR FOR MOZILLA
 	scrollbar-color: abstracts.$scrollThumbDark abstracts.$scrollTrackDark;
 	// CUSTOM SCROLLBAR FOR CHROMIUM BROWSERS
@@ -113,7 +113,7 @@
 	}
 }
 .sidebar--light {
-	background-color: abstracts.$subBgLight;
+	background-color: abstracts.$mainBgLight;
 	// CUSTOM SCROLLBAR FOR MOZILLA
 	scrollbar-color: abstracts.$scrollThumbLight abstracts.$scrollTrackLight;
 	// CUSTOM SCROLLBAR FOR CHROMIUM BROWSERS

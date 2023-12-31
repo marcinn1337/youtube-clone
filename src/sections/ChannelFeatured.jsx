@@ -1,5 +1,4 @@
 import FeaturedChannelList from './FeaturedChannelList'
-import featuredChannelsData from '../data/channel-featured.json'
 export default function ChannelFeatured() {
 	const channelsListing = featuredChannelsData.data
 	const channelListingElements = channelsListing.map((list, i) => {

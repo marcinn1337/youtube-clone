@@ -1,9 +1,13 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useReport } from '../context/ReportContext'
 import Icon from './Icon'
 import CommentInput from './CommentInput'
-import commentReplies from '../data/comment-replies.json'
+import { fetchFromAPI } from '../utils/fetchFromAPI'
 export default function Comment({
+	id,
+	referenceType,
+	referenceId,
+	replyToken,
 	type,
 	authorName,
 	authorId,
@@ -15,17 +19,18 @@ export default function Comment({
 	authorIsChannelOwner
 }) {
 	const [comment, setComment] = useState({
+		id: id,
 		reactionState: null,
 		isReply: type === 'reply' ? true : false,
 		hasReplies: replyCount > 0 ? true : false,
 		replies: [],
 		hiddenReplies: true
 	})
+
 	const openReportModal = useReport().openReportModal
 	const avatarStyles = {
 		backgroundImage: `url('${avatarUrl}')`
 	}
-
 	const reactToComment = e => {
 		let reactionState = comment.reactionState
 		if (e.target.classList.contains('comment__like-btn')) {
@@ -41,34 +46,43 @@ export default function Comment({
 		})
 	}
 	const toggleReplies = () => {
-		setComment(prevComment => {
-			return {
-				...prevComment,
-				hiddenReplies: !prevComment.hiddenReplies
-			}
-		})
-
-		// Fetch replies if replies array is empty
+		// Fetch replies if replies array is empty and comment replies count is more than 0
 		if (comment.hasReplies && comment.replies.length === 0) {
-			const replies = commentReplies.data
-			const repliesElements = commentReplies.data.map(reply => (
-				<Comment
-					key={reply.commentId}
-					type='reply'
-					authorName={reply.authorText}
-					authorId={reply.authorChannelId}
-					avatarUrl={reply.authorThumbnail[0].url}
-					commentText={reply.textDisplay}
-					publishedTime={reply.publishedTimeText}
-					likesCount={reply.likesCount}
-					replyCount={reply.replyCount}
-					authorIsChannelOwner={reply.authorIsChannelOwner}
-				/>
-			))
+			const params = {
+				id: referenceId,
+				token: replyToken
+			}
+			const endPoint = referenceType === 'post' ? 'post/comments' : 'comments'
+			fetchFromAPI(endPoint, params).then(data => {
+				setComment(prevComment => {
+					return {
+						...prevComment,
+						hiddenReplies: false,
+						replies: data.data.map(reply => (
+							<Comment
+								key={reply.commentId}
+								id={reply.commentId}
+								referenceId={referenceId}
+								replyToken=''
+								type='reply'
+								authorName={reply.authorText}
+								authorId={reply.authorChannelId}
+								avatarUrl={reply.authorThumbnail[0].url}
+								commentText={reply.textDisplay}
+								publishedTime={reply.publishedTimeText}
+								likesCount={reply.likesCount}
+								replyCount={reply.replyCount}
+								authorIsChannelOwner={reply.authorIsChannelOwner}
+							/>
+						))
+					}
+				})
+			})
+		} else {
 			setComment(prevComment => {
 				return {
 					...prevComment,
-					replies: repliesElements
+					hiddenReplies: !prevComment.hiddenReplies
 				}
 			})
 		}

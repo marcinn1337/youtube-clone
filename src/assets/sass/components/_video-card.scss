@@ -20,6 +20,9 @@
 			color: abstracts.$mainFontDark;
 			font-size: 1.3rem;
 		}
+		.video-card__duration--highlighted {
+			color: abstracts.$secondGreen;
+		}
 		.thumbnail-btn {
 			padding: 0.5rem 0.5rem;
 			position: absolute;
@@ -44,6 +47,7 @@
 			left: 0;
 			.tooltip {
 				top: 4rem;
+				left: 0.5rem;
 			}
 			&:hover .tooltip {
 				opacity: 1;
@@ -72,16 +76,10 @@
 		}
 	}
 }
-.video-card:first-of-type {
-	.video-card__watch-later-btn {
-		.tooltip {
-			left: 1rem;
-		}
-	}
-}
 
 // Styles for video card located on channel page
-.channel {
+.channel,
+.channel__search-results {
 	.video-card {
 		&__info {
 			display: flex;
@@ -94,12 +92,16 @@
 			.video-card__author-name {
 				display: none;
 			}
+			.video-card__details {
+				width: 100%;
+			}
 		}
 	}
 }
+
 // Styles for video card located on home page, search results page and recommendations on video page
 .home-page,
-.search-results,
+.search__results,
 .video__recommendations {
 	.video-card {
 		&__info {
@@ -151,7 +153,7 @@
 // THEMES
 .main-content--dark {
 	.home-page__cards,
-	.search-results,
+	.search__results,
 	.video__recommendations,
 	.channel {
 		.video-card {
@@ -183,7 +185,7 @@
 			}
 		}
 	}
-	.search-results {
+	.search__results {
 		&__thumbnail {
 			background-color: abstracts.$hoverBgDark;
 		}
@@ -194,6 +196,7 @@
 }
 .main-content--light {
 	.home-page__cards,
+	.search__results,
 	.video__recommendations,
 	.channel {
 		.video-card {
@@ -246,7 +249,8 @@
 			}
 		}
 	}
-	.search-results,
+	.search__results,
+	.channel__search-results,
 	.video__recommendations {
 		.video-card {
 			.video-card__info {
@@ -283,7 +287,8 @@
 			}
 		}
 	}
-	.search-results {
+	.search__results,
+	.channel__search-results {
 		.video-card {
 			flex-direction: row;
 			.video-card__thumbnail {

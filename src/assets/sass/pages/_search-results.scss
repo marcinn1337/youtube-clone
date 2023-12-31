@@ -1,26 +1,175 @@
 @use '../abstracts';
-.search-details {
-	margin: 2rem 2rem 0;
+.search__details {
+	margin: 3rem 2rem 0;
+}
+.search__filter {
+	margin-block: 2rem;
+	margin-inline: 2rem;
+	&-toggle-btn {
+		position: relative;
+		display: flex;
+		align-items: center;
+		font-size: 1.7rem;
+		z-index: 0;
+		svg:first-of-type {
+			margin-inline-end: 1rem;
+		}
+		svg:nth-of-type(2) {
+			margin-inline-start: 0.5rem;
+		}
+	}
+	form {
+		margin-block-start: 2rem;
+		button:first-of-type {
+			margin: 0.5rem 1rem 0.5rem 0;
+		}
+		button {
+			margin: 0.5rem 1rem;
+			padding: 0.9rem 2rem;
+			font-size: 1.4rem;
+			border-radius: abstracts.$borderRadius;
+		}
+		div {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: start;
+			section {
+				margin-block: 2rem;
+				margin-inline: 0 2rem;
+				display: grid;
+				grid-template-columns: 1px auto;
+				align-items: center;
+				min-width: 90px;
+				h5 {
+					margin-block-end: 1rem;
+					grid-column: 1/-1;
+					grid-row: 1/2;
+				}
+				input[type='radio'],
+				input[type='checkbox'] {
+					/* Add if not using autoprefixer */
+					-webkit-appearance: none;
+					appearance: none;
+					/* For iOS < 15 to remove gradient background */
+					background-color: transparent;
+					/* Not removed via appearance */
+					margin-block: 0;
+					grid-column: 1/2;
+				}
+				label {
+					margin-block: 0.4rem;
+					grid-column: 2/3;
+					font-size: 1.5rem;
+				}
+			}
+		}
+	}
 }
 // THEMES
 .main-content--dark {
-	.search-details {
+	.search__details {
 		color: abstracts.$mainFontDark;
 		span {
 			color: abstracts.$secondFontDark;
 		}
 	}
+	.search__filter {
+		&-toggle-btn {
+			color: abstracts.$mainFontDark;
+			svg {
+				color: abstracts.$mainFontDark;
+				fill: abstracts.$mainFontDark;
+			}
+			&:hover {
+				color: white;
+				svg {
+					color: white;
+					fill: white;
+				}
+			}
+		}
+		form {
+			button {
+				color: abstracts.$secondFontDark;
+				border: 1px solid abstracts.$secondFontDark;
+				&:hover {
+					background-color: abstracts.$hoverBgDark;
+					color: abstracts.$mainFontDark;
+				}
+			}
+			div {
+				section {
+					h5 {
+						color: abstracts.$secondFontDark;
+					}
+					label {
+						color: abstracts.$offDark;
+					}
+					input[type='radio']:checked + label,
+					input[type='checkbox']:checked + label {
+						color: abstracts.$green;
+					}
+					input:disabled + label {
+						color: rgb(72, 72, 72);
+					}
+				}
+			}
+		}
+	}
 }
 .main-content--light {
-	.search-details {
+	.search__details {
 		color: abstracts.$mainFontLight;
 		span {
 			color: abstracts.$secondFontLight;
 		}
 	}
+	.search__filter {
+		&-toggle-btn {
+			color: abstracts.$mainFontLight;
+			svg {
+				color: abstracts.$mainFontLight;
+				fill: abstracts.$mainFontLight;
+			}
+			&:hover {
+				color: black;
+				svg {
+					color: black;
+					fill: black;
+				}
+			}
+		}
+		form {
+			button {
+				color: abstracts.$secondFontLight;
+				border: 1px solid abstracts.$secondFontLight;
+				&:hover {
+					background-color: abstracts.$hoverBgLight;
+					color: abstracts.$mainFontLight;
+				}
+			}
+			div {
+				section {
+					h5 {
+						color: abstracts.$secondFontLight;
+					}
+					label {
+						color: abstracts.$offLight;
+					}
+					input[type='radio']:checked + label,
+					input[type='checkbox']:checked + label {
+						color: abstracts.$green;
+					}
+					input:disabled + label {
+						color: #abb9b2;
+					}
+				}
+			}
+		}
+	}
 }
 @media (min-width: 576px) {
-	.search-results {
+	.search__results {
 		padding-inline: 2rem;
 	}
 }

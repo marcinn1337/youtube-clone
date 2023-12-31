@@ -22,8 +22,8 @@ export default function App() {
 					<ReportProvider>
 						<Routes>
 							<Route path='/' element={<HomePage />} />
-							<Route path='/search' element={<SearchResultsPage />} />
-							<Route path='/channel' element={<ChannelPage />} />
+							<Route path='/search/:searchQuery' element={<SearchResultsPage />} />
+							<Route path='/channel/:channelId' element={<ChannelPage />} />
 							<Route path='/video/:videoId' element={<VideoPage />} />
 						</Routes>
 						<ReportModal />

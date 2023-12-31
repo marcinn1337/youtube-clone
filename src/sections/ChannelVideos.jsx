@@ -1,49 +1,69 @@
 import VideoCard from '../components/VideoCard'
 import { useState, useEffect } from 'react'
-import fetchedData from '../data/channel-videos.json'
+import { fetchFromAPI } from '../utils/fetchFromAPI'
 
-export default function ChannelVideos(videosArray) {
-	const [videosData, setVideosData] = useState({
-		authorName: null,
-		authorId: null,
-		authorIsVerified: null,
-		authorAvatarUrl: null,
-		videos: []
+export default function ChannelVideos({ author }) {
+	const [videos, setVideos] = useState([])
+	const [fetchParams, setFetchParams] = useState({
+		id: author.id,
+		sort_by: 'newest'
 	})
 	useEffect(() => {
 		// Fetching data
-
-		setVideosData({
-			authorName: fetchedData.meta.title,
-			authorId: fetchedData.meta.channelId,
-			authorIsVerified: fetchedData.meta.isVerified,
-			authorAvatarUrl: fetchedData.meta.avatar[0].url,
-			videos: fetchedData.data.filter(video => video.type === 'video')
+		fetchFromAPI('channel/videos', fetchParams).then(data => {
+			const videos = data.data.filter(video => video.type === 'video')
+			setVideos(prevVideos => {
+				return videos.map(video => (
+					<VideoCard
+						key={video.videoId}
+						videoId={video.videoId}
+						thumbnailUrl={video.thumbnail[3].url}
+						videoTitle={video.title}
+						authorName={author.title}
+						authorId={author.id}
+						authorIsVerified={null}
+						authorAvatarUrl={null}
+						videoPublishDate={video.publishedTimeText}
+						viewCount={parseInt(video.viewCount)}
+						videoLength={video.lengthText}
+					/>
+				))
+			})
 		})
-	}, [])
-
-	const videoCards = videosData.videos.map(video => (
-		<VideoCard
-			key={video.videoId}
-			videoId={video.videoId}
-			thumbnailUrl={video.thumbnail[3].url}
-			videoTitle={video.title}
-			authorName={videosData.authorName}
-			authorId={videosData.authorId}
-			authorIsVerified={videosData.authorIsVerified}
-			authorAvatarUrl={null}
-			videoPublishDate={video.publishedTimeText}
-			viewCount={parseInt(video.viewCount)}
-			videoLength={video.lengthText}
-		/>
-	))
+	}, [author.id, fetchParams])
+	const sortVideos = e => {
+		if (e.target.classList.contains('sort-btn--active')) return
+		const sortButtons = document.querySelectorAll('.sort-btn')
+		sortButtons.forEach(button => {
+			// Delete --active modifier from current active button
+			if (button.classList.contains('sort-btn--active')) {
+				button.classList.remove('sort-btn--active')
+			}
+		})
+		// Add --modifier to button which user clicked
+		e.target.classList.add('sort-btn--active')
+		// Change fetch params which will rerender component and fetch videos with new params
+		setFetchParams(prevFetchParams => {
+			return {
+				...prevFetchParams,
+				sort_by: e.target.textContent
+			}
+		})
+	}
 	return (
 		<>
 			<div className='channel__sort'>
-				<button className='sort-btn sort-btn--active'>Latest</button>
-				<button className='sort-btn'>Popular</button>
+				<button onClick={sortVideos} className='sort-btn sort-btn--active'>
+					newest
+				</button>
+				<button onClick={sortVideos} className='sort-btn'>
+					popular
+				</button>
+				<button onClick={sortVideos} className='sort-btn'>
+					oldest
+				</button>
 			</div>
-			<div className='channel-videos'>{videoCards}</div>
+			<div className='channel-videos'>{videos}</div>
 		</>
 	)
 }

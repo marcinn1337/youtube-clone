@@ -1,8 +1,7 @@
 import { useState, createContext, useContext, useRef } from 'react'
-
+import messages from '../data/alert-messages.json'
 const AlertContext = createContext()
 export const useAlert = () => useContext(AlertContext)
-
 
 export function AlertProvider({ children }) {
 	const [alert, setAlert] = useState({

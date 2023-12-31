@@ -55,3 +55,17 @@
 		}
 	}
 }
+@media (min-width: 570px) {
+	.playlist-card {
+		flex-direction: row;
+		.playlist-card__thumbnail {
+			min-width: 275px;
+			border-radius: abstracts.$cardRadius;
+		}
+		.playlist-card__title {
+			margin-inline-start: 2rem;
+			order: 1;
+			width: 100%;
+		}
+	}
+}

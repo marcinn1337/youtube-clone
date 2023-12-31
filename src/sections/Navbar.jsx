@@ -1,13 +1,18 @@
 import { useTheme } from '../context/ThemeContext'
+import { Link, useNavigate } from 'react-router-dom'
 import { toggleSidebar } from '../utils/toggleSidebar'
 import SearchBar from '../components/SearchBar'
 import Icon from '../components/Icon'
 
 export default function Navbar() {
+	const navigate = useNavigate()
 	const theme = useTheme().darkTheme ? 'dark' : 'light'
 
 	const toggleSearchbar = () => {
 		document.querySelector('.searchbar--nav').classList.toggle('searchbar--visible')
+	}
+	const initSearch = searchQuery => {
+		navigate(`/search/${searchQuery}`)
 	}
 	return (
 		<nav className={`nav nav--${theme}`}>
@@ -16,7 +21,9 @@ export default function Navbar() {
 					<Icon type='regular' name='list' />
 				</button>
 				<h1 className='nav__title'>
-					<span>clone</span>Tube
+					<Link to='/'>
+						<span>clone</span>Tube
+					</Link>
 				</h1>
 				<button onClick={toggleSearchbar} className='icon-btn show-searchbar'>
 					<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 -960 960 960'>
@@ -31,7 +38,7 @@ export default function Navbar() {
 					</button>
 					<button className='nav__login-btn cta-btn'>Login</button>
 				</a>
-				<SearchBar parent='nav' toggleNavSearchBar={toggleSearchbar} />
+				<SearchBar parent='nav' toggleNavSearchBar={toggleSearchbar} initSearch={initSearch} />
 			</div>
 		</nav>
 	)

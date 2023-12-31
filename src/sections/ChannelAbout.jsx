@@ -1,17 +1,6 @@
-import channelInfo from '../data/channel-info.json'
 import ChannelLink from '../components/ChannelLink'
 import { formatNumberToLocalString } from '../utils/formatNumberToLocalString'
-import { useState } from 'react'
-export default function ChannelAbout() {
-	const [channel, setChannel] = useState({
-		description: channelInfo.description,
-		joinedDate: channelInfo.joinedDate,
-		viewCount: channelInfo.viewCount,
-		videosCount: channelInfo.videosCount,
-		subscriberCount: channelInfo.subscriberCount,
-		links: channelInfo.links
-	})
-
+export default function ChannelAbout({ channel }) {
 	const linkElements =
 		channel.links &&
 		channel.links.map(({ title, link }, i) => {

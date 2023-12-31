@@ -1,21 +1,28 @@
 import { useState, useEffect } from 'react'
+import { useParams, Link } from 'react-router-dom'
 import { useTheme } from '../context/ThemeContext'
-import { useLocation, useParams } from 'react-router-dom'
+import { useAlert } from '../context/AlertContext'
+import { useReport } from '../context/ReportContext'
 import Comments from '../sections/Comments'
 import Icon from '../components/Icon'
 import VideoCard from '../components/VideoCard'
 import ModalBackground from '../components/ModalBackground'
+import VerifiedBadge from '../components/VerifiedBadge'
 
 import { formatText } from '../utils/formatText'
 import { formatNumberToLocalString } from '../utils/formatNumberToLocalString'
-import { fetchVideo } from '../utils/fetchVideo'
+import { fetchFromAPI } from '../utils/fetchFromAPI'
 
 export default function VideoPage() {
 	const theme = useTheme().darkTheme ? 'dark' : 'light'
+	const showAlert = useAlert().showAlert
+	const openReportModal = useReport().openReportModal
 	const [video, setVideo] = useState({
 		description: '',
 		id: '',
 		title: '',
+		channelId: '',
+		channelBadges: [''],
 		channelTitle: '',
 		viewCount: 0,
 		subscriberCountText: '',
@@ -27,25 +34,30 @@ export default function VideoPage() {
 		actionsList: false,
 		comments: false
 	})
-	const location = useLocation()
 	let { videoId } = useParams()
-	const { avatarUrlStyle } = location.state
 	useEffect(() => {
 		// Fetching data...
 		const params = {
 			id: videoId,
 			extend: '1'
 		}
-		fetchVideo(params).then(data => {
-			setVideo(data)
+		fetchFromAPI('video/info', params).then(data => {
+			setVideo({
+				...data,
+				channelBadges: data.channelBadges === null ? [] : data.channelBadges,
+				commentCount: data.commentCount === null ? 0 : data.commentCount
+			})
 		})
 	}, [videoId])
 
+	const avatarUrlStyle = {
+		backgroundImage: `url(${video.channelThumbnail[video.channelThumbnail.length - 1].url})`
+	}
 	const showDescription = e => {
 		// Show whole description by adding --visible class modifier
 		document.querySelector('.video__description-text').classList.toggle('video__description-text--visible')
 
-		// Toggle button text ...more / ...hide
+		// Toggle button text from "...more" to "...hide"
 		if (e.target.textContent === '...more') {
 			e.target.textContent = '...hide'
 			return
@@ -103,6 +115,9 @@ export default function VideoPage() {
 			videoLength={video.lengthText}
 		/>
 	))
+	const showErrorAlert = e => {
+		showAlert('error', 2)
+	}
 	return (
 		<main className={`main-content main-content--${theme}`}>
 			<div className='video'>
@@ -133,8 +148,11 @@ export default function VideoPage() {
 							className='video__description-text'></p>
 					</div>
 					<div className='video__author'>
-						<a style={avatarUrlStyle} className='video__author-avatar'></a>
-						<a className='video__author-name'>{video.channelTitle}</a>
+						<Link style={avatarUrlStyle} className='video__author-avatar' to={`/channel/${video.channelId}`}></Link>
+						<Link className='video__author-name' to={`/channel/${video.channelId}`}>
+							{video.channelTitle}
+							{video.channelBadges.includes('Verified') && <VerifiedBadge />}
+						</Link>
 						<p className='video__author-subscribers'>{video.subscriberCountText}</p>
 						<button onClick={subscribeChannel} className='video__author-subscribe-btn cta-btn'>
 							Subscribe
@@ -155,15 +173,19 @@ export default function VideoPage() {
 							<>
 								<ModalBackground closeModal={toggleMoreActionsMenu} />
 								<div className='video__actions-more'>
-									<button className='video__actions-save-btn'>
+									<button onClick={showErrorAlert} className='video__actions-save-btn'>
 										<Icon type='small' name='add-to-playlist' />
 										Save
 									</button>
-									<button className='video__actions-share-btn'>
+									<button onClick={showErrorAlert} className='video__actions-share-btn'>
 										<Icon type='small' name='share' />
 										Share
 									</button>
-									<button className='video__actions-report-btn'>
+									<button
+										onClick={() => {
+											openReportModal('video')
+										}}
+										className='video__actions-report-btn'>
 										<Icon type='small' name='report' />
 										Report
 									</button>
@@ -175,7 +197,7 @@ export default function VideoPage() {
 						Comments {formatNumberToLocalString(video.commentCount)}{' '}
 						<Icon type='small' name={visibleComponents.comments ? 'chevron-up' : 'chevron-down'} />
 					</button>
-					{visibleComponents.comments && <Comments />}
+					{visibleComponents.comments && <Comments referenceType='video' referenceId={videoId} />}
 					<div className='video__recommendations'>{recommendedVideoCards}</div>
 				</div>
 			</div>

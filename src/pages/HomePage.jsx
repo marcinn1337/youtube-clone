@@ -9,21 +9,22 @@ export default function HomePage() {
 	const [videos, setVideos] = useState([])
 	useEffect(() => {
 		// Fetching data...
-		let params = {}
-		let url = selectedCategory.name
+		let params = { geo: 'US' }
+		let endPoint = selectedCategory.name
 		if (selectedCategory.type === 'trending') {
-			url = 'trending'
+			endPoint = 'trending'
 			params = {
 				geo: 'US',
 				type: selectedCategory.name
 			}
 		} else if (selectedCategory.type === 'hashtag') {
-			url = 'hashtag'
+			endPoint = 'hashtag'
 			params = {
+				geo: 'US',
 				tag: selectedCategory.name
 			}
 		}
-		fetchFromAPI(url, params).then(data => {
+		fetchFromAPI(endPoint, params).then(data => {
 			// Filter data to avoid short listings etc.
 			const videosData = data.data.filter(video => video.type === 'video')
 			// Create video cards and save them to "videos" state

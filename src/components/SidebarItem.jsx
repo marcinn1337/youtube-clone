@@ -4,8 +4,7 @@ import Icon from './Icon'
 
 export default function SidebarItem({ itemName, type }) {
 	const updateCategory = useCategory().updateCategory
-	const isActive = useCategory().selectedCategory === itemName ? true : false
-
+	const isActive = useCategory().selectedCategory.name === itemName ? true : false
 	return (
 		<button
 			className={`sidebar__item ${isActive ? 'sidebar__item--active' : ''}`}

@@ -94,7 +94,7 @@ export default function CommunityPost({
 					{`${post.hiddenComments ? 'Show' : 'Hide'}`} Comments ({commentsCount})
 				</button>
 			</div>
-			{!post.hiddenComments && <Comments postId={postId} />}
+			{!post.hiddenComments && <Comments referenceType='post' referenceId={postId} />}
 		</div>
 	)
 }
